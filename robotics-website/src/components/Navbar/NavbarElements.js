@@ -112,3 +112,22 @@ export const SubLink = styled(Link)`
     color: #333;
   }
 `;
+
+
+export const GlossaryLink = styled(NavLink)`
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  &.active {
+    color: #ffcc00;
+  }
+  &:hover {
+    background-color: #ffcc00;
+    color: #333;
+  }
+`;
+

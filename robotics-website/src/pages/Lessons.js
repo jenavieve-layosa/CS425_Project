@@ -1,12 +1,12 @@
 // Lessons.js
-
 import React from 'react';
+import LessonsDropdown from '../components/LessonsDropdown';
 
 const Lessons = () => {
   return (
     <div>
-      <h1>Lessons Page</h1>
-      {/* Add content for Lessons page */}
+      <h1>Lessons</h1>
+      <LessonsDropdown />
     </div>
   );
 };

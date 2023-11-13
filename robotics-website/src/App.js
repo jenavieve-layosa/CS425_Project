@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { NavbarContainer, Title } from './components/NavbarElements';
+import { NavbarContainer, Title } from './components/Navbar/NavbarElements';
 import Navbar from './components/Navbar';
 import Home from './pages';
 import About from './pages/about';
@@ -24,15 +24,17 @@ function App() {
       </NavbarContainer>
       <div style={{ padding: '20px' }}>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/sign-up' element={<SignUp />} />
-          <Route path='/lessons' element={<Lessons />} />
-          <Route path='/lessons/1' element={<Lesson1 />} />
-          <Route path='/lessons/2' element={<Lesson2 />} />
-          <Route path='/lessons/3' element={<Lesson3 />} />
-          <Route path='/lessons/4' element={<Lesson4 />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/lessons" element={<Lessons />}>
+          <Route path="1" element={<Lesson1 />} />
+          <Route path="2" element={<Lesson2 />} />
+          <Route path="3" element={<Lesson3 />} />
+          <Route path="4" element={<Lesson4 />} />
+          </Route>
+          <Route path='/glossary' element={<Glossary />} />
         </Routes>
       </div>
     </Router>
