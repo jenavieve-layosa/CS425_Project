@@ -52,6 +52,9 @@ const Navbar = () => {
             <StyledNavLink to="/contact" activeStyle>
               Contact
             </StyledNavLink>
+            <StyledNavLink to="/glossary" activeStyle>
+              Glossary
+            </StyledNavLink>
             <StyledNavLink to="/signup" activeStyle>
               Sign Up
             </StyledNavLink>

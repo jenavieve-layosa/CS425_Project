@@ -34,7 +34,7 @@ function App() {
           <Route path="3" element={<Lesson3 />} />
           <Route path="4" element={<Lesson4 />} />
           </Route>
-          <Route path='/glossary' element={<Glossary />} />
+        <Route path='/glossary' element={<Glossary />} />
         </Routes>
       </div>
     </Router>
