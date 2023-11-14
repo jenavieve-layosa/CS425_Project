@@ -14,6 +14,8 @@ import Lesson2 from './lessons/Lesson2';
 import Lesson3 from './lessons/Lesson3';
 import Lesson4 from './lessons/Lesson4';
 import Glossary from './pages/Glossary';
+import SignUp2 from './components/Accounts/Signup2';
+import Login from './components/Accounts/Login';
 
 function App() {
   return (
@@ -30,11 +32,9 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/lessons" element={<Lessons />}>
           <Route path="1" element={<Lesson1 />} />
-          <Route path="2" element={<Lesson2 />} />
-          <Route path="3" element={<Lesson3 />} />
-          <Route path="4" element={<Lesson4 />} />
           </Route>
         <Route path='/glossary' element={<Glossary />} />
+
         </Routes>
       </div>
     </Router>

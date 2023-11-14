@@ -65,15 +65,6 @@ const Navbar = () => {
               <SubLink to="/lessons/1" activeStyle>
                 Lesson 1
               </SubLink>
-              <SubLink to="/lessons/2" activeStyle>
-                Lesson 2
-              </SubLink>
-              <SubLink to="/lessons/3" activeStyle>
-                Lesson 3
-              </SubLink>
-              <SubLink to="/lessons/4" activeStyle>
-                Lesson 4
-              </SubLink>
             </SubLinkContainer>
           </NavLinkContainer>
           <Bars />
