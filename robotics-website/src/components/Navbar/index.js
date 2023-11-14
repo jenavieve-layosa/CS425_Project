@@ -7,7 +7,7 @@ import { Nav, NavLinkContainer, Title, Bars, NavMenu } from "./NavbarElements";
 
 const StyledNavLink = styled(NavLink)`
   color: #ffffff;
-  text-decoration: none;
+  text-decoration: underline;
   padding: 10px;
   cursor: pointer;
   &.active {

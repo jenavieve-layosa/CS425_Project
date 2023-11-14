@@ -12,6 +12,7 @@ export const NavbarContainer = styled.div`
 
 export const Title = styled.h1`
   color: #ffffff;
+  text-align: left;
   margin-bottom: 10px;
   font-weight: bold; // Keep bold for the title
 `;
@@ -28,7 +29,7 @@ export const Nav = styled.nav`
 export const NavLink = styled(Link)`
   color: #ffffff; /* Change this to your desired link color */
   display: flex;
-  align-items: center;
+  align-items: right;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
@@ -58,7 +59,7 @@ export const Bars = styled(FaBars)`
 
 export const NavMenu = styled.div`
   display: flex;
-  align-items: center;
+  align-items: right;
   margin-right: -24px;
   @media screen and (max-width: 768px) {
     display: none;
