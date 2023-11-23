@@ -3,7 +3,6 @@
 
 from flask import Flask, request, jsonify, make_response
 from flask_sqlalchemy import SQLAlchemy
-import jsonify
 import uuid
 from werkzeug.security import generate_password_hash, check_password_hash
 import mysql.connector
@@ -26,7 +25,7 @@ def checkingIfAccountEquists():
         user='root', 
         #this is whatever your stuff is it will change for each person
         password='MySQL Database', 
-        host = '127.0.0.1', 
+        host = 'localhost', 
         database='students')
     
     mycursor = db.cursor()

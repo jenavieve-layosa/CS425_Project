@@ -35,6 +35,21 @@ const Login = (props) => {
       return;
     }
 
+    if (!/[A-z]/.test(password)) {
+      setPasswordError("The password must contain at least one letter");
+      return;
+    }
+
+    if (!/\d/.test(password)) {
+      setPasswordError("The password must contain at least one number");
+      return;
+    }
+
+    if (!/string.punctuation/.test(password)) {
+      setPasswordError("The password must contain at least one special character");
+      return;
+    }
+
     // Authentication calls will be made here...
     // Check if email has an account associated with it
     checkAccountExists((accountExists) => {
