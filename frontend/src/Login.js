@@ -20,7 +20,7 @@ const Login = (props) => {
       return;
     }
 
-    if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+    if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
       setEmailError("Please enter a valid email");
       return;
     }
@@ -45,7 +45,7 @@ const Login = (props) => {
       return;
     }
 
-    if (!/string.punctuation/.test(password)) {
+    if (!/[!@#$%^&*]/.test(password)) {
       setPasswordError("The password must contain at least one special character");
       return;
     }
@@ -83,7 +83,7 @@ const Login = (props) => {
 
   // Log in a user using email and password
   const logIn = () => {
-    fetch("http://localhost:3080/auth", {
+    fetch("http://localhost:5000/auth", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
