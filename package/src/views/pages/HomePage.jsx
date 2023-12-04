@@ -121,7 +121,7 @@ const Home = () => {
                                     </Container>
                                 </div>
                                 <h3>Advanced Robotics Concepts</h3>
-                                <p>Delve into advanced topics such as robot localization, mapping, and control algorithms to elevate your robotics skills.</p>
+                                <p>Delve into advanced topics such as robot localization, mapping, and control algorithms to elevate your robotics skills. Compare your skills with your peers, leave comments, start groups.</p>
                                 <img src={img3} alt="Advanced Robotics Concepts" className="img-circle" width="290" />
                                 
                             </li>
