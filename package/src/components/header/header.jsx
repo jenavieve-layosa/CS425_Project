@@ -20,7 +20,7 @@ const Header = () => {
             <div className="header6">
                 <Container className="po-relative">
                     <Navbar className="navbar-expand-lg h6-nav-bar">
-                        <NavbarBrand href="/"><img src={logo} alt="wrapkit" /></NavbarBrand>
+                        <NavbarBrand ><img src={logo} alt="wrapkit" /></NavbarBrand>
                         <NavbarToggler onClick={toggle}><span className="ti-menu"></span></NavbarToggler>
                         <Collapse isOpen={isOpen} navbar className="hover-dropdown font-14 justify-content-end" id="h6-info">
                             <Nav navbar className="ms-auto">

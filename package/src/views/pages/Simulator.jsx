@@ -23,11 +23,8 @@ const Simulator = () => {
                         <p>
                             *insert simulation here* 
                         </p>
-                        <ol>
-                            <li>
-                                
-                                <img src={img3} alt="Advanced Robotics Concepts" className="img-thumbnail" width="290" />
-                            </li>
+                        <ol>                                
+                        <img src={img3} alt="Advanced Robotics Concepts" className="img-thumbnail" width="290" />
                         </ol>
                     </div>
                 </div>

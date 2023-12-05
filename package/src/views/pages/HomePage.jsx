@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Link, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import PropTypes from "prop-types";
 import { Card, Button,  CardTitle, CardBody, CardText, Row, Col, Container } from 'reactstrap';
 
@@ -95,12 +95,11 @@ const Home = () => {
                             </div>
                         <h3>Roadmap to Learning Robotics</h3>
                         <ol>
-                            <li>
-                                
+
+    
                                 <p>Explore the basics of robotics, understanding its applications and significance in various industries.</p>
                                 <img src={roadmap} alt="Introduction to Robotics" className="img-rounded" width = "350"/>
-                            </li>
-                            <li>
+                            
                             <div className="spacer ">
                                     <Container className="feature30">
                                         <Row>
@@ -112,7 +111,7 @@ const Home = () => {
                                                             <span className="label label-light-primary label-info label-rounded">Programming with ROS</span>
                                                             <h3 className="title">Master the Robot Operating System (ROS) to program and control robots. Dive into hands-on lessons and an interactive visual simulator.</h3>
                                                             <p>Experience a care-free environment to try your hand at programming in Python! Our coding environment is simple and easy, showing your robots movements in real time!</p>
-                                                            <a className="btn btn-outline-primary btn-md btn-arrow m-t-20" href="/Simulation"><span>See Simulator <i className="ti-arrow-right"></i></span></a>
+                                                            <a className="btn btn-outline-primary btn-md btn-arrow m-t-20" href="/Simulator"><span>See Simulator <i className="ti-arrow-right"></i></span></a>
                                                         </div>
                                                     </CardBody>
                                                 </Card>
@@ -124,7 +123,6 @@ const Home = () => {
                                 <p>Delve into advanced topics such as robot localization, mapping, and control algorithms to elevate your robotics skills. Compare your skills with your peers, leave comments, start groups.</p>
                                 <img src={img3} alt="Advanced Robotics Concepts" className="img-circle" width="290" />
                                 
-                            </li>
                         </ol>
                     </div>
                     
