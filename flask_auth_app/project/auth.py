@@ -45,13 +45,15 @@ def signup_post():
     if user: # if a user is found, we want to redirect back to signup page so user can try again
         flash('Email address already exists')
         return redirect(url_for('auth.signup'))
-
+    
+    
     # create a new user with the form data. Hash the password so the plaintext version isn't saved.
     new_user = User(email=email, name=name, password=generate_password_hash(password, method='pbkdf2:sha1', salt_length=8))
-
+    
     # add the new user to the database
     db.session.add(new_user)
     db.session.commit()
+    
     return redirect(url_for('auth.login'))
 
 @auth.route('/logout')
