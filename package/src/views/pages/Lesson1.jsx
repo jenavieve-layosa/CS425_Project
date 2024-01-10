@@ -7,6 +7,7 @@ import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
 
+import img5 from '../../assets/images/img5.jpg';
 
 import logo from '../../assets/images/robot_logo.png';
 
@@ -17,10 +18,18 @@ const Lesson1 = () => {
             <div className="page-wrapper">
                 <div className="container-fluid">
                     <HeaderBanner />
-                    <h1 className="title">Lesson 1: Introduction to the World of Robotics</h1>
-                   
-
+                    <Container>
+                    <Row className="justify-content-center">
+                        <Col md="12" className="text-center">
+                            <h1 className="title font-bold">Lesson 1: An Introduction to the World of Robotics</h1>
+                            <h6 className="subtitle">The significance of ROS, prerequisites and resources, and what is a robot?</h6>
+                        </Col>
+                    </Row>
+                </Container>
                      {/* Lesson Content */}
+                     
+
+                     
                      <div style={{ padding: '20px', border: '1px solid #ddd', borderRadius: '5px', marginBottom: '20px' }}>
                         <h2>Course Overview</h2>
                         <p>
@@ -35,6 +44,8 @@ const Lesson1 = () => {
                             <li>Console commands: Navigating and analyzing the ROS system and the catkin workspace</li>
                             <li>Creating ROS packages: Structure, launch-files, and best practices</li>
                         </ul>
+
+                        
 
                         <h2>Lesson 1: Introduction to ROS Architecture</h2>
                         
@@ -90,8 +101,26 @@ const Lesson1 = () => {
                         {/* Add more content as needed for the learning portion */}
                         {/* Use headings, paragraphs, and code snippets for clear explanations */}
 
-                        
-                        
+                        <div className="spacer ">
+                            <Container className="feature30">
+                                <Row>
+                                    <Col lg="6"><img src={img5} className="rounded img-responsive" alt="wrappixel" /></Col>
+                                    <Col lg="6" md="4" className="text-center wrap-feature30-box">
+                                        <Card className="card-shadow">
+                                            <CardBody>
+                                                <div className="p-20">
+                                                    <span className="label label-info label-rounded">What is ROS?</span>
+                                                    <h3 className="subtitle">ROS, Robot Operating System, serves as a meta-operating system for robots, providing essential services and tools for deeloping robotic applications.</h3>
+                                                    <p>ROS was built with the goal of smooth and easy cross-collaboration, the base code and knowledge can be applied across all robotics platforms such as arms, drones, mobile bases, etc. </p>
+                                                    
+                                                </div>
+                                            </CardBody>
+                                        </Card>
+                                    </Col>
+                                </Row>
+                            </Container>
+                        </div>
+                                    
 
                         <h3>Questions:</h3>
                         <ol>
@@ -109,7 +138,6 @@ const Lesson1 = () => {
                             <li>Online forums for discussions and problem-solving.</li>
                         </ul>
                     </div>
-              
 
                     {/* End of Lesson Content */}
                 </div>
