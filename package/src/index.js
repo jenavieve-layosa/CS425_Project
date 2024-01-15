@@ -27,9 +27,10 @@ root.render(
   <HashRouter history={hist}>
     <Routes>
       <Route path="/custom-components" element={<CustomComponents />} />
+      <Route path="/Components" element={<Components />} />
       <Route path="/Lesson1" element={<Lesson1 />} />
-      <Route path="/Lesson2" element={<CustomComponents />} />
-      <Route path="/Lesson3" element={<Components />} />
+      <Route path="/Lesson2" element={<Lesson2 />} />
+      <Route path="/Lesson3" element={<Lesson3 />} />
       <Route path="/HomePage" element={<HomePage />} />
       <Route path="/Glossary" element={<Glossary />} />
       <Route path="/Simulator" element={<Simulator />} />

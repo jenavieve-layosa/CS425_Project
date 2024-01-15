@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import logo from '../../assets/images/robot_logo.png';
+import logo from '../../assets/images/robot-logo.png';
 
 const Footer = () => {
     return (

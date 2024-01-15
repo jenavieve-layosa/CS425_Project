@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import PropTypes from "prop-types";
-import { Card, Button,  CardTitle, CardBody, CardText, Row, Col, Container } from 'reactstrap';
+import { Card,  CardTitle, CardBody, CardText, Button, Container, Row, Col } from 'reactstrap';
 
 
 import Header from "../../components/header/header.jsx";
@@ -15,8 +15,12 @@ import img5 from '../../assets/images/img5.jpg';
 import img6 from '../../assets/images/img6.jpg';
 import roadmap from '../../assets/images/roadmap.png';
 import learning_robot from '../../assets/images/learning_robot_1.png';
+import JsComponents from "../components/sections/js-components.jsx";
+
 
 const Home = () => {
+
+
     return (
         <div id="main-wrapper">
             <Header />
@@ -93,13 +97,7 @@ const Home = () => {
                                     </Row>
                                 </Container>
                             </div>
-                        <h3>Roadmap to Learning Robotics</h3>
-                        <ol>
-
-    
-                                <p>Explore the basics of robotics, understanding its applications and significance in various industries.</p>
-                                <img src={roadmap} alt="Introduction to Robotics" className="img-rounded" width = "350"/>
-                            
+                        <JsComponents />
                             <div className="spacer ">
                                     <Container className="feature30">
                                         <Row>
@@ -122,8 +120,6 @@ const Home = () => {
                                 <h3>Advanced Robotics Concepts</h3>
                                 <p>Delve into advanced topics such as robot localization, mapping, and control algorithms to elevate your robotics skills. Compare your skills with your peers, leave comments, start groups.</p>
                                 <img src={img3} alt="Advanced Robotics Concepts" className="img-circle" width="290" />
-                                
-                        </ol>
                     </div>
                     
                 </div>

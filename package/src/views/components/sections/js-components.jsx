@@ -13,20 +13,24 @@ import {
 import img1 from '../../../assets/images/ui/Robot.jpg';
 import img2 from '../../../assets/images/ui/img5.jpg';
 import img3 from '../../../assets/images/ui/img6.jpg';
+import img7 from '../../../assets/images/cars1.jpg';
+import img8 from '../../../assets/images/AI2.jpg';
+import img9 from '../../../assets/images/medical robots.jpg';
+
 
 const items = [
     {
-        src: img1,
+        src: img7,
         altText: '',
         caption: ''
     },
     {
-        src: img2,
+        src: img8,
         altText: '',
         caption: ''
     },
     {
-        src: img3,
+        src: img9,
         altText: '',
         caption: ''
     }
@@ -87,46 +91,63 @@ const JsComponents = (props) => {
                 <Container>
                     <Row className="justify-content-center">
                         <Col md="7" className="text-center">
-                            <h1 className="title font-bold">Lesson 1</h1>
-                            <h6 className="subtitle">Welcome to the start of your robotics journey! We'll being with some background and context on robotics. By the end of this lesson you should have a grasp of the basics and the ability to make your robot move forward for a given amount of time.</h6>
+                            <h1 className="title font-bold">Exciting news in the Robotics World!</h1>
+                            <h6 className="subtitle"><p>As students start their journey into the world of robotics, it is important that they understand the significance of what they are learning about. Robotics is not merely a theorhetical field of study but an essential force that is shaping our society.</p>
+                                <p>Below are some exciting new developments in the robotics world today!</p></h6>
                         </Col>
                     </Row>
                 </Container>
             </div>
             <Container>
-                <Row className="m-b-40">
-                    <Col md="6" className='d-flex flex-column'>
-                        <Button type="button" onClick={toggle.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Large Modal</Button>
-                        <Modal size="lg" isOpen={modal} toggle={toggle.bind(null)} className={props.className}>
-                            <ModalHeader toggle={toggle.bind(null)}>Background of Robotics</ModalHeader>
+                <Row className="m-b-30">
+                    <Col md="6" className='p-b-40 d-flex flex-column'>
+                        <Button type="button" onClick={toggle.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Medical Robots</Button>
+                        <Modal size="md" isOpen={modal} toggle={toggle.bind(null)} className={props.className}>
+                            <ModalHeader toggle={toggle.bind(null)}>Why is is cool?</ModalHeader>
                             <ModalBody>
-                            One of the first instances of a mechanical device built to regularly carry out a particular physical task occurred around 3000 B.C.:  Egyptian water clocks used human figurines to strike the hour bells.  In 400 B.C., Archytus of Taremtum, inventor of the pulley and the screw, also invented a wooden pigeon that could fly.  Hydraulically-operated statues that could speak, gesture, and prophecy were commonly constructed in Hellenic Egypt during the second century B.C.
-                            In the first century A.D., Petronius Arbiter made a doll that could move like a human being.
+                            In the medical field, robots are making surgeries less invasive and more precise. An example of this is the da Vinci Surgical Robot, a multi-armed wonderbot is currently being used to reduce surgical errors and save lives. 
+                            This system gives surgeons more precise control for a range of procedures. It uses magnified 3D high-definition vision and controls that strap to the surgeons wrists and hands and allows them to make small incisions that human hands would not be able to accomplish.
+                             This offers less risk in surgery and a faster recover time for patients. 
+
                             </ModalBody>
                             <ModalFooter>
                                 <Button color="primary" onClick={toggle.bind(null)}>Continue</Button>{' '}
-                                <Button color="secondary" onClick={toggle.bind(null)}>Cancel</Button>
+                                
                             </ModalFooter>
                         </Modal>
-                        <Button type="button" onClick={toggle1.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Medium Modal</Button>
+                        <Button type="button" onClick={toggle1.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Robotics Assistants</Button>
                         <Modal size="md" isOpen={modal1} toggle={toggle1.bind(null)} className={props.className}>
-                            <ModalHeader toggle={toggle1.bind(null)}>How to start programming for your robot</ModalHeader>
+                            <ModalHeader toggle={toggle1.bind(null)}>Why is it cool?</ModalHeader>
                             <ModalBody>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                Robotic assistants have often been present in futuristic settings but they are closer to being a reality than you'd think. Imagine having an assistant that can handle mundane daily tasks such as cleaning your room, answering an email, or bringing you a snack. 
+                                Companies like Boston Dynamics are working dynamic and humanoid robots such as Atlas. Atlas is a research platform that is allowing them to push the limits of whole-body mobility and bimanual manipulation. It has an advanced control syste, and state-of-the-art hardware and is an example of the efforts to create mobile, perceptive, and intelligent robots that may eventually become commonplace in our lives.
                             </ModalBody>
                             <ModalFooter>
-                                <Button color="primary" onClick={toggle1.bind(null)}>Do Something</Button>{' '}
-                                <Button color="secondary" onClick={toggle1.bind(null)}>Cancel</Button>
+                                <Button color="primary" onClick={toggle1.bind(null)}>Continue</Button>{' '}
+                                
                             </ModalFooter>
                         </Modal>
-                        <Button type="button" onClick={toggle2.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Small Modal</Button>
-                        <Modal size="sm" isOpen={modal2} toggle={toggle2.bind(null)} className={props.className}>
-                            <ModalHeader toggle={toggle2.bind(null)}></ModalHeader>
+                        <Button type="button" onClick={toggle2.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Autonomous Vehicles</Button>
+                        <Modal size="md" isOpen={modal2} toggle={toggle2.bind(null)} className={props.className}>
+                            <ModalHeader toggle={toggle2.bind(null)}>Why is it cool?</ModalHeader>
                             <ModalBody>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            There are many advancements being made in the world of self driving cars and it is bringing the dream of effortless transportation closer and closer to a reality. Companies such as Hyundai with the car Mobis have made advancements such as the 'e-Corner System' which allows a vehicle to move laterally and diagonally, as well as perform stationary 360-degree pivot turns. 
+                            Mercedes-Benz is set to test Level 3 autonomous driving on roads in China which could pave the way for the carmaker to offer its Drive Pilot feature to the market.    
                             </ModalBody>
                             <ModalFooter className="justify-content-center">
-                                <Button color="primary" onClick={toggle2.bind(null)}>Cancel</Button>
+                                <Button color="primary" onClick={toggle2.bind(null)}>Continue</Button>
+                            </ModalFooter>
+                        </Modal>
+                        <Button type="button" onClick={toggle.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Drone Technology(need description and picture)</Button>
+                        <Modal size="md" isOpen={modal} toggle={toggle.bind(null)} className={props.className}>
+                            <ModalHeader toggle={toggle.bind(null)}>Why is is cool?</ModalHeader>
+                            <ModalBody>
+                            
+
+                            </ModalBody>
+                            <ModalFooter>
+                                <Button color="primary" onClick={toggle.bind(null)}>Continue</Button>{' '}
+                                
                             </ModalFooter>
                         </Modal>
                     </Col>

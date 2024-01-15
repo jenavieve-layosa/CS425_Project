@@ -4,7 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { Container, NavbarBrand, Navbar, Nav, NavItem, NavbarToggler, Collapse, Row, Col, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, } from 'reactstrap';
 
 
-import logo from '../../assets/images/robot_logo.png';
+import logo from '../../assets/images/robot-logo.png';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -38,6 +38,9 @@ const Header = () => {
                                         <DropdownItem><Link to={"/Lesson1"}>Lesson 1</Link></DropdownItem>
                                         <DropdownItem><Link to={"/Lesson2"}>Lesson 2</Link></DropdownItem>
                                         <DropdownItem><Link to={"/Lesson3"}>Lesson 3</Link></DropdownItem>
+                                        <DropdownItem><Link to={"/Components"}>Components</Link></DropdownItem>
+                                        <DropdownItem><Link to={"/custom-components"}>Custom</Link></DropdownItem>
+                                        
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                                 </NavItem>
