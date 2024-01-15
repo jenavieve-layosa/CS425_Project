@@ -16,6 +16,7 @@ import Lesson3 from "./views/pages/Lesson3.jsx";
 import HomePage from "./views/pages/HomePage.jsx";
 import Glossary from "./views/pages/Glossary.jsx";
 import Simulator from "./views/pages/Simulator.jsx";
+import SignUp from "./views/pages/SignUp.jsx";
 
 
 
@@ -32,6 +33,7 @@ root.render(
       <Route path="/HomePage" element={<HomePage />} />
       <Route path="/Glossary" element={<Glossary />} />
       <Route path="/Simulator" element={<Simulator />} />
+      <Route path="/SignUp" element={<SignUp />} />
       <Route path="/" element={<HomePage />} />
     </Routes>
   </HashRouter>

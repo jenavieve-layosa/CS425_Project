@@ -40,7 +40,7 @@ const Home = () => {
                                         <Card body className="card-shadow">
                                             <CardTitle>I am a Student in a Class</CardTitle>
                                             <CardText>FORE is an environment that you may learn under the supervision of an instructor who has made a class of their own. Sign up for the class and complete assignments, quizzes, and projects assigned by your teacher!</CardText>
-                                            <Link to="/Lesson1">
+                                            <Link to="/SignUp">
                                             <Button color="primary">Sign Up With Class Code</Button>
                                             </Link>
                                         </Card>
@@ -49,7 +49,7 @@ const Home = () => {
                                         <Card body className="card-shadow">
                                             <CardTitle>I am an Independent Learner</CardTitle>
                                             <CardText>FORE is also designed for those who are simply interested in trying robotics out and do not have access to hardware. Follow our pre-determined learning path and start programming robotics today!</CardText>
-                                            <Link to="/Lesson1">
+                                            <Link to="/SignUp">
                                             <Button color="primary">Sign Up and Get Started!</Button>
                                             </Link>
                                         </Card>
