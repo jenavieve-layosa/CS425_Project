@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PropTypes from "prop-types";
-import { Row, Col, Container, Card, CardBody } from 'reactstrap';
+import { Row, Col, Container, Card, Button, CardTitle, CardText, CardBody } from 'reactstrap';
 
 import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
 import img5 from '../../assets/images/img5.jpg';
-import Cards from "../components/sections/cards.jsx";
+
 const Lesson2 = () => {
     return (
 
@@ -19,13 +19,14 @@ const Lesson2 = () => {
                     <Container>
                     <Row className="justify-content-center">
                         <Col md="12" className="text-center">
-                            <h1 className="title font-bold text-darkblue">Lesson 2: A deeper dive into ROS</h1>
-                            <h6 className="subtitle text-darkblue">The significance of ROS, prerequisites and resources, and what is a robot?</h6>
+                            <h1 className="lesson-title font-bold text-darkblue">Lesson 2: A deeper dive into ROS</h1>
+                            <h6 className="lesson-subtitle text-darkblue">The significance of ROS, prerequisites and resources, and what is a robot?</h6>
                             
                         </Col>
                     </Row>
                     </Container>
                     
+                    <Container maxWidth="lg">
                      <h2 className="subtitle font-bold text-darkblue">Course Overview</h2>
                         <p>
                             Welcome to Lesson 1 of our ROS Programming course. In this lesson, we'll dive into the fundamentals of ROS architecture,
@@ -44,6 +45,7 @@ const Lesson2 = () => {
                             nodes, topics, messages, services, parameters, and actions. 
                             
                         </p>
+                        </Container>
                     <div className="spacer ">
                             <Container className="feature30">
                                 <Row>
@@ -62,7 +64,36 @@ const Lesson2 = () => {
                                     </Col>
                                 </Row>
                             </Container>
-                            <Cards />
+                            <div>
+                                <div className="spacer" id="card-component">
+                                    <Container>
+                                        <Row className="justify-content-center">
+                                            <Col md="7" className="text-center">
+                                                <h1 className="title font-bold">ROS: Robot Operating System</h1>
+                                                <h6 className="subtitle">Next we're gonna tackle the turn. By the end of this lesson you robot will be able to complete one full revolution inside the simulation. You will learn to take into account real world limitations to your robot such as physics.</h6>
+                                            </Col>
+                                        </Row>
+                                    </Container>
+                                </div>
+                                <Container>
+                                    <Row>
+                                        <Col md="6">
+                                            <Card body className="card-shadow">
+                                                <CardTitle>Fundamentals of ROS</CardTitle>
+                                                <CardText>An overview of what goes into a revolution, common mistakes, and frequently asked questions</CardText>
+                                                
+                                            </Card>
+                                        </Col>
+                                        <Col md="6">
+                                            <Card body className="card-shadow">
+                                                <CardTitle>History of ROS</CardTitle>
+                                                <CardText>ROS or Robot Operating System is a set of software libraries and tools that helps you build robot applications.</CardText>
+                                                
+                                            </Card>
+                                        </Col>
+                                    </Row>
+                                </Container>
+                            </div>
                         </div>
                 </div>
             </div>

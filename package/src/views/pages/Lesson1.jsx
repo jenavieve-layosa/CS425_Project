@@ -21,13 +21,13 @@ const Lesson1 = () => {
                     <Container>
                     <Row className="justify-content-center">
                         <Col md="12" className="text-center">
-                            <h1 className="title font-bold text-darkblue">Lesson 1: An Introduction to the World of Robotics</h1>
-                            <h6 className="subtitle text-darkblue">The significance of ROS, prerequisites and resources, and what is a robot?</h6>
+                            <h1 className="lesson-title font-bold text-darkblue">Lesson 1: An Introduction to the World of Robotics</h1>
+                            <h6 className="lesson-subtitle text-darkblue">The significance of ROS, prerequisites and resources, and what is a robot?</h6>
                             
                         </Col>
                     </Row>
                     </Container>
-                 
+                    <Container maxWidth="lg">
                      <div style={{ padding: '20px', border: '1px solid #ddd', borderRadius: '5px', marginBottom: '20px' }}>
                      <h2 className="subtitle font-bold text-darkblue">Course Overview</h2>
                         <p>
@@ -120,6 +120,7 @@ const Lesson1 = () => {
                     </div>
 
                     {/* End of Lesson Content */}
+                    </Container>
                 </div>
             </div>
             

@@ -155,7 +155,9 @@ Spacer
     padding: 40px 0;
 }
 
-
+.lesson-title {
+    margin: 10px 0 5px;
+}
 /******************* 
 Title
 *******************/
@@ -172,6 +174,10 @@ Subtitle
 .subtitle {
     color: $muted;
     line-height: 24px;
+}
+.lesson-subtitle {
+    color: $muted;
+    line-height: 36px;
 }
 
 
