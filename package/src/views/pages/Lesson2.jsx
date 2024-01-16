@@ -27,7 +27,7 @@ const Lesson2 = () => {
                     </Container>
                     
                     <Container maxWidth="lg">
-                    <div style={{ padding: '20px', border: '5px solid #ddd', borderRadius: '5px', marginBottom: '20px' }}>
+                    <div style={{ padding: '20px', border: '5px solid #ddd', borderRadius: '15px', marginBottom: '20px' }}>
                      <h2 className="subtitle font-bold text-darkblue">Course Overview</h2>
                         <p>
                             Welcome to Lesson 2 of our ROS Programming course. In this lesson, we'll dive into the fundamentals of ROS architecture,
