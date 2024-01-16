@@ -36,15 +36,16 @@ Header 6
 
     .navbar-nav {
         .nav-link {
-            padding: 35px 15px;
-            color: rgba(255, 255, 255, 0.5);
+            padding: 40px 20px;
+            font-size: 18px;
+            color: rgba(187, 211, 255, 0.877);
             transition-duration: 1.2s;
             transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
         }
 
         .nav-item:hover .nav-link,
         .nav-item.active .nav-link {
-            color: rgba(255, 255, 255, 1);
+            color: rgb(0, 255, 85);
         }
     }
 

@@ -27,6 +27,7 @@ const Lesson2 = () => {
                     </Container>
                     
                     <Container maxWidth="lg">
+                    <div style={{ padding: '20px', border: '1px solid #ddd', borderRadius: '5px', marginBottom: '20px' }}>
                      <h2 className="subtitle font-bold text-darkblue">Course Overview</h2>
                         <p>
                             Welcome to Lesson 1 of our ROS Programming course. In this lesson, we'll dive into the fundamentals of ROS architecture,
@@ -40,6 +41,7 @@ const Lesson2 = () => {
                             <li>Console commands: Navigating and analyzing the ROS system and the catkin workspace</li>
                             <li>Creating ROS packages: Structure, launch-files, and best practices</li>
                         </ul>
+                        </div>
                         <p>
                             By the end of this section, you will master the core elements of ROS architecture, including the roles of the ROS master,
                             nodes, topics, messages, services, parameters, and actions. 
@@ -94,7 +96,9 @@ const Lesson2 = () => {
                                     </Row>
                                 </Container>
                             </div>
+                            
                         </div>
+                   
                 </div>
             </div>
             <Footer />
