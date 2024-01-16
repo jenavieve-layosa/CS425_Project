@@ -126,8 +126,16 @@ const Lesson1 = () => {
                         <p>
                         <img src={applications} alt="" className="img-rounded" width = "550"/>
                         </p>
+                        <h3 className= "subtitle font-bold text-darkblue">A brief introduction to ROS</h3>
+                        <p>
+                        Explanation: ROS, the Robot Operating System, serves as a meta-operating
+                        system for robots, providing essential services and tools for developing robotic
+                        applications.
+                        Real-world Example: ROS is widely used in research and industry, powering
+                        robots in diverse applications, from autonomous vehicles to medical robotics.
+                        </p>
 
-                        <h3>Vocabulary:</h3>
+                        <h3 className= "subtitle font-bold text-darkblue">Vocabulary:</h3>
                         <ul>
                             <li>ROS Master: The central hub managing the ROS system. It tracks all active nodes, services, and topics.</li>
                             <li>Node: An individual process that performs specific computations. Nodes communicate through topics.</li>
@@ -138,16 +146,13 @@ const Lesson1 = () => {
                             <li>Action: A type of software component that performs a specific task. Actions are more complex than services and can have feedback and goal states.</li>
                         </ul>
 
-                        <h3>Questions:</h3>
+                        <h3 className= "subtitle font-bold text-darkblue">Knowledge Check: See if you can answer these questions!</h3>
                         <ol>
-                            <li>What is the role of the ROS master in the ROS system?</li>
-                            <li>How do nodes communicate with each other in ROS?</li>
-                            <li>Explain the purpose of ROS services.</li>
-                            <li>How does the concept of topics facilitate communication between nodes?</li>
-                            <li>Why are parameters important in configuring node behavior?</li>
+                            <li></li>
+                            
                         </ol>
 
-                        <h3>Simulations, Websites, and Resources:</h3>
+                        <h3 className= "subtitle font-bold text-darkblue">Simulations, Websites, and Resources:</h3>
                         <ul>
                             <li>ROS Wiki for in-depth information on ROS architecture.</li>
                             <li>ROS tutorials for practical exercises.</li>
