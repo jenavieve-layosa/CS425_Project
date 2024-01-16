@@ -20,17 +20,17 @@ const Lesson2 = () => {
                     <Row className="justify-content-center">
                         <Col md="12" className="text-center">
                             <h1 className="lesson-title font-bold text-darkblue">Lesson 2: A deeper dive into ROS</h1>
-                            <h6 className="lesson-subtitle text-darkblue">The significance of ROS, prerequisites and resources, and what is a robot?</h6>
+                            <h6 className="lesson-subtitle text-darkblue">The significance of ROS, why did everyone start using ROS, and how you can start using it now</h6>
                             
                         </Col>
                     </Row>
                     </Container>
                     
                     <Container maxWidth="lg">
-                    <div style={{ padding: '20px', border: '1px solid #ddd', borderRadius: '5px', marginBottom: '20px' }}>
+                    <div style={{ padding: '20px', border: '5px solid #ddd', borderRadius: '5px', marginBottom: '20px' }}>
                      <h2 className="subtitle font-bold text-darkblue">Course Overview</h2>
                         <p>
-                            Welcome to Lesson 1 of our ROS Programming course. In this lesson, we'll dive into the fundamentals of ROS architecture,
+                            Welcome to Lesson 2 of our ROS Programming course. In this lesson, we'll dive into the fundamentals of ROS architecture,
                             console commands, and creating ROS packages. By the end of this lesson, you'll have a solid understanding of key ROS concepts
                             and be ready to take your first steps in programming robots.
                         </p>
@@ -47,7 +47,16 @@ const Lesson2 = () => {
                             nodes, topics, messages, services, parameters, and actions. 
                             
                         </p>
+                        
                         </Container>
+                        <div className="static-slider-1">
+                                <Row className="justify-content-center">
+                                    <Col md="6" className="align-self-center text-center">
+                                        <h1 className="title"></h1>
+                                        <h6 className="subtitle op-8"></h6>
+                                    </Col>
+                                </Row>
+                        </div>
                     <div className="spacer ">
                             <Container className="feature30">
                                 <Row>

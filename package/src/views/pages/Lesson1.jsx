@@ -30,24 +30,27 @@ const Lesson1 = () => {
                     </Row>
                     </Container>
                     <Container maxWidth="md">
-                     <div style={{ padding: '20px', border: '5px solid #ddd', borderRadius: '5px', marginBottom: '20px' }}>
+                     <div style={{ padding: '20px', border: '5px solid #ddd', borderRadius: '15px', marginBottom: '20px' }}>
                      <h2 className="subtitle font-bold text-darkblue">Course Overview</h2>
                         <p>
-                            Welcome to Lesson 1 of our ROS Programming course. In this lesson, we'll dive into the fundamentals of ROS architecture,
-                            console commands, and creating ROS packages. By the end of this lesson, you'll have a solid understanding of key ROS concepts
-                            and be ready to take your first steps in programming robots.
+                            Welcome to Lesson 1 of our ROS Programming course. In this lesson, we'll get you started with an understanding of what a robot is and what constitutes a robot, robotics fields of study, 
+                            a brief introduction to ROS, and recommended sources and prerequisites for this course! 
                         </p>
 
                         <h2 className="subtitle font-bold text-darkblue">What will you learn?</h2>
                         <ul>
-                            <li>ROS architecture: Master, nodes, topics, messages, services, parameters, and actions</li>
-                            <li>Console commands: Navigating and analyzing the ROS system and the catkin workspace</li>
-                            <li>Creating ROS packages: Structure, launch-files, and best practices</li>
+                            <li>Definition of what is a robot and why they are important</li>
+                            <li>An overview of robotics as a field and it's different sections</li>
+                            <li>Understand what the goals of the robotics field are and how we achieve them</li>
+                            <li>A basic definition of what ROS is and why we use it in robotics</li>
+                            <li>Reccommended prerequisites for this course and associated sources</li>
                         </ul>
                         <p>
-                            By the end of this section, you will master the core elements of ROS architecture, including the roles of the ROS master,
-                            nodes, topics, messages, services, parameters, and actions. 
-                            
+                            By the end of this section, you will have a good foundation for studying and understanding robotics concepts as well as a working definition of important robotics aspects. 
+                            You will be able to identify different fields of robotics, the purpose of those different fields, and important tools used to achieve those goals.                             
+                        </p>
+                        <p>
+                            Let's get started!
                         </p>
                         </div>
                         </Container>
@@ -63,30 +66,24 @@ const Lesson1 = () => {
                         <p>.</p>
                         
                         <div style={{ padding: '15px', border: '0px solid #ddd', borderRadius: '10px', marginBottom: '15px', marginTop: '5px' }}>
-                        <h3 className= "lesson-subtitle font-bold text-darkblue">Learning Goals:</h3>
-                        <ol>
-                            <li>Definition of what is a robot and why they are important</li>
-                            <li>An overview of robotics as a field and it's different sections</li>
-                            <li>Understand what the goals of the robotics field are and how we achieve them</li>
-                            <li>A basic definition of what ROS is and why we use it in robotics</li>
-                            <li>Reccommended prerequisites for this course and associated sources</li>
-                        </ol>
+                
 
                         <h3 className= "subtitle font-bold text-darkblue">What is a robot?</h3>
                         <p>
                         A robot is an embodied agent programmed to execute complex actions. It is an
                         autonomous or semi-autonomous machine capable of sensing its environment and making
-                        decisions based on computations. 
+                        decisions based on computations. A robot can technically be a physical entity or a software program but this course focuses on physical entities.  
                         </p>
                         <p>
                             A robot typically does three things (see below):
                         </p>
-                        <img src={robots3things} alt="" className="img-rounded" width = "550"/>
+                        <img src={robots3things} alt="" className="img-thumbnail" width = "550"/>
                         <p>
                             Different robots can 'sense' certain information depending on how their built and in what ways they experience their environment. Visual stimulus, temperature change, auditory input, different movements are all examples of information that a robot can gather in this first stage.
                             The stage of computation can involve everything from small electronic curcuits to multicore processors or even a cluster of networked computers. 
                             In action, robots vary the most, as some robots can move things around, manipulate objects, perform specific tasks, while others can output information, formulate responses, or provide answers to questions. 
-                            
+                            Robot anatomy is made up of many different parts: manipulators which is the mechanical part of the robot that performs the task, end effectors that are the tools or devices that are attached to the robots manipulator for specific tasks
+                            and many others that we will take a deeper dive into as the lessons progress.
                         </p>
                     
                         <p>
@@ -124,26 +121,20 @@ const Lesson1 = () => {
                         Moreover, other sectors where robots are useful are entertainment, customer service, food preparation, security, etc.
                         </p>
                         <p>
-                        <img src={applications} alt="" className="img-rounded" width = "550"/>
+                        <img src={applications} alt="" className="img-circle" width = "550"/>
                         </p>
                         <h3 className= "subtitle font-bold text-darkblue">A brief introduction to ROS</h3>
                         <p>
-                        Explanation: ROS, the Robot Operating System, serves as a meta-operating
-                        system for robots, providing essential services and tools for developing robotic
-                        applications.
+                        ROS, the Robot Operating System, serves as a meta-operating system for robots, providing essential services and tools for developing robotic
+                        applications. It is an open source middleware framework used in robotics for developing software. It provides services for hardware abstraction, device drivers, and communication between processes as well as many others. 
+                        ROS 
                         Real-world Example: ROS is widely used in research and industry, powering
                         robots in diverse applications, from autonomous vehicles to medical robotics.
                         </p>
 
                         <h3 className= "subtitle font-bold text-darkblue">Vocabulary:</h3>
                         <ul>
-                            <li>ROS Master: The central hub managing the ROS system. It tracks all active nodes, services, and topics.</li>
-                            <li>Node: An individual process that performs specific computations. Nodes communicate through topics.</li>
-                            <li>Topic: A communication channel used by nodes to exchange messages. Topics enable the flow of information between nodes.</li>
-                            <li>Message: A data structure defining the information sent between nodes through topics. It can be as simple as an integer or as complex as a sensor reading.</li>
-                            <li>Service: A function call that nodes can make to request work from another node. It allows nodes to perform specific tasks on demand.</li>
-                            <li>Parameter: A variable that nodes can use to store and retrieve data. Parameters provide a convenient way to configure node behavior.</li>
-                            <li>Action: A type of software component that performs a specific task. Actions are more complex than services and can have feedback and goal states.</li>
+                            
                         </ul>
 
                         <h3 className= "subtitle font-bold text-darkblue">Knowledge Check: See if you can answer these questions!</h3>
@@ -152,7 +143,7 @@ const Lesson1 = () => {
                             
                         </ol>
 
-                        <h3 className= "subtitle font-bold text-darkblue">Simulations, Websites, and Resources:</h3>
+                        <h3 className= "subtitle font-bold text-darkblue">Prerequisites, Websites, and Resources:</h3>
                         <ul>
                             <li>ROS Wiki for in-depth information on ROS architecture.</li>
                             <li>ROS tutorials for practical exercises.</li>

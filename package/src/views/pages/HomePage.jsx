@@ -12,6 +12,8 @@ import img6 from '../../assets/images/img6.jpg';
 import roadmap from '../../assets/images/roadmap.png';
 import learning_robot from '../../assets/images/learning_robot_1.png';
 import JsComponents from "../components/sections/js-components.jsx";
+import Examples from "../pages/robotics_examples.jsx";
+
 
 
 const Home = () => {
@@ -93,7 +95,7 @@ const Home = () => {
                                     </Row>
                                 </Container>
                             </div>
-                        <JsComponents />
+                        <Examples />
                             <div className="spacer ">
                                     <Container className="feature30">
                                         <Row>
