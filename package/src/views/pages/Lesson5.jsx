@@ -6,48 +6,47 @@ import { Row, Col, Container, Card, Button, CardTitle, CardText, CardBody } from
 import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
-import img5 from '../../assets/images/img5.jpg';
 
-const Lesson2 = () => {
+
+const Lesson5 = () => {
     return (
 
         <div id="main-wrapper">
-             <Header />
+            <Header />
             <div className="page-wrapper">
                 <div className="container-fluid">
                     <HeaderBanner />
                     <Container>
                     <Row className="justify-content-center">
                         <Col md="12" className="text-center">
-                            <h1 className="lesson-title font-bold text-darkblue">Lesson 2: A deeper dive into ROS</h1>
-                            <h6 className="lesson-subtitle text-darkblue">The significance of ROS, why did everyone start using ROS, and how you can start using it now</h6>
+                            <h1 className="lesson-title font-bold text-darkblue">Lesson 5 </h1>
+                            <h6 className="lesson-subtitle text-darkblue">Students will be able to </h6>
                             
                         </Col>
                     </Row>
                     </Container>
-                    
-                    <Container maxWidth="lg">
-                    <div style={{ padding: '20px', border: '5px solid #ddd', borderRadius: '15px', marginBottom: '20px' }}>
+                    <Container maxWidth="md">
+                     <div style={{ padding: '20px', border: '5px solid #ddd', borderRadius: '15px', marginBottom: '20px' }}>
                      <h2 className="subtitle font-bold text-darkblue">Course Overview</h2>
                         <p>
-                            Welcome to Lesson 2 of our ROS Programming course. In this lesson, we'll dive into the fundamentals of ROS architecture,
-                            console commands, and creating ROS packages. By the end of this lesson, you'll have a solid understanding of key ROS concepts
-                            and be ready to take your first steps in programming robots.
+                            
                         </p>
 
                         <h2 className="subtitle font-bold text-darkblue">What will you learn?</h2>
                         <ul>
-                            <li>ROS architecture: Master, nodes, topics, messages, services, parameters, and actions</li>
-                            <li>Console commands: Navigating and analyzing the ROS system and the catkin workspace</li>
-                            <li>Creating ROS packages: Structure, launch-files, and best practices</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
                         </ul>
-                        </div>
                         <p>
-                            By the end of this section, you will master the core elements of ROS architecture, including the roles of the ROS master,
-                            nodes, topics, messages, services, parameters, and actions. 
-                            
+                            By the end of this section, you will 
                         </p>
-                        
+                        <p>
+                            Let's get started!
+                        </p>
+                        </div>
                         </Container>
                         <div className="static-slider-1">
                                 <Row className="justify-content-center">
@@ -56,17 +55,18 @@ const Lesson2 = () => {
                                         <h6 className="subtitle op-8"></h6>
                                     </Col>
                                 </Row>
-                        </div>                   
+                        </div>
+
+                    </div>
                 </div>
-            </div>
             <Footer />
         </div>
         
     );
 }
 
-Lesson2.propTypes = {
+Lesson5.propTypes = {
     classes: PropTypes.object
 };
 
-export default Lesson2;
+export default Lesson5;

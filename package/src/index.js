@@ -13,6 +13,8 @@ import CustomComponents from "./views/custom-components/custom-components.jsx";
 import Lesson1 from "./views/pages/Lesson1.jsx";
 import Lesson2 from "./views/pages/Lesson2.jsx";
 import Lesson3 from "./views/pages/Lesson3.jsx";
+import Lesson4 from "./views/pages/Lesson4.jsx";
+import Lesson5 from "./views/pages/Lesson5.jsx";
 import HomePage from "./views/pages/HomePage.jsx";
 import Glossary from "./views/pages/Glossary.jsx";
 import Simulator from "./views/pages/Simulator.jsx";
@@ -31,6 +33,8 @@ root.render(
       <Route path="/Lesson1" element={<Lesson1 />} />
       <Route path="/Lesson2" element={<Lesson2 />} />
       <Route path="/Lesson3" element={<Lesson3 />} />
+      <Route path="/Lesson4" element={<Lesson4 />} />
+      <Route path="/Lesson5" element={<Lesson5 />} />
       <Route path="/HomePage" element={<HomePage />} />
       <Route path="/Glossary" element={<Glossary />} />
       <Route path="/Simulator" element={<Simulator />} />

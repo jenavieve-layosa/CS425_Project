@@ -38,6 +38,8 @@ const Header = () => {
                                         <DropdownItem><Link to={"/Lesson1"}>Lesson 1</Link></DropdownItem>
                                         <DropdownItem><Link to={"/Lesson2"}>Lesson 2</Link></DropdownItem>
                                         <DropdownItem><Link to={"/Lesson3"}>Lesson 3</Link></DropdownItem>
+                                        <DropdownItem><Link to={"/Lesson4"}>Lesson 4</Link></DropdownItem>
+                                        <DropdownItem><Link to={"/Lesson5"}>Lesson 5</Link></DropdownItem>
                                         <DropdownItem><Link to={"/Components"}>Components</Link></DropdownItem>
                                         <DropdownItem><Link to={"/custom-components"}>Custom</Link></DropdownItem>
                                         
