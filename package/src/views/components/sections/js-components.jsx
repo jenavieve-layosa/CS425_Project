@@ -138,18 +138,7 @@ const JsComponents = (props) => {
                                 <Button color="primary" onClick={toggle2.bind(null)}>Continue</Button>
                             </ModalFooter>
                         </Modal>
-                        <Button type="button" onClick={toggle.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Drone Technology(need description and picture)</Button>
-                        <Modal size="md" isOpen={modal} toggle={toggle.bind(null)} className={props.className}>
-                            <ModalHeader toggle={toggle.bind(null)}>Why is is cool?</ModalHeader>
-                            <ModalBody>
-                            
-
-                            </ModalBody>
-                            <ModalFooter>
-                                <Button color="primary" onClick={toggle.bind(null)}>Continue</Button>{' '}
-                                
-                            </ModalFooter>
-                        </Modal>
+                        
                     </Col>
                     <Col md="6">
                         <Carousel
