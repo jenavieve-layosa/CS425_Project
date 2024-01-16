@@ -801,7 +801,7 @@ Labels
 *******************/
 
 .label {
-    padding: 2px 8px;
+    padding: 3px 8px;
     line-height: 7px;
     color: $white;
     font-weight: 400;
@@ -895,6 +895,27 @@ Labels
     background-color: $light-inverse;
     color: $inverse;
 }
+.label-lesson1 {
+    background-color: $lesson1;
+    
+}
+.label-lesson2 {
+    background-color: $lesson2;
+    
+}
+.label-lesson3 {
+    background-color: $lesson3;
+    
+}
+.label-lesson4 {
+    background-color: $lesson4;
+    
+}
+.label-lesson5 {
+    background-color: $lesson5;
+    
+}
+
 
 
 /*******************
