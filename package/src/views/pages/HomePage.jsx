@@ -87,8 +87,10 @@ const Home = () => {
                                 </Row>
                                 {' '}
                             </div>
-                            
+                            <div style={{ padding: '1px', border: '0px solid #ddd', borderRadius: '1px', marginBottom: '1px', marginTop: '25px' }}>
+                                  
                             <h3 className= "lesson-subtitle font-bold text-darkblue">How can I get started?</h3>
+                            </div>
                             <p>
                                 There are two different options available for starting your learning journey with us. If you are trying robotics out on your own you can sign up independently and move through the lessons at your own pace 
                                 and you are given resourcse and help as well as the option to post a question to the question board if you get stuck. Students who are a part of a class that has signed up with FORE have the option of joining their class 

@@ -200,6 +200,15 @@ card
     margin-bottom: 30px;
 }
 
+.card-1 {
+    border: 0px;
+    margin-bottom: 30px;
+    color: $blue-card;
+
+    &.card-shadow {
+        box-shadow: $card-shadow;
+    }
+}
 
 /******************* 
 Icon space
