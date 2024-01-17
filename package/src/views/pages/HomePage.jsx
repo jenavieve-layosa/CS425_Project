@@ -26,7 +26,7 @@ const Home = () => {
                     <Container>
                     <Row className="justify-content-center">
                         <Col md="12" className="text-center">
-                            <h1 className="title font-bold">Welcome to the FORE Learning Hub!</h1>
+                            <h1 className="title font-bold">Welcome to Fundamentals of Robotics!</h1>
                             <h6 className="subtitle">FORE: Fundamentals of Robotics Education is an interactive learning website for those of a high school to undergraduate level with an interest in learning how to program robotics!</h6>
                         </Col>
                     </Row>
