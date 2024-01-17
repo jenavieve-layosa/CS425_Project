@@ -86,7 +86,7 @@ const JsComponents = (props) => {
         <div>
             <div className="spacer" id="js-component">
                 <Container>
-                <div style={{ padding: '20px', border: '5px solid #ddd', borderColor: "darkblue", borderRadius: '15px', marginBottom: '20px' }}>
+                <div style={{ padding: '20px', border: '1px solid', borderColor: "darkblue", borderRadius: '15px', marginBottom: '20px' }}>
                     <Row className="justify-content-center">
                         <Col md="7" className="text-center">
                             <h1 className="title font-bold">Exciting news in the Robotics World!</h1>

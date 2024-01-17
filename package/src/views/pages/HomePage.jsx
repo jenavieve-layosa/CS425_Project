@@ -36,6 +36,68 @@ const Home = () => {
                     <div className="intro-content">
                     
                     <img src={learning_robot} alt="Introduction to Robotics" className="img-rounded" width = "350"/>
+                            
+                            <div className="spacer feature4">
+                                <Container>
+                                <div style={{ padding: '15px', border: '1px solid #ddd', borderRadius: '10px', marginBottom: '15px', marginTop: '5px' }}>
+                                    <Row className="justify-content-center">
+                                        <Col md="7" className="text-center">
+                                            
+                                            <h2 className="title">Hands-on Learning and Development</h2>
+                                            <h6 className="subtitle">We at FORE believe that the best possible way for people to acquire the skills needed to work with robotics is to practice as much as possible. Each lesson in designed to teach an essential concept for robotics and then apply that in the project.</h6>
+                                        </Col>
+                                    </Row>
+                                    
+                                    <Row className="m-t-40">
+                                        <Col md="6" className="wrap-feature4-box">
+                                            <Card>
+                                                <CardBody>
+                                                    
+                                                    <h5 className="font-medium">Lessons</h5>
+                                                    <p className="m-b-5">1. Introduction to the World of Robotics</p>
+                                                    <p className="m-b-5">2. A Deeper Dive into ROS</p>
+                                                    <p className="m-b-5">3. Get to Know the Robot</p>
+                                                    <p className="m-b-5">4. Programming Robotics using Python</p>
+                                                    <p className="m-b-5">5. Moving Forward with your Robot</p>
+                                                    
+                            
+                                                </CardBody>
+                                            </Card>
+                                        </Col>
+                                        <Col md="6" className="wrap-feature4-box">
+                                            <Card>
+                                                <CardBody>
+                                                   
+                                                    <h5 className="font-medium">Projects</h5>
+                                                    <p className="m-t-20">Our strategy: Trial by Fire. Real learnings starts with application and we want to provide ample oppurtunity for our users to try their hand at what they're learning. 
+                                                    Our projects are straightforward and are designed to test your brand new skills!</p>
+                                                </CardBody>
+                                            </Card>
+                                        </Col>
+                                    </Row>
+                                    </div>
+                                </Container>
+                            </div>
+                            <div className="static-slider-1">
+                                <Row className="justify-content-center">
+                                    <Col md="6" className="align-self-center text-center">
+                                        <h1 className="title"></h1>
+                                        <h6 className="subtitle op-8"></h6>
+                                    </Col>
+                                </Row>
+                                {' '}
+                            </div>
+                            
+                            <h3 className= "lesson-subtitle font-bold text-darkblue">How can I get started?</h3>
+                            <p>
+                                There are two different options available for starting your learning journey with us. If you are trying robotics out on your own you can sign up independently and move through the lessons at your own pace 
+                                and you are given resourcse and help as well as the option to post a question to the question board if you get stuck. Students who are a part of a class that has signed up with FORE have the option of joining their class 
+                                with a code from their teacher and they will be assigned lessons and projects as their class moves along. 
+                            </p>
+                            <p>
+                                Our main goal at FORE is to make learning accessible, robotics is truly one of the industries that can change the world for better or for worse and we believe that the only way to faciliate positive change is through education. 
+                                We want to provide as much of an oppurtunity to as many people as possible to gain that education and use it for innovation. 
+                            </p>
                             <Container>
                                 <Row>
                                     <Col md="6">
@@ -58,43 +120,6 @@ const Home = () => {
                                     </Col>
                                 </Row>
                             </Container>
-                            <div className="spacer feature4">
-                                <Container>
-                                    <Row className="justify-content-center">
-                                        <Col md="7" className="text-center">
-                                            
-                                            <h2 className="title">Hands-on Learning and Development</h2>
-                                            <h6 className="subtitle">We at FORE believe that the best possible way for people to acquire the skills needed to work with robotics is to practice as much as possible. Each lesson in designed to teach an essential concept for robotics and then apply that in the project.</h6>
-                                        </Col>
-                                    </Row>
-                                    
-                                    <Row className="m-t-40">
-                                        <Col md="6" className="wrap-feature4-box">
-                                            <Card>
-                                                <CardBody>
-                                                    
-                                                    <h5 className="font-medium">Lessons</h5>
-                                                    <p className="m-b-5">1. Introduction to Robotics: What is ROS?</p>
-                                                    <p className="m-b-5">2. Moving Forward: Getting your robot to move</p>
-                                                    <p className="m-b-5">3. Timing it Right: Moving for Specified Time Amounts</p>
-                                                    <p className="m-b-5">4. Tracking Your Position: Tracking Angels with an IMU</p>
-                                                    
-                            
-                                                </CardBody>
-                                            </Card>
-                                        </Col>
-                                        <Col md="6" className="wrap-feature4-box">
-                                            <Card>
-                                                <CardBody>
-                                                   
-                                                    <h5 className="font-medium">Projects</h5>
-                                                    <p className="m-t-20">Our strategy: Trial by Fire. Real learnings starts with application and we want to provide ample oppurtunity for our users to try their hand at what they're learning. Our projects are straightforward and are designed to test your brand new skills!</p>
-                                                </CardBody>
-                                            </Card>
-                                        </Col>
-                                    </Row>
-                                </Container>
-                            </div>
                         <Examples />
                             <div className="spacer ">
                                     <Container className="feature30">

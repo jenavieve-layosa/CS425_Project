@@ -151,6 +151,17 @@ const Lesson1 = () => {
                         Soft Robotics is a subfield of robotics that deals with constructing robots from materials with properties similar to living organisms.
                         Swarm Robotics describes the coordination and cooperation of multiple robots to accomplish complex tasks.  
                         </p>
+                        <p>
+                            Other trends that will likely be relevant as robotics continues to florish and grow are autonomous mobile robots. The idea behind these robots is to 
+                            limit the amount that workers are exposed to hazardous conditions such as toxic chemicals, tight spaces, heavy machinery, or dangerous situations. 
+                            AMRs are a combination of sensors, computer vision, and artificial intelligence to be able to identify their surroundings and navigate independently. These are a great example of the idea 
+                            of an autonomous robot as they are capable of making decisions and accomplishing tasks with no instruction or interference by the engineers. 
+                            These robots can be used in factories to transport parts over long distances and cleaning shop floors, in hospitals they are able to automate disinfection which reduces the risk to workers. 
+                            
+                        </p>
+                        <p>
+                            Other trends to be on the lookout for in the robotics industry includes drones, robotics cybersecurity, humanoid robots, automated guided vehicles, assistive robots, and much more to come!
+                        </p>
 
                         <h3 className= "subtitle font-bold text-darkblue">A brief introduction to ROS and programming</h3>
                         <p>

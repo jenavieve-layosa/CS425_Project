@@ -56,7 +56,45 @@ const Lesson2 = () => {
                                         <h6 className="subtitle op-8"></h6>
                                     </Col>
                                 </Row>
-                        </div>                   
+                        </div>
+                        <p>
+                            .
+                        </p> 
+                        <div style={{ padding: '15px', border: '0px solid #ddd', borderRadius: '10px', marginBottom: '15px', marginTop: '5px' }}>
+
+                        <h3 className= "subtitle font-bold text-darkblue">Fundamentals and history of ROS</h3>
+
+                        <p>
+                        ROS, born in the early 2000s at Stanford University, started as an open-source middleware
+                        framework for robotics. Its fundamental design principles revolve around modularity, reusability,
+                        and collaborative development. ROS provides a structured communication layer, a robust set of
+                        tools, and a flexible framework for creating intricate robot behaviors. Over the years, ROS has
+                        evolved through various versions, each introducing enhancements and expanded capabilities,
+                        becoming a pivotal force in the robotics community.
+                        </p>
+
+                        <h3 className= "subtitle font-bold text-darkblue">Using Python to move your robot</h3>
+
+                        <p>
+                        Programming a robot to move forward using Python and ROS involves understanding ROS
+                        nodes, topics, and Python scripts. By creating a simple script, we can command the robot to
+                        move forward. This hands-on experience provides a practical understanding of the integration
+                        between Python and ROS for basic robot control.
+                        </p>                      
+
+
+                        <h3 className= "subtitle font-bold text-darkblue">Knowledge Check: See if you can answer these questions!</h3>
+                        <ol>
+                            <li>What are the fundamental design principles of ROS?</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            
+                        </ol>
+
+                        </div>                  
                 </div>
             </div>
             <Footer />

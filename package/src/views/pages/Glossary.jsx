@@ -89,7 +89,27 @@ const Glossary = () => {
                                                     <td>A platform providing reusable software components</td>
                                                     <td><span className="label label-lesson1">L.1</span></td>
                                                 </tr>
-                                                
+                                                <tr>
+                                                    
+                                                    <td>Middleware</td>
+                                                    <td>Example</td>
+                                                    <td>Software that acts as an intermediary allowing communication between different applications.</td>
+                                                    <td><span className="label label-lesson2">L.2</span> </td>
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    <td>Modularity</td>
+                                                    <td>Example</td>
+                                                    <td>Design principle emphasizing the organization of a system into independent, interchangeable components.</td>
+                                                    <td><span className="label label-lesson2">L.2</span> </td>
+                                                </tr>  
+                                                <tr>
+                                                    
+                                                    <td></td>
+                                                    <td>Example</td>
+                                                    <td></td>
+                                                    <td><span className="label label-lesson2">L.2</span> </td>
+                                                </tr>                                                
                                                 <tr>
                                                     
                                                     <td>ROS Master</td>
