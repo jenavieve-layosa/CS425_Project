@@ -18,6 +18,15 @@ Topbar
     z-index: 20;
 }
 
+side-container {
+    display: flex; 
+    align-items: center; 
+}
+side-paragraph {
+    flex: 1;
+}
+
+
 /*******************
 Header 6
 *******************/

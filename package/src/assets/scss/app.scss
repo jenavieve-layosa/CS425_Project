@@ -26,6 +26,7 @@ body {
     font-weight: 460;
 }
 
+
 html {
     position: relative;
     min-height: 100%;
@@ -551,10 +552,15 @@ Thumb size
 
 .img-circle {
     border-radius: 100%;
+
 }
 
 .radius {
     border-radius: $radius;
+}
+.side-image {
+    width: 50%;
+    margin-right:10px;
 }
 
 
