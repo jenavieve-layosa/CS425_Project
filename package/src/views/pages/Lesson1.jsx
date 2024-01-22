@@ -10,6 +10,7 @@ import img5 from '../../assets/images/robot-background-black-white-1.jpg';
 import robots3things from '../../assets/images/a-robot-does.png';
 import fields from '../../assets/images/fields.png';
 import applications from '../../assets/images/applications-of-robots.jpg';
+import img1 from '../../assets/images/lesson2-1.jpg';
 
 import logo from '../../assets/images/robot_logo.png';
 
@@ -103,6 +104,10 @@ const Lesson1 = () => {
                             Robot anatomy is made up of many different parts: manipulators which is the mechanical part of the robot that performs the task, end effectors that are the tools or devices that are attached to the robots manipulator for specific tasks
                             and many others that we will take a deeper dive into as the lessons progress.
                         </p>
+                        <Container style={{ marginLeft: 0}}>
+                            <Row>
+                                
+                                <Col xs={6}>
 
                         <h3 className= "subtitle font-bold text-darkblue">An overview of the field of robotics</h3>
 
@@ -120,7 +125,14 @@ const Lesson1 = () => {
                         automation. It is at the forefront of technological innovation and it's advancements contribute greatly to the quality of daily life. 
                         The applications of robotics have profound imapcts on society, ranging from healthcare and manufacturing to exploration and entertainment.   
                         </p>
-                        <img src={fields} alt="" className="img-rounded" width = "600"/>
+                        
+                        </Col>
+                                <Col xs={6}>
+                                <img src={fields} alt="" className="img-rounded" width = "650"/>
+                                </Col>
+                            </Row>
+                        </Container>
+
 
                         <h3 className= "subtitle font-bold text-darkblue">Goals and Applications of Robotics</h3>
                                                     
@@ -189,18 +201,6 @@ const Lesson1 = () => {
                         opportunities. 
                         </p>
 
-                        <h3 className= "subtitle font-bold text-darkblue">Knowledge Check: See if you can answer these questions!</h3>
-                        <ol>
-                            <li>What is the primary characteristic of a robot?</li>
-                            <li>What are the key components that make a robot capable of interacting with the physical world?</li>
-                            <li>What does the field of robotics aim to achieve?</li>
-                            <li>What is one of the overarching goals of robotics in various domains?</li>
-                            <li>Name one recent milestone or innovation in the field of robotics.</li>
-                            <li>What role does programming play in a robot&#39;s functionality?</li>
-                            <li>What does ROS stand for, and why is it important in robotics?</li>
-                            <li>What are some recommended prerequisites for delving into robotics?</li>                            
-                        </ol>
-
                         <h3 className= "subtitle font-bold text-darkblue">Prerequisites, Websites, and Resources:</h3>
 
                         <p>
@@ -213,8 +213,51 @@ const Lesson1 = () => {
                             <li>ROS tutorials for practical exercises: https://wiki.ros.org/ROS/Tutorials</li>
                             <li>Tutorials for learning Python programming: https://www.python.org/about/gettingstarted/ </li>
                         </ul>
+
+                        </div>
+
+                        <div className="static-slider-1">
+                                <Row className="justify-content-center">
+                                    <Col md="6" className="align-self-center text-center">
+                                        <h1 className="title"></h1>
+                                        <h6 className="subtitle op-8"></h6>
+                                    </Col>
+                                </Row>
+                        </div>
+                        <p>
+                            .
+                        </p>
+                        
+                        
+                        <Container style={{ marginLeft: 0}}>
+                            <Row>
+                                
+                                <Col xs={6}>
+                                <p>
+                                <h3 className= "subtitle font-bold text-darkblue">Knowledge Check: See if you can answer these questions!</h3>
+                                <ol>
+
+						    <li>What is the primary characteristic of a robot?</li>
+                            <li>What are the key components that make a robot capable of interacting with the physical world?</li>
+                            <li>What does the field of robotics aim to achieve?</li>
+                            <li>What is one of the overarching goals of robotics in various domains?</li>
+                            <li>Name one recent milestone or innovation in the field of robotics.</li>
+                            <li>What role does programming play in a robot&#39;s functionality?</li>
+                            <li>What does ROS stand for, and why is it important in robotics?</li>
+                            <li>What are some recommended prerequisites for delving into robotics?</li> 
+                                    
+                                </ol>
+                                
+                                </p>
+                                </Col>
+                                <Col xs={6}>
+                                <img src={img1} alt="" className="lesson-image" width = "300"/> 
+                                </Col>
+                            </Row>
+                        </Container>
+                        
         
-                    </div>
+                    
                     
                 </div>
             </div>
