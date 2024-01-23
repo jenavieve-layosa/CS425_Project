@@ -7,6 +7,7 @@ import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
 
+import shakey from '../../assets/images/Shakey.png';
 
 const Lesson3 = () => {
     return (
@@ -62,7 +63,7 @@ const Lesson3 = () => {
                         </div>
                         <div style={{ padding: '20px', border: '0px solid #ddd', borderRadius: '15px', marginBottom: '20px' }}>
                         <p>
-                            .
+                            
                         </p> 
                         
                         <h5 className= "subtitle font-bold text-darkblue">A reminder on application</h5>
@@ -86,6 +87,105 @@ const Lesson3 = () => {
                         sensors ensuring awareness, controllers processing information, and end effectors
                         performing tasks like welding or packaging.
                             </p> 
+
+                        <h3 className = "subtitle font-bold text-darkblue"> Types of Robots</h3>
+
+                        <p>
+                            Robots are involved in many different industries and can fulfill a variety of purposes ***write a better intro here***
+                        </p>
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Industrial Robots </h5>
+
+                        <p>
+
+                        </p>
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Service Robots </h5>
+
+                        <p>
+
+                        </p>
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Mobile Robots </h5>
+
+                        <p>
+                            Mobile robotics demands a combination of different disciplines such as social and cognitive sciences, computer science and engineering, physics, mathematics, and many others. The key thing about mobile robots is, well, they're mobile. 
+                            They are computers that perceive their environment through sensors and are able to perform a given task. The core focuses of mobile robot are locomotion, perception, cognition, and navigation. 
+                        </p>
+                        <p>
+                            The first mobile robot was a robot named Shakey, developed at Stanford Research Institute in the 1970's.
+                        </p>
+                        <img src={shakey} alt="shakey" className="img-thumbnail" width = "400"/> 
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Humanoid Robots </h5>
+
+                        <p>
+
+                        </p>
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Agricultural Robots </h5>
+
+                        <p>
+
+                        </p>
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Medical Robots </h5>
+
+                        <p>
+
+                        </p>
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Exploration Robots </h5>
+
+                        <p>
+
+                        </p>
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Military and Defense Robots </h5>
+
+                        <p>
+
+                        </p>
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Educational Robots </h5>
+
+                        <p>
+
+                        </p>
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Entertainment Robots </h5>
+
+                        <p>
+
+                        </p>
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Collaborative Robots </h5>
+
+                        <p>
+
+                        </p>
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Exoskeleton Robots </h5>
+
+                        <p>
+
+                        </p>
+
+                        <h5 className = 'subtitle font-bold text-darkblue'> Bio-inspired Robots </h5>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                         </div>
