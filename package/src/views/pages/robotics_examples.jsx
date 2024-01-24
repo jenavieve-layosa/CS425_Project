@@ -13,11 +13,11 @@ import {
 import img7 from '../../assets/images/cars1.jpg';
 import img8 from '../../assets/images/AI2.jpg';
 import img9 from '../../assets/images/medical robots.jpg';
-
+import img10 from '../../assets/images/drone-example.png';
 
 const items = [
     {
-        src: img7,
+        src: img9,
         altText: '',
         caption: ''
     },
@@ -27,7 +27,12 @@ const items = [
         caption: ''
     },
     {
-        src: img9,
+        src: img7,
+        altText: '',
+        caption: ''
+    },
+    {
+        src: img10,
         altText: '',
         caption: ''
     }
@@ -38,6 +43,7 @@ const JsComponents = (props) => {
     const [modal, setModal] = useState(false);
     const [modal1, setModal1] = useState(false);
     const [modal2, setModal2] = useState(false);
+    const [modal3, setModal3] = useState(false);
     const [activeIndex, setActiveIndex] = useState(0);
     const [animating, setAnimating] = useState(false);
 
@@ -51,6 +57,10 @@ const JsComponents = (props) => {
 
     const toggle2 = () => {
         setModal2(!modal2);
+    }
+
+    const toggle3 = () => {
+        setModal3(!modal3);
     }
 
     const next = () => {
@@ -132,6 +142,17 @@ const JsComponents = (props) => {
                             <ModalBody>
                             There are many advancements being made in the world of self driving cars and it is bringing the dream of effortless transportation closer and closer to a reality. Companies such as Hyundai with the car Mobis have made advancements such as the 'e-Corner System' which allows a vehicle to move laterally and diagonally, as well as perform stationary 360-degree pivot turns. 
                             Mercedes-Benz is set to test Level 3 autonomous driving on roads in China which could pave the way for the carmaker to offer its Drive Pilot feature to the market.    
+                            </ModalBody>
+                            <ModalFooter className="justify-content-center">
+                                <Button color="primary" onClick={toggle2.bind(null)}>Continue</Button>
+                            </ModalFooter>
+                        </Modal>
+                        <Button type="button" onClick={toggle3.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Drones</Button>
+                        <Modal size="md" isOpen={modal3} toggle={toggle3.bind(null)} className={props.className}>
+                            <ModalHeader toggle={toggle3.bind(null)}>Why is it cool?</ModalHeader>
+                            <ModalBody>
+                            Undefined Technologies' Silent Ventus drone uses an ion propulsion system to fly, instead of propellers
+                            <p>Undefined Technologies</p>
                             </ModalBody>
                             <ModalFooter className="justify-content-center">
                                 <Button color="primary" onClick={toggle2.bind(null)}>Continue</Button>
