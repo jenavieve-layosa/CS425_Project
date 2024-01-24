@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import PropTypes from "prop-types";
-import { Row, Col, Container, Card, Button, CardTitle, CardText, CardBody } from 'reactstrap';
+import { Row, Col, Container } from 'reactstrap';
 
 import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
@@ -114,6 +114,44 @@ const Lesson3 = () => {
 
                         </p>
                         <img src={robotArm} alt="robot arm" className="img-thumbnail" width = "300"/> 
+
+                        <div className="white-space-filler"> secret secret secret</div>
+
+                        <h6 className="font-bold"> Key Components</h6>
+
+
+                        <p>
+                        ●	Controllers - The controller is the main processor and acts as the brain of the robot, it receives commands from a program. 
+                        <p>
+                        ●	The arm has four major components: 
+                        </p>
+                        <Container style={{ marginLeft: 6}}>
+                            <Row>
+                                <Col xs={12}>
+                        <p>
+                        ○	Shoulder joint - this is the highest load bearing point in the arm and has three degrees of freedom: pitch, yaw and roll. The shoulder has the widest range of motion in the human body, and it is the foundation of most modern robotic arms. 
+                        <p>
+                        ○	Elbow joint - Many mechanical elbow joints have been used in robotic arm manufacture. The elbow joint provides extension, retraction, reach around and angular orientation of the wrist and hand. 
+                        <p>
+                        ○	Wrist joint - The wrist is a crucial component of even the earliest prototypes, it's the end-effector terminus and it allows the arm to be manipulated in a three-dimensional space. 
+                        <p>
+                        ○	Hand - this component defines the purpose and capacity of the robotic arm. The hand is a tool for multitasking capable of diverse tasks, it is also the research topic of many higher education institutions. 
+                        </p>
+                        </p>
+                        </p>
+                        </p>
+                                </Col>
+                            </Row>
+                        </Container>
+                        
+                        Robotic arms are also composed of drives and sensors. 
+                        <p>
+                        ●	Drives - these are the motors that provide movement for every part of the robot. They are located in between the joints and regular rotation and linear movement. These move independently from each other at varying speeds and directions as dictated by the controller.
+                        <p>
+                        ●	Sensors - they allow manipulators to react to their environment. 
+                        </p>
+                        </p>
+                        </p>
 
                         <h5 className = 'subtitle font-bold text-darkblue'> Service Robots </h5>
 
