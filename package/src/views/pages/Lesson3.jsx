@@ -8,6 +8,7 @@ import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
 
 import shakey from '../../assets/images/Shakey.png';
+import robotArm from '../../assets/images/robotArm.png';
 
 const Lesson3 = () => {
     return (
@@ -97,8 +98,22 @@ const Lesson3 = () => {
                         <h5 className = 'subtitle font-bold text-darkblue'> Industrial Robots </h5>
 
                         <p>
+                            Industrial robots is the largest commercial application of robotics in the world today, they have improved productivity, quality, precision and adaptability with minimal costs. 
+                            The first industrial robot appeared in 1954 on a patent filed by a man named George Devol on the programmed article transfer. 
+                            He later co-founded Unimation with Joseph Engelberger which was the first robot company that put a robot into service.
+                            Their first robot was called Unimate and was used for extracting parts from a die-casting machine. It was an electronically controlled hydraulic heavy-lifting arm with six axes of motion and was capable for 
+                            lifting objects and moving them with precision. This machine paved the way for the invention and regular use of arm robots in industry. 
+
 
                         </p>
+                        <p>
+                            Robotic arms are also knowna s robot manipulators, they are programmed and built to execute similar functions to a human arm. 
+                            They are built for the execution of repetative tasks that may require extreme precision or immense strength, they help ensure safey and promote production. 
+                            manipulators are connected by joints allowing rotational or linear motion. These robotic arms have end effectors at the end designed to perform tasks with great accuracy, depending on their application 
+                            tasks include gripping, spinning, welding, painting, etc. These robotic manipulators can be autonomous or controlled manually and can be mobile or fixed to a specific location. 
+
+                        </p>
+                        <img src={robotArm} alt="robot arm" className="img-thumbnail" width = "300"/> 
 
                         <h5 className = 'subtitle font-bold text-darkblue'> Service Robots </h5>
 

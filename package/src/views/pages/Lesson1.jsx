@@ -71,7 +71,7 @@ const Lesson1 = () => {
                                 </Row>
                         </div>
                                     
-                        <p>.</p>
+                        <div className= "white-space-filler">...</div>
                         
                         <div style={{ padding: '15px', border: '0px solid #ddd', borderRadius: '10px', marginBottom: '15px', marginTop: '5px' }}>
 

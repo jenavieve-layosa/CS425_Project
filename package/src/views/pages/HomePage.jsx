@@ -100,6 +100,12 @@ const Home = () => {
                                 Our main goal at FORE is to make learning accessible, robotics is truly one of the industries that can change the world for better or for worse and we believe that the only way to faciliate positive change is through education. 
                                 We want to provide as much of an oppurtunity to as many people as possible to gain that education and use it for innovation. 
                             </p>
+                            
+                                <p className="white-space-filler"> Shhhhhh... secret 
+                                    </p>
+                            
+                            
+
                             <Container>
                                 <Row>
                                     <Col md="6">
