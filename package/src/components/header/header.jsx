@@ -58,7 +58,7 @@ const Header = () => {
                                 </NavItem>
                             </Nav>
                             <div className="act-buttons">
-                                <Link to="/#coming" className="btn btn-success-gradiant font-14">Login</Link>
+                                <Link to="/Login" className="btn btn-success-gradiant font-14">Login</Link>
                             </div>
                         </Collapse>
                     </Navbar>

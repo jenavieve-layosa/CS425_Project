@@ -3,6 +3,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import login_user, login_required, logout_user
 from .models import User
 from . import db
+import json
 
 auth = Blueprint('auth', __name__)
 
@@ -61,3 +62,9 @@ def signup_post():
 def logout():
     logout_user()
     return redirect(url_for('main.index'))
+
+@auth.route('/test')
+def test():
+    users = User.query.all()
+    data = [{"email": user.email, "name": user.name} for user in users]
+    return json.dumps(data)
