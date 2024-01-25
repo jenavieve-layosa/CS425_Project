@@ -63,7 +63,7 @@ def logout():
     logout_user()
     return redirect(url_for('main.index'))
 
-@auth.route('/test')
+@auth.route('/api/test', methods=['GET'])
 def test():
     users = User.query.all()
     data = [{"email": user.email, "name": user.name} for user in users]

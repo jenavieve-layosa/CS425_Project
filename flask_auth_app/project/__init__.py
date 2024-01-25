@@ -10,7 +10,6 @@ def create_app():
 
     app.config['SECRET_KEY'] = 'secret-key-goes-here'
     app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:MySQL Database@localhost:3306/FORE_Main_DB'
-    app.config['SQLALCHEMY_ECHO'] = True
 
     db.init_app(app)
     login_manager = LoginManager()

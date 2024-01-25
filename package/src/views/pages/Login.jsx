@@ -1,16 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import React from "react";
+
+const AsyncAwait = () =>{
+    const [data, setData] = useState([]);
+    
+    const fetchData = async () => {
+        const response = await fetch('/api/test');
+        const res = await response.json();
+        setData(res);
+    }
+    useEffect(() => {
+        fetchData();
+    }, []);
+    return data;
+}
 
 const Login = () => {
-    const [data, setData] = useState();
-    fetch('/test')
-        .then(res => res.json())
-        .then(data => setData(data))
-        .catch(err => console.log(err));
+    const data = AsyncAwait();
+    const name = data.map((data) => data.name);
     return (
         <div>
-            <h1>Login</h1>
-            <p>{JSON.stringify(data)}</p>
+            <h1>Login Page</h1>
+            <p>Welcome, {name}</p>
         </div>
-    )
+    );
 }
 export default Login;
