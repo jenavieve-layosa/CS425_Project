@@ -7,11 +7,7 @@ import json
 
 auth = Blueprint('auth', __name__)
 
-@auth.route('/login')
-def login():
-    return render_template('login.html')
-
-@auth.route('/login', methods=['POST'])
+@auth.route('/api/login', methods=['POST'])
 def login_post():
     # login code goes here
     email = request.form.get('email')

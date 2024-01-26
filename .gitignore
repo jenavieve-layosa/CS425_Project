@@ -5,6 +5,7 @@ package/node_modules
 
 # testing
 
+/flask_auth_app/project/__pycache__
 
 # production
 
