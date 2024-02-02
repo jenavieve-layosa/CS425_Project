@@ -1,0 +1,11 @@
+.lesson-container {
+    display: flex; 
+    align-items: center;
+}
+.lesson-image {
+    width: 50%;
+    margin-right: 10px;
+}
+.lesson-paragraph {
+    flex: 1;
+}
