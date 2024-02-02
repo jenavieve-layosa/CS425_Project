@@ -152,10 +152,14 @@ const Lesson3 = () => {
                         </p>
                         </p>
                         </p>
+                        <h3 className="font-bold">Types of robotic arm configurations</h3>
+                        
+
 
                         <h5 className = 'subtitle font-bold text-darkblue'> Service Robots </h5>
 
                         <p>
+
 
                         </p>
 
