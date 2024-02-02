@@ -152,7 +152,67 @@ const Lesson3 = () => {
                         </p>
                         </p>
                         </p>
-                        <h3 className="font-bold">Types of robotic arm configurations</h3>
+                        <h6 className="font-bold">Types of robotic arm configurations</h6>
+                        <p>
+                        ● Cartesian Robot - Also known as the gantry robot, is named after the cartesian
+coordinate system. These robots include three articulating joints programmed to
+move linearly using the X, Y and Z coordinates. These robots are typically used for
+picking and placing items on converter belts.
+
+Image: Robohub - Example of a cartesian robot with 3-axis
+
+● Articulated Robot Arm - These are the most common mechanical robot arms seen
+
+in the workplace. These robots are used for welding, material handling, pick-and-
+place tasks, dispensing and much more. They resemble human arms because of
+
+their multiple axes and degrees of freedom. Because of this, they are among the
+most adaptable, flexible and space saving robotic manipulators, however, they are
+by nature dangerous and must be equipped with necessary safety features.
+
+Image: How Are Industrial Robots Built? - Moving joints of a robotic arm
+
+● Cylindrical Robot Arm - This robot has at least one rotary joint at its base allowing
+it a rotational motion along its axis. Its axis constitutes a cylindrical coordinate
+system (up, down and around). This robotic arm is valuable in industries that
+produce tubes and cylindrical components. Other uses include die casting and spot
+welding.
+
+Image: Process Solutions - Cylindrical Robotic arm
+
+● SCARA Robots - SCARA is an acronym for Selective Compliance Assembly Robot
+Arm. These robots work on a three-dimensional axis (X,Y and Z ) and rotary
+motion, in other words, it combines cartesian and cylindrical movements. SCARA
+robots are used in biomedical applications, assembly and pelletising.
+
+Image: SCARA
+
+● Polar Robot- Also known as the spherical robot. It consists of an arm with two
+rotary joints and one linear joint connected to the base with a twisting joint. The
+axes work together to form a polar coordinate. These are used for injection molding,
+welding and material handling.
+
+Image from Process Solutions - Polar robot arm
+
+● Delta Robot - Delta Robots, or parallel robots, possess three arms connected to a
+
+single base, which is mounted above the workspace. Delta Robots work in a dome-
+shape and can move both delicately and precisely at high speeds due to each joint
+
+of the end effector being directly controlled by all three arms.
+
+Image from Process Solutions - Delta or parallel robot
+
+Humanoid robots Applications in research entertainment robots Human-robot interaction
+
+Image from Kiva Systems: Three engineers, Hundreds of robots, one warehouse -
+
+Kiva robots working in a warehouse
+
+Another example of a material handling robot is the Sparrow robot, the first robotic system
+in amazon warehouses that can detect, select and handle individual products in their
+inventory. 
+                        </p>
                         
 
 
