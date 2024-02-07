@@ -159,6 +159,8 @@ const Lesson3 = () => {
                         move linearly using the X, Y and Z coordinates. These robots are typically used for
                         picking and placing items on converter belts.
 
+                        <p>Image: Robohub - Example of cartesian robot with 3-axis
+
                         
 
                         <p>● Articulated Robot Arm - These are the most common mechanical robot arms seen
@@ -207,7 +209,7 @@ const Lesson3 = () => {
                         <p>Another example of a material handling robot is the Sparrow robot, the first robotic system
                         in amazon warehouses that can detect, select and handle individual products in their
                         inventory. 
-                        </p></p></p></p></p></p></p>
+                        </p></p></p></p></p></p></p></p>
                         
 
 
