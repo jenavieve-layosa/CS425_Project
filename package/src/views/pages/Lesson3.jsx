@@ -23,6 +23,8 @@ import entertainment1 from '../../assets/images/types-of-robots/entertainment1.p
 import entertainment2 from '../../assets/images/types-of-robots/entertainment2.png';
 import entertainment3 from '../../assets/images/types-of-robots/entertainment3.png';
 import esko from '../../assets/images/types-of-robots/esko.png';
+import hondas from '../../assets/images/types-of-robots/hondas.png';
+import icub from '../../assets/images/types-of-robots/icub.png';
 
 
 
@@ -526,7 +528,8 @@ const Lesson3 = () => {
                             Example: The iCub robot, developed by the RobotCub Consortium, is used to
                             investigate cognitive development in children.
 
-                            <p>Image of iCub robot crawling like a child
+                            <p><img src={icub} alt="" className="img-thumbnail" width = "350"/>
+
 
                             <p>● Rehabilitation - Humanoid robots assist in rehabilitation therapies for individuals with
                             physical impairments, providing personalized assistance and monitoring progress.
