@@ -9,6 +9,22 @@ import Footer from "../../components/footer/footer.jsx";
 
 import shakey from '../../assets/images/Shakey.png';
 import robotArm from '../../assets/images/robotArm.png';
+import apple from '../../assets/images/types-of-robots/apple.png';
+import atlas from '../../assets/images/types-of-robots/atlas.png';
+import auv from '../../assets/images/types-of-robots/auv.jpg';
+import boltr from '../../assets/images/types-of-robots/boltr.png';
+import cartesian from '../../assets/images/types-of-robots/cartesian.png';
+import cotton from '../../assets/images/types-of-robots/cotton.png';
+import cylindricalarm from '../../assets/images/types-of-robots/cylindrical-arm.png';
+import davinci from '../../assets/images/types-of-robots/davinci.png';
+import delta from '../../assets/images/types-of-robots/delta.png';
+import dotTech from '../../assets/images/types-of-robots/dot tech.png';
+import entertainment1 from '../../assets/images/types-of-robots/entertainment1.png';
+import entertainment2 from '../../assets/images/types-of-robots/entertainment2.png';
+import entertainment3 from '../../assets/images/types-of-robots/entertainment3.png';
+import esko from '../../assets/images/types-of-robots/esko.png';
+
+
 
 const Lesson3 = () => {
     return (
@@ -566,7 +582,7 @@ const Lesson3 = () => {
                             <p>Example: Quori, a novel, affordable, and modular social robot designed for human-
                             robot interaction researchers. Learn more about Human-robot interaction!
 
-                            <p>Image of Quori in a museum Image of ATLAS, from Boston Dynamics
+                            <p><img src={atlas} alt="" className="img-thumbnail" width = "350"/>
                         </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
 
                         <h5 className = 'subtitle font-bold text-darkblue'> Agricultural Robots </h5>
@@ -628,7 +644,7 @@ const Lesson3 = () => {
                             and mechanical tools to identify and remove unwanted lettuce plants in large-scale
                             operations.
 
-                            <p>Image of the apple harvesting robot from FFRobotics
+                            <p><img src={apple} alt="" className="img-thumbnail" width = "350"/>
 
                             <h6 className = "font-bold">Seeding</h6>
                             <p>Seeding robots automate the process of sowing seeds, providing precise and efficient
@@ -856,7 +872,7 @@ const Lesson3 = () => {
                         sea exploration. An example of this is a research study of a self-powered robot made with soft
                         materials that is designed after the snailfish in order to withstand extreme pressures.
 
-                        <p>Image from Nature Journal
+                        <p><img src={auv} alt="" className="img-thumbnail" width = "350"/>
 
                         </p></p></p></p></p></p></p></p>
 
