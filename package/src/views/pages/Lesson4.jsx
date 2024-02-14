@@ -31,6 +31,9 @@ const Lesson4 = () => {
                      <div style={{ padding: '20px', border: '5px solid #ddd', borderRadius: '15px', marginBottom: '20px' }}>
                      <h2 className="subtitle font-bold text-darkblue">Course Overview</h2>
                         <p>
+                            This lesson is designed to help students understand how a robot is able to see the world. Robots are able to gather vast quantities and kinds of information depending on their purpose and hardware, 
+                            this means that communicating to different robots will depend on what information they have to work with. Getting your robot to move and navigate a given environment is one of the first real steps we will make in our robotics 
+                            journey 
                             
                         </p>
 
@@ -59,6 +62,10 @@ const Lesson4 = () => {
                                 </Row>
                         </div>
 
+                        <div className= "white-space-filler">...</div>
+                        
+                        <div style={{ padding: '15px', border: '0px solid #ddd', borderRadius: '10px', marginBottom: '15px', marginTop: '5px' }}>
+
                         <p>
                             <h2 className = "title font-bold text-darkblue">Perception</h2>
 
@@ -75,7 +82,7 @@ const Lesson4 = () => {
                             other people are trying to tell us, and make choices. It changes how we think, feel, and act, which
                             changes how we connect with others and how we see the world.</p>
 
-                            <h5 className = "subtitle text-bold text-darkblue"> Perception in Mobile Robots </h5>
+                            <h5 className = "lesson-subtitle text-bold text-darkblue"> Perception in Mobile Robots </h5>
 
                             <p>Mobile robots require the ability to perceive their surroundings and make decisions based on
                             visual information. This enables them to navigate safely through unknown or changing
@@ -124,7 +131,7 @@ const Lesson4 = () => {
 
                             </ul>
 
-                            <h5 className = "subtitle text-bold text-darkblue">Sensor</h5>
+                            <h5 className = "lesson-subtitle text-bold text-darkblue">Sensor</h5>
 
                             <p>A sensor is a device that detects and responds to a physical stimulus or change in the
                             environment and converts it into an electrical, mechanical, or optical signal. They are used in
@@ -137,10 +144,10 @@ const Lesson4 = () => {
                             application of perception algorithms are crucial for enabling mobile robots to perceive and
                             interact autonomously in complex real-world environments.</p></p>
 
-                            <h5 className = "subtitle text-bold text-darkblue"> Types of Sensors</h5>
+                            <h5 className = "lesson-subtitle text-bold text-darkblue"> Types of Sensors</h5>
                             <p>There are many different types of sensors used in robotics to provide feedback to the robot about
                             its environment. Here are some examples of commonly used sensors in robotics:</p>
-                            <h6 className = "subtitle">Proximity Sensors:</h6>
+                            <h6 className = "lesson-subtitle">Proximity Sensors:</h6>
                             <div className= "white-space-filler">...</div>
 
                             <p>Proximity sensors are devices that detect the presence or absence of objects without physical
@@ -176,7 +183,7 @@ const Lesson4 = () => {
                             interruption of the light beam by a person triggers the door to open.</p></p></p></p></p></p>
                             <div className= "white-space-filler">...</div>
 
-                            <h6 className = "subtitle">Vision Sensors:</h6>
+                            <h6 className = "lesson-subtitle">Vision Sensors:</h6>
                             <div className= "white-space-filler">...</div>
 
                             <p>Vision sensors, also known as vision systems or vision cameras, are devices that use image
@@ -222,7 +229,7 @@ const Lesson4 = () => {
                             to create immersive virtual environments in VR.</p></p></p></p></p></p></p></p></p>
                             <div className= "white-space-filler">...</div>
 
-                            <h6 className = "subtitle">Tactile Sensors:</h6>
+                            <h6 className = "lesson-subtitle">Tactile Sensors:</h6>
                             <div className= "white-space-filler">...</div>
 
 
@@ -249,7 +256,7 @@ const Lesson4 = () => {
                             and ensure safety.</p></p></p></p></p>
                             <div className= "white-space-filler">...</div>
 
-                            <h6 className = "subtitle">Motion Sensors:</h6>
+                            <h6 className = "lesson-subtitle">Motion Sensors:</h6>
                             <div className= "white-space-filler">...</div>
 
                             <p>Motion sensors, also known as motion detectors, are devices that detect movement or changes in
@@ -284,7 +291,7 @@ const Lesson4 = () => {
                             <div className= "white-space-filler">...</div>
 
 
-                            <h6 className = "subtitle">Temperature Sensors:</h6>
+                            <h6 className = "lesson-subtitle">Temperature Sensors:</h6>
                             <div className= "white-space-filler">...</div>
 
                             Temperature sensors are devices that measure and detect changes in temperature. They are
@@ -316,7 +323,7 @@ const Lesson4 = () => {
 
                             <div className= "white-space-filler">...</div>
 
-                            <h6 className = "subtitle">Gas Sensors:</h6>
+                            <h6 className = "lesson-subtitle">Gas Sensors:</h6>
                             <div className= "white-space-filler">...</div>
                             <p>Gas sensors, also known as gas detectors or gas analyzers, are devices that detect and measure
                             the presence and concentration of specific gases in the environment. They are utilized in a wide
@@ -346,7 +353,7 @@ const Lesson4 = () => {
                             for high-temperature applications.</p></p></p></p></p>
                             <div className= "white-space-filler">...</div>
 
-                            <h6 className = "subtitle">Light Sensors:</h6>
+                            <h6 className = "lesson-subtitle">Light Sensors:</h6>
                             <div className= "white-space-filler">...</div>
                             <p>Light sensors, also known as photodetectors or photo sensors, are devices that detect and
                             measure light intensity or the presence of light. They convert light energy into an electrical signal
@@ -390,7 +397,7 @@ const Lesson4 = () => {
                             energy, and optimize screen visibility.</p></p></p></p></p></p></p></p>
                             <div className= "white-space-filler">...</div>
 
-                            <h6 className = "subtitle">Range Sensors:</h6>
+                            <h6 className = "lesson-subtitle">Range Sensors:</h6>
                             <div className= "white-space-filler">...</div>
 
                             <p>Range sensors, also known as distance sensors or proximity sensors, are devices that measure the
@@ -439,7 +446,7 @@ const Lesson4 = () => {
                             <div className= "white-space-filler">...</div>
 
 
-                            <h5 className = "subtitle text-bold text-darkblue">Importance of Sensors in Robotics</h5>
+                            <h5 className = "lesson-subtitle text-bold text-darkblue">Importance of Sensors in Robotics</h5>
 
                             <p>Sensors play a critical role in robotics by providing robots with the ability to perceive and
                             interact with their environment. Here are some examples of how sensors are used in robotics and
@@ -465,6 +472,8 @@ const Lesson4 = () => {
                             autonomous vehicles to medical robotics. They enable robots to perceive and interact with their
                             environment, making them safer and more efficient.</p></p></p></p></p>
                         </p>
+
+                        </div>
 
                         <div className="static-slider-1">
                                 <Row className="justify-content-center">
