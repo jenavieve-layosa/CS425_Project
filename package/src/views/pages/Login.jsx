@@ -8,10 +8,10 @@ import Footer from "../../components/footer/footer";
 import { Container, Form, FormGroup, Row, Col, Label, Button, Input } from 'reactstrap';
 
 
-const AsyncFetch = (loginData) =>{
+const AsyncAwait = (loginData) =>{
     const [data, setData] = useState([]);
 
-    const fetchData = async () => {
+    const login = async () => {
         try{
             const response = await fetch('/api/login', {
                 method: 'POST',
@@ -28,10 +28,11 @@ const AsyncFetch = (loginData) =>{
         }
     }
     useEffect(() => {
-        fetchData();
-    }, []);
-    return data;
+        login();
+    }, );
+    return data.map((data) => data.status);
 }
+
 const HandleSubmit = async (event) => {
     event.preventDefault();
     
@@ -39,8 +40,7 @@ const HandleSubmit = async (event) => {
         email: event.target.email.value,
         password: event.target.password.value
     }
-    AsyncFetch(loginData);
-    
+    AsyncAwait(loginData);
 };
 
 const Login = () => {
@@ -49,7 +49,6 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
     //data fetching functions
-    //const data = AsyncAwait();
     //const name = data.map((data) => data.name);
 
     //non data related functions
@@ -82,7 +81,14 @@ const Login = () => {
                                     <Row>
                                         <Col md="6" className="mx-auto">
                                             <Label htmlFor="password">Password</Label>
-                                            <Input type="password" className="form-control" id="password" placeholder="Password" />
+                                            <Input type={showPassword ? "text": "password"} className="form-control" id="password" placeholder="Password" 
+                                                value={password} onChange={(e)=>setPassword(e.target.value)}/>
+                                        </Col>
+                                        <Col md="1" className="mx-center">
+                                            <Label check>
+                                                <Input type="checkbox" onChange={togglePasswordVisibility} />
+                                                Show password
+                                            </Label>
                                         </Col>
                                     </Row>
                                 </FormGroup>
