@@ -1,0 +1,4 @@
+[console_scripts]
+drive_forward = robot_controller.driveForward:main
+state_listener = robot_controller.stateListener:main
+

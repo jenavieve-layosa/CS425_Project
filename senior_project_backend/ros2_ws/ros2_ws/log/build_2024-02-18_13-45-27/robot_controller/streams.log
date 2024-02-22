@@ -1,0 +1,35 @@
+[0.794s] Invoking command in '/home/andy/ros2_ws/src/robot_controller': PYTHONPATH=/home/andy/ros2_ws/build/robot_controller/prefix_override:/home/andy/ros2_ws/install/robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_controller build --build-base /home/andy/ros2_ws/build/robot_controller/build install --record /home/andy/ros2_ws/build/robot_controller/install.log --single-version-externally-managed
+[1.009s] running egg_info
+[1.010s] creating ../../build/robot_controller/robot_controller.egg-info
+[1.010s] writing ../../build/robot_controller/robot_controller.egg-info/PKG-INFO
+[1.010s] writing dependency_links to ../../build/robot_controller/robot_controller.egg-info/dependency_links.txt
+[1.010s] writing entry points to ../../build/robot_controller/robot_controller.egg-info/entry_points.txt
+[1.010s] writing requirements to ../../build/robot_controller/robot_controller.egg-info/requires.txt
+[1.011s] writing top-level names to ../../build/robot_controller/robot_controller.egg-info/top_level.txt
+[1.011s] writing manifest file '../../build/robot_controller/robot_controller.egg-info/SOURCES.txt'
+[1.012s] reading manifest file '../../build/robot_controller/robot_controller.egg-info/SOURCES.txt'
+[1.013s] writing manifest file '../../build/robot_controller/robot_controller.egg-info/SOURCES.txt'
+[1.014s] running build
+[1.014s] running build_py
+[1.014s] creating /home/andy/ros2_ws/build/robot_controller/build
+[1.014s] creating /home/andy/ros2_ws/build/robot_controller/build/lib
+[1.014s] creating /home/andy/ros2_ws/build/robot_controller/build/lib/robot_controller
+[1.014s] copying robot_controller/__init__.py -> /home/andy/ros2_ws/build/robot_controller/build/lib/robot_controller
+[1.015s] running install
+[1.015s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.015s]   warnings.warn(
+[1.015s] running install_lib
+[1.016s] creating /home/andy/ros2_ws/install/robot_controller/lib/python3.10/site-packages/robot_controller
+[1.016s] copying /home/andy/ros2_ws/build/robot_controller/build/lib/robot_controller/__init__.py -> /home/andy/ros2_ws/install/robot_controller/lib/python3.10/site-packages/robot_controller
+[1.016s] byte-compiling /home/andy/ros2_ws/install/robot_controller/lib/python3.10/site-packages/robot_controller/__init__.py to __init__.cpython-310.pyc
+[1.017s] running install_data
+[1.017s] creating /home/andy/ros2_ws/install/robot_controller/share/ament_index
+[1.017s] creating /home/andy/ros2_ws/install/robot_controller/share/ament_index/resource_index
+[1.017s] creating /home/andy/ros2_ws/install/robot_controller/share/ament_index/resource_index/packages
+[1.017s] copying resource/robot_controller -> /home/andy/ros2_ws/install/robot_controller/share/ament_index/resource_index/packages
+[1.017s] copying package.xml -> /home/andy/ros2_ws/install/robot_controller/share/robot_controller
+[1.017s] running install_egg_info
+[1.019s] Copying ../../build/robot_controller/robot_controller.egg-info to /home/andy/ros2_ws/install/robot_controller/lib/python3.10/site-packages/robot_controller-0.0.0-py3.10.egg-info
+[1.020s] running install_scripts
+[1.040s] writing list of installed files to '/home/andy/ros2_ws/build/robot_controller/install.log'
+[1.073s] Invoked command in '/home/andy/ros2_ws/src/robot_controller' returned '0': PYTHONPATH=/home/andy/ros2_ws/build/robot_controller/prefix_override:/home/andy/ros2_ws/install/robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_controller build --build-base /home/andy/ros2_ws/build/robot_controller/build install --record /home/andy/ros2_ws/build/robot_controller/install.log --single-version-externally-managed
