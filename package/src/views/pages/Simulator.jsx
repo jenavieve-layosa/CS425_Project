@@ -47,6 +47,7 @@ const Simulator = () => {
     URL.revokeObjectURL(url);
   };
 
+
   // Function to handle theme change
   const changeTheme = (theme) => {
     setEditorTheme(theme);
@@ -56,27 +57,28 @@ const Simulator = () => {
     <div id="main-wrapper">
       <Header />
       <div className="page-wrapper">
-        <div className="container-fluid text-center">
+        <div className="container-fluid">
           <HeaderBanner />
-          <h1 className="title"> Welcome to the Simulator</h1>
-          <h2 className="subtitle">This website uses Monaco Code Editor and Gazebo to create an interactive virtual environment to help demonstrate robotics concepts without the need for hardware</h2>
-
-          <div className="intro-content">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-              <div style={{ width: '80%' }}>
-                <MonacoEditor
-                  width="100%"
-                  height="600"
-                  options={editorOptions}
-                  onChange={handleChange}
-                />
-              </div>
-              <div style={{ width: '20%', textAlign: 'right' }}>
+          <h1 className="title text-center"> Welcome to the Simulator</h1>
+          <h2 className="subtitle text-center">This website uses Monaco Code Editor and Gazebo to create an interactive virtual environment to help demonstrate robotics concepts without the need for hardware</h2>
+          <div style={{ width: '80%', textAlign: 'left' }}>
                 <button onClick={saveFile} style={{ marginBottom: '10px' }}>Save File</button>
                 <button onClick={() => changeTheme('hc-black')}>Dark Theme</button>
                 <button onClick={() => changeTheme('vs-light')}>Light Theme</button>
                 {/* Add more theme buttons as needed */}
               </div>
+          <div className="intro-content">
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'left', marginBottom: '20px' }}>
+              <div style={{ width: '80%' }}>
+                <MonacoEditor
+                  width="800"
+                  height="600"
+                  options={editorOptions}
+                  onChange={handleChange}
+                  
+                />
+              </div>
+              
             </div>
             <img src={img3} alt="Advanced Robotics Concepts" className="img-thumbnail" width="290" />
           </div>
