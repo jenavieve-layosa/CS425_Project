@@ -13,6 +13,8 @@ import roadmap from '../../assets/images/roadmap.png';
 import learning_robot from '../../assets/images/learning_robot_1.png';
 
 import Examples from "../pages/robotics_examples.jsx";
+import Types from "../pages/types_of_robots.jsx";
+
 
 
 
@@ -71,6 +73,8 @@ const Home = () => {
                                                     <h5 className="font-medium">Projects</h5>
                                                     <p className="m-t-20">Our strategy: Trial by Fire. Real learnings starts with application and we want to provide ample oppurtunity for our users to try their hand at what they're learning. 
                                                     Our projects are straightforward and are designed to test your brand new skills!</p>
+                                                    <p className="m-b-5">Learn how to move your robot forward!</p>
+                                                    <p className="m-b-5">Making the robot turn in a circle</p>
                                                 </CardBody>
                                             </Card>
                                         </Col>
@@ -129,6 +133,7 @@ const Home = () => {
                                 </Row>
                             </Container>
                         <Examples />
+                       
                             <div className="spacer ">
                                     <Container className="feature30">
                                         <Row>
