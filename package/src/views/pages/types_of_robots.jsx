@@ -102,6 +102,22 @@ const JsComponents = (props) => {
             <Container>
                 <Row>
                     <Col md="9" className='p-b-60 d-flex flex-column'>
+
+                    <Button onClick={handleOpen}>Open modal</Button>
+                    <Modal
+                    open={open}
+                    onClose={handleClose}
+                    aria-labelledby="parent-modal-title"
+                    aria-describedby="parent-modal-description"
+                    >
+                    <Box sx={{ ...style, width: 400 }}>
+                        <h2 id="parent-modal-title">Text in a modal</h2>
+                        <p id="parent-modal-description">
+                        Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                        </p>
+                        <ChildModal />
+                    </Box>
+                    </Modal>
                         <Button type="button" onClick={toggle.bind(null)} className="btn btn-block waves-effect waves-light btn-outline-primary m-b-30">Service Robots</Button>
                         <Modal size="lg" isOpen={modal} toggle={toggle.bind(null)} className={props.className}>
                             <ModalHeader toggle={toggle.bind(null)}>Why is is cool?</ModalHeader>
