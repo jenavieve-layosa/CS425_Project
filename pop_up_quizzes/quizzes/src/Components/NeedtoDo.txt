@@ -1,0 +1,7 @@
+1. Pop ups
+2. Make pretty
+3. Don't allow to move on without clicking an answer
+4. Finish Button? 
+5. Allow for multiple choices to be picked
+6. Show which questions were wrong??
+7. Confetti
