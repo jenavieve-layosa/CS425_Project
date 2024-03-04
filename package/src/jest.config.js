@@ -1,14 +1,13 @@
 module.exports = {
-    transform: {
-      "^.+\\.jsx?$": "babel-jest",
-      "^.+\\.(jpg|jpeg|png|gif|svg)$": "<rootDir>/src/__mocks__/fileMock.js"
-    },
-    testEnvironment: "jsdom",
-    testRegex: "(/__tests__/.*|\\.(test|spec))\\.(js|jsx)$",
-    moduleFileExtensions: [
-      "js",
-      "json",
-      "jsx"
-    ]
-  };
-  
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+  },
+  testEnvironment: 'jsdom',
+  babelConfig: require('./babel.config.js'),
+  testRegex: '(/__tests__/.*|\\.(test|spec))\\.(js|jsx)$',
+  moduleFileExtensions: ['js', 'json', 'jsx'],
+  transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+  },
+};
