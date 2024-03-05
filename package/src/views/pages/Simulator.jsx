@@ -148,28 +148,23 @@ const Simulator = () => {
                   onChange={handleChange}
                 />
               </div>
-              
-              <div style={{ width: '50%', textAlign: 'left' }}>
-                <p>Current Frame: {currentFrame}</p>
-                <button onClick={startAutoplay} disabled={autoplay}>
-                  Start Autoplay
-                </button>
-                <button onClick={stopAutoplay} disabled={!autoplay}>
-                  Stop Autoplay
-                </button>
-                <div style={{display: 'flex',  width: '50%', textAlign: 'left' }}>
-                <ThreeScene data={data[currentFrame]} />
-                </div>
-                <Slider
-                  min={0}
-                  max={data.length - 1}
-                  step={1}
-                  value={currentFrame}
-                  onChange={handleSliderChange}
-                  disabled={autoplay}
-                />
-                
-              </div>
+              <Slider
+                min={0}
+                max={data.length - 1}
+                step={1}
+                value={currentFrame}
+                onChange={handleSliderChange}
+                disabled={autoplay}
+              />
+              <p>Current Frame: {currentFrame}</p>
+              <button onClick={startAutoplay} disabled={autoplay}>
+                Start Autoplay
+              </button>
+              <button onClick={stopAutoplay} disabled={!autoplay}>
+                Stop Autoplay
+              </button>
+              <ThreeScene data={data[currentFrame]} />
+                      
             </div>
             
           </div>
