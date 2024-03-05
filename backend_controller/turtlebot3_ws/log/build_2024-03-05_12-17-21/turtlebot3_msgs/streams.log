@@ -1,0 +1,273 @@
+[1.176s] Invoking command in '/home/andy/backend_controller/turtlebot3_ws/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_teleop:/home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_example:/home/andy/backend_controller/turtlebot3_ws/install/robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/andy/backend_controller/turtlebot3_ws/build/turtlebot3_msgs -- -j6 -l6
+[1.416s] [  1%] Built target turtlebot3_msgs__cpp
+[1.523s] [  1%] Built target ament_cmake_python_copy_turtlebot3_msgs
+[1.682s] [ 12%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_cpp
+[2.736s] running egg_info
+[2.737s] writing turtlebot3_msgs.egg-info/PKG-INFO
+[2.737s] writing dependency_links to turtlebot3_msgs.egg-info/dependency_links.txt
+[2.738s] writing top-level names to turtlebot3_msgs.egg-info/top_level.txt
+[2.789s] reading manifest file 'turtlebot3_msgs.egg-info/SOURCES.txt'
+[2.789s] writing manifest file 'turtlebot3_msgs.egg-info/SOURCES.txt'
+[2.956s] [ 12%] Built target ament_cmake_python_build_turtlebot3_msgs_egg
+[2.997s] [ 23%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_cpp
+[3.130s] [ 35%] Built target turtlebot3_msgs__rosidl_typesupport_cpp
+[3.249s] [ 46%] Built target turtlebot3_msgs__rosidl_generator_c
+[3.411s] [ 57%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_c
+[3.514s] [ 69%] Built target turtlebot3_msgs__rosidl_typesupport_c
+[3.592s] [ 80%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_c
+[3.754s] [ 80%] Built target turtlebot3_msgs
+[3.989s] [ 81%] Built target turtlebot3_msgs__py
+[4.221s] [ 91%] Built target turtlebot3_msgs__rosidl_generator_py
+[4.313s] [ 94%] Built target turtlebot3_msgs__rosidl_typesupport_fastrtps_c__pyext
+[4.462s] [ 97%] Built target turtlebot3_msgs__rosidl_typesupport_c__pyext
+[4.528s] [100%] Built target turtlebot3_msgs__rosidl_typesupport_introspection_c__pyext
+[5.644s] Invoked command in '/home/andy/backend_controller/turtlebot3_ws/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_teleop:/home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_example:/home/andy/backend_controller/turtlebot3_ws/install/robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/andy/backend_controller/turtlebot3_ws/build/turtlebot3_msgs -- -j6 -l6
+[8.206s] Invoking command in '/home/andy/backend_controller/turtlebot3_ws/build/turtlebot3_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_teleop:/home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_example:/home/andy/backend_controller/turtlebot3_ws/install/robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/andy/backend_controller/turtlebot3_ws/build/turtlebot3_msgs
+[8.249s] -- Install configuration: ""
+[8.249s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/ament_index/resource_index/rosidl_interfaces/turtlebot3_msgs
+[8.249s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs
+[8.249s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg
+[8.249s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/version_info.h
+[8.249s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/sound.h
+[8.249s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/rosidl_generator_c__visibility_control.h
+[8.249s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail
+[8.249s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__functions.h
+[8.249s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__struct.h
+[8.250s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__struct.h
+[8.250s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__functions.h
+[8.250s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__type_support.h
+[8.250s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__functions.c
+[8.250s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__type_support.h
+[8.250s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__type_support.h
+[8.250s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__functions.c
+[8.252s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__functions.c
+[8.253s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__functions.h
+[8.265s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__struct.h
+[8.265s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/sensor_state.h
+[8.265s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv
+[8.265s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/sound.h
+[8.265s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/dqn.h
+[8.265s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail
+[8.268s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__functions.h
+[8.269s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__functions.c
+[8.269s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__struct.h
+[8.269s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__functions.c
+[8.269s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__type_support.h
+[8.269s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__functions.h
+[8.269s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__type_support.h
+[8.269s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__struct.h
+[8.270s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action
+[8.270s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/patrol.h
+[8.270s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail
+[8.270s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__functions.c
+[8.270s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__struct.h
+[8.270s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__type_support.h
+[8.270s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__functions.h
+[8.270s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/environment/library_path.sh
+[8.270s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/environment/library_path.dsv
+[8.270s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_generator_c.so
+[8.270s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs
+[8.270s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg
+[8.272s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail
+[8.273s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__rosidl_typesupport_fastrtps_c.h
+[8.273s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__rosidl_typesupport_fastrtps_c.h
+[8.273s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__rosidl_typesupport_fastrtps_c.h
+[8.273s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.273s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv
+[8.280s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail
+[8.284s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__rosidl_typesupport_fastrtps_c.h
+[8.284s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__rosidl_typesupport_fastrtps_c.h
+[8.284s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__rosidl_typesupport_fastrtps_c.h
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_fastrtps_c.so
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/sound.hpp
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__traits.hpp
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__struct.hpp
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__traits.hpp
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__builder.hpp
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__struct.hpp
+[8.285s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__struct.hpp
+[8.286s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__builder.hpp
+[8.286s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__traits.hpp
+[8.286s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__builder.hpp
+[8.286s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/version_info.hpp
+[8.286s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/sensor_state.hpp
+[8.289s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv
+[8.289s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/dqn.hpp
+[8.289s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/sound.hpp
+[8.289s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail
+[8.289s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__traits.hpp
+[8.299s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__struct.hpp
+[8.299s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__builder.hpp
+[8.299s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__struct.hpp
+[8.299s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__builder.hpp
+[8.299s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__traits.hpp
+[8.299s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action
+[8.299s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/patrol.hpp
+[8.299s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail
+[8.300s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__traits.hpp
+[8.300s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__struct.hpp
+[8.300s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__builder.hpp
+[8.300s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs
+[8.300s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg
+[8.300s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail
+[8.300s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__rosidl_typesupport_fastrtps_cpp.hpp
+[8.300s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__rosidl_typesupport_fastrtps_cpp.hpp
+[8.305s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__rosidl_typesupport_fastrtps_cpp.hpp
+[8.305s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/dds_fastrtps
+[8.305s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.305s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv
+[8.305s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail
+[8.306s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__rosidl_typesupport_fastrtps_cpp.hpp
+[8.306s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__rosidl_typesupport_fastrtps_cpp.hpp
+[8.306s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dds_fastrtps
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/dds_fastrtps
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__rosidl_typesupport_fastrtps_cpp.hpp
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_fastrtps_cpp.so
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__type_support.c
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__rosidl_typesupport_introspection_c.h
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__rosidl_typesupport_introspection_c.h
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__rosidl_typesupport_introspection_c.h
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__type_support.c
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__type_support.c
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail
+[8.307s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__type_support.c
+[8.308s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__type_support.c
+[8.308s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__rosidl_typesupport_introspection_c.h
+[8.308s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__rosidl_typesupport_introspection_c.h
+[8.308s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action
+[8.308s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail
+[8.308s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__rosidl_typesupport_introspection_c.h
+[8.308s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__type_support.c
+[8.308s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_introspection_c.so
+[8.308s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_c.so
+[8.308s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs
+[8.308s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg
+[8.308s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__rosidl_typesupport_introspection_cpp.hpp
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__rosidl_typesupport_introspection_cpp.hpp
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__rosidl_typesupport_introspection_cpp.hpp
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sound__type_support.cpp
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/sensor_state__type_support.cpp
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/msg/detail/version_info__type_support.cpp
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__type_support.cpp
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/dqn__rosidl_typesupport_introspection_cpp.hpp
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__rosidl_typesupport_introspection_cpp.hpp
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/srv/detail/sound__type_support.cpp
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail
+[8.309s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__type_support.cpp
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/include/turtlebot3_msgs/turtlebot3_msgs/action/detail/patrol__rosidl_typesupport_introspection_cpp.hpp
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_introspection_cpp.so
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_typesupport_cpp.so
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/environment/pythonpath.sh
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/environment/pythonpath.dsv
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs-2.2.3-py3.10.egg-info
+[8.310s] -- Installing: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs-2.2.3-py3.10.egg-info/SOURCES.txt
+[8.310s] -- Installing: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs-2.2.3-py3.10.egg-info/top_level.txt
+[8.310s] -- Installing: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs-2.2.3-py3.10.egg-info/PKG-INFO
+[8.310s] -- Installing: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs-2.2.3-py3.10.egg-info/dependency_links.txt
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/__init__.py
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/_turtlebot3_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/msg
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/msg/_sensor_state_s.c
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/msg/_sound.py
+[8.310s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/msg/_version_info_s.c
+[8.311s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/msg/__init__.py
+[8.311s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/msg/_version_info.py
+[8.311s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/msg/_sensor_state.py
+[8.311s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/msg/_sound_s.c
+[8.311s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/libturtlebot3_msgs__rosidl_generator_py.so
+[8.311s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/srv
+[8.311s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/srv/_sound.py
+[8.314s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/srv/__init__.py
+[8.314s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/srv/_dqn_s.c
+[8.314s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/srv/_dqn.py
+[8.314s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/srv/_sound_s.c
+[8.314s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/action
+[8.314s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/action/__init__.py
+[8.314s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/action/_patrol_s.c
+[8.314s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/action/_patrol.py
+[8.314s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/_turtlebot3_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[8.315s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.315s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/_turtlebot3_msgs_s.ep.rosidl_typesupport_c.c
+[8.351s] Listing '/home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs'...
+[8.352s] Listing '/home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/action'...
+[8.352s] Listing '/home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/msg'...
+[8.352s] Listing '/home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/srv'...
+[8.374s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[8.377s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[8.377s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages/turtlebot3_msgs/turtlebot3_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[8.384s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/lib/libturtlebot3_msgs__rosidl_generator_py.so
+[8.384s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/msg/SensorState.idl
+[8.384s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/msg/Sound.idl
+[8.384s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/msg/VersionInfo.idl
+[8.384s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/srv/Sound.idl
+[8.384s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/srv/Dqn.idl
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/action/Patrol.idl
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/msg/SensorState.msg
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/msg/Sound.msg
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/msg/VersionInfo.msg
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/srv/Sound.srv
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/srv/Sound_Request.msg
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/srv/Sound_Response.msg
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/srv/Dqn.srv
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/srv/Dqn_Request.msg
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/srv/Dqn_Response.msg
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/action/Patrol.action
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/ament_index/resource_index/package_run_dependencies/turtlebot3_msgs
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/ament_index/resource_index/parent_prefix_path/turtlebot3_msgs
+[8.385s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/environment/ament_prefix_path.sh
+[8.386s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/environment/ament_prefix_path.dsv
+[8.386s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/environment/path.sh
+[8.386s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/environment/path.dsv
+[8.386s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/local_setup.bash
+[8.386s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/local_setup.sh
+[8.386s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/local_setup.zsh
+[8.386s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/local_setup.dsv
+[8.386s] -- Installing: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.dsv
+[8.391s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/ament_index/resource_index/packages/turtlebot3_msgs
+[8.391s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_generator_cExport.cmake
+[8.391s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_generator_cExport-noconfig.cmake
+[8.391s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[8.391s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[8.391s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_generator_cppExport.cmake
+[8.392s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[8.392s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[8.392s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_introspection_cExport.cmake
+[8.398s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.398s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_cExport.cmake
+[8.398s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[8.399s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[8.399s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.399s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_cppExport.cmake
+[8.399s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/turtlebot3_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[8.399s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_generator_pyExport.cmake
+[8.399s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/export_turtlebot3_msgs__rosidl_generator_pyExport-noconfig.cmake
+[8.399s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/rosidl_cmake-extras.cmake
+[8.399s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.400s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.421s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[8.423s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[8.423s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.423s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.423s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/turtlebot3_msgsConfig.cmake
+[8.423s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/cmake/turtlebot3_msgsConfig-version.cmake
+[8.423s] -- Up-to-date: /home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_msgs/share/turtlebot3_msgs/package.xml
+[8.442s] Invoked command in '/home/andy/backend_controller/turtlebot3_ws/build/turtlebot3_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_teleop:/home/andy/backend_controller/turtlebot3_ws/install/turtlebot3_example:/home/andy/backend_controller/turtlebot3_ws/install/robot_controller:/opt/ros/humble /usr/bin/cmake --install /home/andy/backend_controller/turtlebot3_ws/build/turtlebot3_msgs

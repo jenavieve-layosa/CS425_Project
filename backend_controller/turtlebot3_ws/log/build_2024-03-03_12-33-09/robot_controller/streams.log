@@ -1,0 +1,24 @@
+[2.642s] Invoking command in '/home/andy/backend_controller/turtlebot3_ws/src/turtlebot3/robot_controller': PYTHONPATH=/home/andy/backend_controller/turtlebot3_ws/build/robot_controller/prefix_override:/home/andy/backend_controller/turtlebot3_ws/install/robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/robot_controller build --build-base /home/andy/backend_controller/turtlebot3_ws/build/robot_controller/build install --record /home/andy/backend_controller/turtlebot3_ws/build/robot_controller/install.log --single-version-externally-managed
+[3.023s] running egg_info
+[3.023s] writing ../../../build/robot_controller/robot_controller.egg-info/PKG-INFO
+[3.033s] writing dependency_links to ../../../build/robot_controller/robot_controller.egg-info/dependency_links.txt
+[3.035s] writing entry points to ../../../build/robot_controller/robot_controller.egg-info/entry_points.txt
+[3.036s] writing requirements to ../../../build/robot_controller/robot_controller.egg-info/requires.txt
+[3.036s] writing top-level names to ../../../build/robot_controller/robot_controller.egg-info/top_level.txt
+[3.044s] reading manifest file '../../../build/robot_controller/robot_controller.egg-info/SOURCES.txt'
+[3.044s] writing manifest file '../../../build/robot_controller/robot_controller.egg-info/SOURCES.txt'
+[3.044s] running build
+[3.044s] running build_py
+[3.044s] running install
+[3.044s] running install_lib
+[3.044s] running install_data
+[3.044s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.044s]   warnings.warn(
+[3.044s] running install_egg_info
+[3.047s] removing '/home/andy/backend_controller/turtlebot3_ws/install/robot_controller/lib/python3.10/site-packages/robot_controller-0.0.0-py3.10.egg-info' (and everything under it)
+[3.047s] Copying ../../../build/robot_controller/robot_controller.egg-info to /home/andy/backend_controller/turtlebot3_ws/install/robot_controller/lib/python3.10/site-packages/robot_controller-0.0.0-py3.10.egg-info
+[3.048s] running install_scripts
+[3.075s] Installing controller_node script to /home/andy/backend_controller/turtlebot3_ws/install/robot_controller/lib/robot_controller
+[3.081s] Installing state_listener script to /home/andy/backend_controller/turtlebot3_ws/install/robot_controller/lib/robot_controller
+[3.090s] writing list of installed files to '/home/andy/backend_controller/turtlebot3_ws/build/robot_controller/install.log'
+[3.163s] Invoked command in '/home/andy/backend_controller/turtlebot3_ws/src/turtlebot3/robot_controller' returned '0': PYTHONPATH=/home/andy/backend_controller/turtlebot3_ws/build/robot_controller/prefix_override:/home/andy/backend_controller/turtlebot3_ws/install/robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/robot_controller build --build-base /home/andy/backend_controller/turtlebot3_ws/build/robot_controller/build install --record /home/andy/backend_controller/turtlebot3_ws/build/robot_controller/install.log --single-version-externally-managed
