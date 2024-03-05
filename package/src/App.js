@@ -9,7 +9,7 @@ import Lesson4 from "./views/pages/Lesson4.jsx";
 import Lesson5 from "./views/pages/Lesson5.jsx";
 import HomePage from "./views/pages/HomePage.jsx";
 import Glossary from "./views/pages/Glossary.jsx";
-import Simulator from "./views/pages/visualizer.jsx";
+import Simulator from "./views/pages/Simulator.jsx";
 import SignUp from "./views/pages/SignUp.jsx";
 
 function App() {

@@ -5,7 +5,7 @@ import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
 import img3 from '../../assets/images/img3.jpg';
-import ThreeScene from './ThreeScene';
+import ThreeScene from './ThreeScene.js';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
@@ -140,7 +140,7 @@ const Simulator = () => {
           </div>
           <div className="intro-content">
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'left', marginBottom: '20px' }}>
-              <div style={{ display: 'flex', width: '50%' }}>
+              <div style={{ display: 'flex', width: '40%' }}>
                 <MonacoEditor
                   width="100%"
                   height="600"
@@ -148,8 +148,18 @@ const Simulator = () => {
                   onChange={handleChange}
                 />
               </div>
-              <div style={{display: 'flex',  width: '50%', textAlign: 'left' }}>
-                <h6 className = "text-darkblue">3D Simulation</h6>
+              
+              <div style={{ width: '50%', textAlign: 'left' }}>
+                <p>Current Frame: {currentFrame}</p>
+                <button onClick={startAutoplay} disabled={autoplay}>
+                  Start Autoplay
+                </button>
+                <button onClick={stopAutoplay} disabled={!autoplay}>
+                  Stop Autoplay
+                </button>
+                <div style={{display: 'flex',  width: '50%', textAlign: 'left' }}>
+                <ThreeScene data={data[currentFrame]} />
+                </div>
                 <Slider
                   min={0}
                   max={data.length - 1}
@@ -158,17 +168,10 @@ const Simulator = () => {
                   onChange={handleSliderChange}
                   disabled={autoplay}
                 />
-                <h1>Current Frame: {currentFrame}</h1>
-                <button onClick={startAutoplay} disabled={autoplay}>
-                  Start Autoplay
-                </button>
-                <button onClick={stopAutoplay} disabled={!autoplay}>
-                  Stop Autoplay
-                </button>
-                <ThreeScene data={data[currentFrame]} />
+                
               </div>
             </div>
-            <img src={img3} alt="Advanced Robotics Concepts" className="img-thumbnail" width="290" />
+            
           </div>
         </div>
       </div>
