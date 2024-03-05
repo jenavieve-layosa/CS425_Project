@@ -9,7 +9,7 @@ def create_app():
     app = Flask(__name__)
 
     app.config['SECRET_KEY'] = 'dev' #replace with a random string
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://admin:Team292024!@senior-project-2024.cjmuky04w0mq.us-east-2.rds.amazonaws.com:3306/fore_main_DB'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://'#actual connect info
 
     db.init_app(app)
     login_manager = LoginManager()
