@@ -6,6 +6,7 @@ import Header from "../../components/header/header";
 import HeaderBanner2 from "../../components/banner2/banner2";
 import Footer from "../../components/footer/footer";
 import { Container, Form, FormGroup, Row, Col, Label, Button, Input } from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
 const AsyncAwait = (loginData) =>{
@@ -84,7 +85,7 @@ const Login = () => {
                                             <Input type={showPassword ? "text": "password"} className="form-control" id="password" placeholder="Password" 
                                                 value={password} onChange={(e)=>setPassword(e.target.value)}/>
                                         </Col>
-                                        <Col md="1" className="mx-center">
+                                        <Col md="0">
                                             <Label check>
                                                 <Input type="checkbox" onChange={togglePasswordVisibility} />
                                                 Show password
@@ -98,6 +99,9 @@ const Login = () => {
                                 <Col md="12" className="align-self-center text-center">
                                     <Button type="submit" className="btn btn-inverse waves-effect waves-light">Forgot Password?</Button>
                                 </Col>
+                                <div className="act-buttons align-self-center text-center">
+                                    <Link to="/SignUp" className="btn btn-success-gradiant font-14">Create an Account</Link>
+                                </div>
                             </Form>
                         </Col>
                     </Row>

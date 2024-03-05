@@ -17,27 +17,30 @@ import HomePage from "./views/pages/HomePage.jsx";
 import Glossary from "./views/pages/Glossary.jsx";
 import Simulator from "./views/pages/Simulator.jsx";
 import Login from "./views/pages/Login.jsx";
+import SignUp from "./views/pages/SignUp.jsx";
 
 
+document.addEventListener("DOMContentLoaded", function() {
+  const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-var hist = createBrowserHistory();
-root.render(
-  <HashRouter history={hist}>
-    <Routes>
-      <Route path="/custom-components" element={<CustomComponents />} />
-      <Route path="/Lesson1" element={<Lesson1 />} />
-      <Route path="/Lesson2" element={<CustomComponents />} />
-      <Route path="/Lesson3" element={<Components />} />
-      <Route path="/HomePage" element={<HomePage />} />
-      <Route path="/Glossary" element={<Glossary />} />
-      <Route path="/Simulator" element={<Simulator />} />
-      <Route path="/" element={<HomePage />} />
-      <Route path="/Login" element={<Login/>} />
-    </Routes>
-  </HashRouter>
-);
+  var hist = createBrowserHistory();
+  root.render(
+    <HashRouter history={hist}>
+      <Routes>
+        <Route path="/custom-components" element={<CustomComponents />} />
+        <Route path="/Lesson1" element={<Lesson1 />} />
+        <Route path="/Lesson2" element={<CustomComponents />} />
+        <Route path="/Lesson3" element={<Components />} />
+        <Route path="/HomePage" element={<HomePage />} />
+        <Route path="/Glossary" element={<Glossary />} />
+        <Route path="/Simulator" element={<Simulator />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/SignUp" element={<SignUp/>} />
+      </Routes>
+    </HashRouter>
+  );
+});
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

@@ -9,6 +9,7 @@
 
 #caches
 /flask_backend/app/__pycache__
+/flask_backend/__pycache__
 
 # production
 

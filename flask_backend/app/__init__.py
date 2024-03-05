@@ -1,7 +1,6 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
-import os
 
 # init SQLAlchemy so we can use it later in our models
 db = SQLAlchemy()
@@ -9,9 +8,8 @@ db = SQLAlchemy()
 def create_app():
     app = Flask(__name__)
 
-    app.config['SECRET_KEY'] = 'secret-key-goes-here'
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://' + os.getenv('DB_USERNAME') + ':' + os.getenv('DB_PASSWORD') + '@'+os.getenv('DB_ENDPOINT')+':'+os.getenv('DB_PORT')+ '/' + os.getenv('DB_NAME')
-    
+    app.config['SECRET_KEY'] = 'dev' #replace with a random string
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://admin:Team292024!@senior-project-2024.cjmuky04w0mq.us-east-2.rds.amazonaws.com:3306/fore_main_DB'
 
     db.init_app(app)
     login_manager = LoginManager()
