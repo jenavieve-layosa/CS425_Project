@@ -1,10 +1,12 @@
 # dependencies
 /package/node_modules
+/package/node_modules/*
 /flask_backend/auth/Lib
 
 #environment variables
 /flask_backend/app/.env
 
 #caches
-/flask_backend/app/__pycache__
-/flask_backend/__pycache__
+backend/flask_backend/app/__pycache__
+backend/flask_backend/__pycache__
+backend/ros_backend/controller/ws files/robot controller/robot controller/__pycache__
