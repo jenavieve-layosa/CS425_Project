@@ -11,6 +11,7 @@ import HomePage from "./views/pages/HomePage.jsx";
 import Glossary from "./views/pages/Glossary.jsx";
 import Simulator from "./views/pages/Simulator.jsx";
 import SignUp from "./views/pages/SignUp.jsx";
+import Login from "./views/pages/Login.jsx";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/glossary" element={<Glossary />} />
         <Route path="/simulator" element={<Simulator />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/" element={<HomePage />} />
       </Routes>
     </Router>
