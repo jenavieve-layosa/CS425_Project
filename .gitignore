@@ -1,10 +1,22 @@
 # dependencies
 /package/node_modules
+<<<<<<< HEAD
+=======
+/package/node_modules/*
+>>>>>>> 57d8fb2bb18b84f8076dbbc856b7b804f96a070d
 /flask_backend/auth/Lib
 
 #environment variables
 /flask_backend/app/.env
 
 #caches
+<<<<<<< HEAD
 /flask_backend/app/__pycache__
 /flask_backend/__pycache__
+=======
+backend/flask_backend/app/__pycache__
+backend/flask_backend/__pycache__
+backend/ros_backend/controller/ws files/robot controller/robot controller/__pycache__
+backend/ros_backend/turtlebot3_ws
+backend/ros_backend/turtlebot3_ws/*
+>>>>>>> 57d8fb2bb18b84f8076dbbc856b7b804f96a070d
