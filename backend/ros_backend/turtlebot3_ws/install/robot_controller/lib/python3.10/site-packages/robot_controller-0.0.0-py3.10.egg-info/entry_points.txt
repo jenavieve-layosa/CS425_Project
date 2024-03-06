@@ -1,0 +1,4 @@
+[console_scripts]
+controller_node = robot_controller.controller:main
+state_listener = robot_controller.stateListener:main
+
