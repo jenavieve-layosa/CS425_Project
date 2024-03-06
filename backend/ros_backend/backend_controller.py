@@ -1,4 +1,4 @@
-# python3 /home/andy/backend_controller/controller/backend_controller.py
+# python3 /home/andy/CS425_Project/backend/ros-backend/backend_controller.py
 
 import subprocess
 import time
@@ -42,15 +42,15 @@ def check_gazebo_ready():
 def main():
     # Define paths
 #    src_file = '/home/andy/before_test/' + os.listdir('/home/andy/before_test/')[0] # this is file from aws
-    dest_file = '/home/andy/backend_controller/turtlebot3_ws/src/turtlebot3/robot_controller/robot_controller/controller.py'
+#    dest_file = '/home/andy/backend_controller/turtlebot3_ws/src/turtlebot3/robot_controller/robot_controller/controller.py'
     
     # Move file into ROS2 package
 #    move_file(src_file, dest_file)
     
     # Paths to the shell scripts
-    gazebo_script = '/home/andy/backend_controller/controller/subprocesses/run_gazebo.sh'
-    state_listener_script = '/home/andy/backend_controller/controller/subprocesses/run_state_listener.sh'
-    robot_controller_script = '/home/andy/backend_controller/controller/subprocesses/run_robot_controller.sh'
+    gazebo_script = '/home/andy/CS425_Project/backend/ros-backend/subprocesses/run_gazebo.sh'
+    state_listener_script = '/home/andy/CS425_Project/backend/ros-backend/subprocesses/run_state_listener.sh'
+    robot_controller_script = '/home/andy/CS425_Project/backend/ros-backend/subprocesses/run_robot_controller.sh'
     
     make_executable(gazebo_script)
     make_executable(state_listener_script)
