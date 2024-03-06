@@ -95,7 +95,5 @@ const Simulation = () => {
     </div>
   );
 };
-// i am seconds away from losing my actual mind 
-
 
 export default Simulation;
