@@ -10,3 +10,5 @@
 backend/flask_backend/app/__pycache__
 backend/flask_backend/__pycache__
 backend/ros_backend/controller/ws files/robot controller/robot controller/__pycache__
+backend/ros_backend/turtlebot3_ws
+backend/ros_backend/turtlebot3_ws/*
