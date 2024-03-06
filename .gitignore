@@ -14,4 +14,5 @@ backend/ros_backend/turtlebot3_ws
 backend/ros_backend/turtlebot3_ws/*
 
 #other
+.DS_Store
 */.DS_Store
