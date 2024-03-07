@@ -152,7 +152,7 @@ const Simulator = () => {
             {/* Right half: Visualizer, its buttons, and a slider */}
             <div style={{ width: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
               <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                <ThreeScene data={data[currentFrame]} />
+                
                 <div style={{ marginTop: '20px' }}>
                   <button onClick={startAutoplay} disabled={autoplay}>Start Autoplay</button>
                   <button onClick={stopAutoplay} disabled={!autoplay}>Stop Autoplay</button>
@@ -167,6 +167,7 @@ const Simulator = () => {
                   />
                   <p>Current Frame: {currentFrame}</p>
                 </div>
+                <ThreeScene data={data[currentFrame]} />
               </div>
             </div>
           </div>
