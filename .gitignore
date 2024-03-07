@@ -1,10 +1,10 @@
 # dependencies
 /package/node_modules
 /package/node_modules/*
-/flask_backend/auth/Lib
+backend/flask_backend/auth/Lib
 
 #environment variables
-/flask_backend/app/.env
+/backend/flask_backend/app/.env
 
 #caches
 /backend/flask_backend/app/__pycache__
