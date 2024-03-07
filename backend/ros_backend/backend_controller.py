@@ -24,7 +24,7 @@ def get_current_code(lesson_progress_id):
 def upload_current_data(lesson_progress_id, data):
     lesson_progress = LessonProgress.query.filter_by(id=lesson_progress_id).first()
     if lesson_progress:
-        lesson_progress.current_data = data
+        lesson_progress.current_sim_data = data
         try:
             db.session.commit()
             return True
