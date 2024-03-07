@@ -6,6 +6,7 @@ import signal
 import shutil
 import os
 from flask import request, jsonify, Blueprint
+from flask_login import current_user
 from flask_cors import CORS
 from ..flask_backend.app import db
 from ..flask_backend.app.models import LessonProgress
@@ -13,8 +14,8 @@ from ..flask_backend.app.models import LessonProgress
 auth = Blueprint('auth', __name__)
 CORS(auth)
 
-def get_current_code(lesson_progress_id):
-    lesson_progress = LessonProgress.query.filter_by(id=lesson_progress_id).first()
+def get_current_code(lesson_id, user_id):
+    lesson_progress = LessonProgress.query.filter_by(lesson_id=lesson_id, user_id=user_id).first()
     if lesson_progress:
         return lesson_progress.current_code
     else:
@@ -56,18 +57,25 @@ def check_gazebo_ready():
 def main():
     # grab needed info to get current code
     data = request.get_json()
-    lesson_progress_id = data[''] #TODO GET CORRECT ID
+    lesson_id = data['lesson_id']
+    user_id = data['user_id']
 
     # get current code
-    current_code = get_current_code(lesson_progress_id)
-
+    try:
+        current_code = get_current_code(lesson_id, user_id)
+    except Exception as e:
+        print(f"Error getting current code: {e}")
+        return jsonify({'status': False, 'err_msg': 'Error getting current code'})
     # save current code to correct file location
     dest_file = './turtlebot3_ws/src/turtlebot3/robot_controller/robot_controller/controller.py'
     with open(dest_file, 'w') as file:
         file.write(current_code)
-    
+    if not os.path.exists(dest_file):
+        print(f"Error writing current code to {dest_file}")
+        return jsonify({'status': False, 'err_msg': 'Error writing current code'})
     exit() # stuff below currently works need the stuff above to work
     # Paths to the shell scripts
+
     gazebo_script = '/home/andy/CS425_Project/backend/ros-backend/subprocesses/run_gazebo.sh'
     state_listener_script = '/home/andy/CS425_Project/backend/ros-backend/subprocesses/run_state_listener.sh'
     robot_controller_script = '/home/andy/CS425_Project/backend/ros-backend/subprocesses/run_robot_controller.sh'
