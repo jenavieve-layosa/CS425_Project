@@ -115,6 +115,10 @@ def main():
         with open(save_location, 'r') as file:
             uploaded = upload_current_data(lesson_progress_id, file.read())
         os.remove(save_location)
+        if uploaded:
+            return jsonify({'status': 'success', 'message': 'Sim data uploaded successfully'}), 200
+        else:
+            return jsonify({'status': 'error', 'message': 'Sim data uploaded unsuccessfully'}), 404
         
     else:
         print("robot data not saved unable to upload to aws")
