@@ -5,7 +5,7 @@ import time
 import signal
 import shutil
 import os
-from flask import request, jsonify, Blueprint
+from flask import request, jsonify, Blueprint, sess
 from flask_cors import CORS
 from ..flask_backend.app import db
 from ..flask_backend.app.models import LessonProgress
@@ -21,6 +21,20 @@ def get_current_code(lesson_progress_id):
         print("unable to pull current code")
         return None
     
+def upload_current_data(lesson_progress_id, data):
+    lesson_progress = LessonProgress.query.filter_by(id=lesson_progress_id).first()
+    if lesson_progress:
+        lesson_progress.current_data = data
+        try:
+            db.session.commit()
+            return True
+        except Exception as e:
+            print(f"Error uploading current data for lesson {lesson_progress_id}, with error: {e}")
+            db.session.rollback()
+            return False
+    else:
+        print("cant find lesson progress")
+        return False
 def make_executable(path):
     try:
         subprocess.run(['chmod', '+x', path], check=True)
@@ -66,7 +80,7 @@ def main():
     with open(dest_file, 'w') as file:
         file.write(current_code)
     
-    exit() # stuff below currently works need the stuff above to work
+    
     # Paths to the shell scripts
     gazebo_script = '/home/andy/CS425_Project/backend/ros-backend/subprocesses/run_gazebo.sh'
     state_listener_script = '/home/andy/CS425_Project/backend/ros-backend/subprocesses/run_state_listener.sh'
@@ -95,6 +109,15 @@ def main():
     # After both scripts finish, kill gazebo
     gazebo_proccess.terminate()
     print("gazebo terminated.")
+
+    save_location = "/home/andy/CS425_Project/backend/ros_backend/sim_save/robot_positions.txt"
+    if os.path.isfile(save_location):
+        with open(save_location, 'r') as file:
+            uploaded = upload_current_data(lesson_progress_id, file.read())
+        os.remove(save_location)
+        
+    else:
+        print("robot data not saved unable to upload to aws")
 
     
 
