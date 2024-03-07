@@ -24,6 +24,7 @@ class LessonProgress(db.Model):
     lesson_id = db.Column(db.Integer, ForeignKey(Lesson.lesson_id)) #foreign key is the lesson id
     progress = db.Column(db.Float) #value between 0 and 1
     current_code = db.Column(db.String(100000)) #current code the user is working on
+    current_sim_data = db.Column(db.String(100000)) #current sim data from current code
 
 class UserClass(db.Model):
     class_code = db.Column(db.Integer, unique=True, primary_key=True) # primary keys are required by SQLAlchemy

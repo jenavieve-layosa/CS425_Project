@@ -14,13 +14,28 @@ from ..flask_backend.app.models import LessonProgress
 auth = Blueprint('auth', __name__)
 CORS(auth)
 
-def get_current_code(lesson_id, user_id):
-    lesson_progress = LessonProgress.query.filter_by(lesson_id=lesson_id, user_id=user_id).first()
+def get_current_code(user_id, lesson_id):
+    lesson_progress = LessonProgress.query.filter_by(user_id=user_id, lesson_id=lesson_id).first()
     if lesson_progress:
         return lesson_progress.current_code
     else:
         print("unable to pull current code")
         return None
+    
+def upload_current_data(user_id, lesson_id, data):
+    lesson_progress = LessonProgress.query.filter_by(user_id=user_id, lesson_id=lesson_id).first()
+    if lesson_progress:
+        lesson_progress.current_sim_data = data
+        try:
+            db.session.commit()
+            return True
+        except Exception as e:
+            print(f"Error uploading current data: {e}")
+            db.session.rollback()
+            return False
+    else:
+        print("cant find lesson progress")
+        return False
     
 def make_executable(path):
     try:
@@ -55,6 +70,8 @@ def check_gazebo_ready():
 
 @auth.route('/api/run_simulation', methods=['POST'])
 def main():
+    path_to_ros = '/home/andy/CS425_Project/backend/ros-backend/'
+
     # grab needed info to get current code
     data = request.get_json()
     lesson_id = data['lesson_id']
@@ -67,7 +84,7 @@ def main():
         print(f"Error getting current code: {e}")
         return jsonify({'status': False, 'err_msg': 'Error getting current code'})
     # save current code to correct file location
-    dest_file = './turtlebot3_ws/src/turtlebot3/robot_controller/robot_controller/controller.py'
+    dest_file = f"{path_to_ros}/turtlebot3_ws/src/turtlebot3/robot_controller/robot_controller/controller.py"
     with open(dest_file, 'w') as file:
         file.write(current_code)
     if not os.path.exists(dest_file):
@@ -103,6 +120,19 @@ def main():
     # After both scripts finish, kill gazebo
     gazebo_proccess.terminate()
     print("gazebo terminated.")
+
+    save_location = f'{path_to_ros}sim_save/robot_positions.txt'
+    if os.path.isfile(save_location):
+        with open(save_location, 'r') as file:
+            uploaded = upload_current_data(user_id, lesson_id, file.read())
+        os.remove(save_location)
+        if uploaded:
+            return jsonify({'status': 'success', 'message': 'Sim data uploaded successfully'}), 200
+        else:
+            return jsonify({'status': 'error', 'message': 'Sim data uploaded unsuccessfully'}), 404
+        
+    else:
+        print("robot data not saved unable to upload to aws")
 
     
 
