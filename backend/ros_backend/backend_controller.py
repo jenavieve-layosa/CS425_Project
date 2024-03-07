@@ -29,12 +29,13 @@ def upload_current_data(user_id, lesson_id, data):
             db.session.commit()
             return True
         except Exception as e:
-            print(f"Error uploading current data with error: {e}")
+            print(f"Error uploading current data: {e}")
             db.session.rollback()
             return False
     else:
         print("cant find lesson progress")
         return False
+    
 def make_executable(path):
     try:
         subprocess.run(['chmod', '+x', path], check=True)
@@ -68,6 +69,8 @@ def check_gazebo_ready():
 
 @auth.route('/api/run_simulation', methods=['POST'])
 def main():
+    path_to_ros = '/home/andy/CS425_Project/backend/ros-backend/'
+
     # grab needed info to get current code
     data = request.get_json()
     user_id = data['id']
@@ -77,15 +80,15 @@ def main():
     current_code = get_current_code(user_id, lesson_id)
 
     # save current code to correct file location
-    dest_file = './turtlebot3_ws/src/turtlebot3/robot_controller/robot_controller/controller.py'
+    dest_file = f"{path_to_ros}/turtlebot3_ws/src/turtlebot3/robot_controller/robot_controller/controller.py"
     with open(dest_file, 'w') as file:
         file.write(current_code)
     
     
     # Paths to the shell scripts
-    gazebo_script = '/home/andy/CS425_Project/backend/ros-backend/subprocesses/run_gazebo.sh'
-    state_listener_script = '/home/andy/CS425_Project/backend/ros-backend/subprocesses/run_state_listener.sh'
-    robot_controller_script = '/home/andy/CS425_Project/backend/ros-backend/subprocesses/run_robot_controller.sh'
+    gazebo_script = f'{path_to_ros}subprocesses/run_gazebo.sh'
+    state_listener_script = f'{path_to_ros}subprocesses/run_state_listener.sh'
+    robot_controller_script = f'{path_to_ros}subprocesses/run_robot_controller.sh'
     
     make_executable(gazebo_script)
     make_executable(state_listener_script)
@@ -111,7 +114,7 @@ def main():
     gazebo_proccess.terminate()
     print("gazebo terminated.")
 
-    save_location = "/home/andy/CS425_Project/backend/ros_backend/sim_save/robot_positions.txt"
+    save_location = f'{path_to_ros}sim_save/robot_positions.txt'
     if os.path.isfile(save_location):
         with open(save_location, 'r') as file:
             uploaded = upload_current_data(user_id, lesson_id, file.read())
