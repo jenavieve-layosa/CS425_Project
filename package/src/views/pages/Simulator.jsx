@@ -167,8 +167,8 @@ const Simulator = () => {
                   />
                   <p>Current Frame: {currentFrame}</p>
                 </div>
-                <ThreeScene data={data[currentFrame]} />
               </div>
+              <ThreeScene data={data[currentFrame]} />
             </div>
           </div>
         </div>
