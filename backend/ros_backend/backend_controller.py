@@ -13,23 +13,23 @@ from ..flask_backend.app.models import LessonProgress
 auth = Blueprint('auth', __name__)
 CORS(auth)
 
-def get_current_code(lesson_progress_id):
-    lesson_progress = LessonProgress.query.filter_by(id=lesson_progress_id).first()
+def get_current_code(user_id, lesson_id):
+    lesson_progress = LessonProgress.query.filter_by(user_id=user_id, lesson_id=lesson_id).first()
     if lesson_progress:
         return lesson_progress.current_code
     else:
         print("unable to pull current code")
         return None
     
-def upload_current_data(lesson_progress_id, data):
-    lesson_progress = LessonProgress.query.filter_by(id=lesson_progress_id).first()
+def upload_current_data(user_id, lesson_id, data):
+    lesson_progress = LessonProgress.query.filter_by(user_id=user_id, lesson_id=lesson_id).first()
     if lesson_progress:
         lesson_progress.current_sim_data = data
         try:
             db.session.commit()
             return True
         except Exception as e:
-            print(f"Error uploading current data for lesson {lesson_progress_id}, with error: {e}")
+            print(f"Error uploading current data with error: {e}")
             db.session.rollback()
             return False
     else:
@@ -70,10 +70,11 @@ def check_gazebo_ready():
 def main():
     # grab needed info to get current code
     data = request.get_json()
-    lesson_progress_id = data[''] #TODO GET CORRECT ID
+    user_id = data['id']
+    lesson_id = data['']
 
     # get current code
-    current_code = get_current_code(lesson_progress_id)
+    current_code = get_current_code(user_id, lesson_id)
 
     # save current code to correct file location
     dest_file = './turtlebot3_ws/src/turtlebot3/robot_controller/robot_controller/controller.py'
@@ -113,7 +114,7 @@ def main():
     save_location = "/home/andy/CS425_Project/backend/ros_backend/sim_save/robot_positions.txt"
     if os.path.isfile(save_location):
         with open(save_location, 'r') as file:
-            uploaded = upload_current_data(lesson_progress_id, file.read())
+            uploaded = upload_current_data(user_id, lesson_id, file.read())
         os.remove(save_location)
         if uploaded:
             return jsonify({'status': 'success', 'message': 'Sim data uploaded successfully'}), 200
