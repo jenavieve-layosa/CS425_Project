@@ -20,6 +20,7 @@
     "sass": "^1.63.3",
     "three": "^0.162.0",
     "three-stdlib": "^2.29.5",
+    "urdf-loader": "^0.12.1",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
@@ -36,9 +37,8 @@
     "react-router-dom": "^6.12.1"
   },
   "scripts": {
-    
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "jest",
     "eject": "react-scripts eject"
   },

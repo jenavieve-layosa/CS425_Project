@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { render } from 'react-dom';
 import * as THREE from 'three';
 import { OrbitControls } from 'three-stdlib';
+// import { URDFLoader } from 'urdf-loader';
 
 const ThreeScene = ({ data }) => {
   const sceneRef = useRef(null);
@@ -25,6 +27,14 @@ const ThreeScene = ({ data }) => {
     sceneRef.current.add(gridHelper);
 
     // Robot mesh
+    // const loader = new URDFLoader();
+    // const urdfPath = "/home/andy/CS425-Project/package/src/assets/urdf_robot_meshs/turtlebot3_burger.urdf";
+    
+    // loader.load(urdfPath, (robot) => {
+    //   sceneRef.current.add(robot);
+    //   robotMeshRef.current = robot;
+    // });
+
     const geometry = new THREE.BoxGeometry();
     const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
     robotMeshRef.current = new THREE.Mesh(geometry, material);
@@ -36,6 +46,7 @@ const ThreeScene = ({ data }) => {
     );
     robotMeshRef.current.attach(cameraRef.current);
     robotMeshRef.current.position.set(0, 0, 0);
+
   };
 
   const updateRobot = () => {
