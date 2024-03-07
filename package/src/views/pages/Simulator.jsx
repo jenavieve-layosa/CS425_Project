@@ -44,6 +44,7 @@ const Simulator = () => {
     setFileContent(value);
   };
 
+  // TODO: push fileContent to aws
   const saveFile = () => {
     // save file here, for now just going to download it
     const blob = new Blob([fileContent], {type: 'text/plain'});
@@ -94,6 +95,7 @@ const Simulator = () => {
     }
   };
 
+  //TODO: change this to grabing the aws data
   useEffect(() => {
     fetch('/data.txt')
       .then((response) => response.text())
