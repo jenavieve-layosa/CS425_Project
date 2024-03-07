@@ -13,8 +13,8 @@ from ..flask_backend.app.models import LessonProgress
 auth = Blueprint('auth', __name__)
 CORS(auth)
 
-def get_current_code(lesson_id, user_id):
-    lesson_progress = LessonProgress.query.filter_by(lesson_id=lesson_id, user_id=user_id).first()
+def get_current_code(lesson_progress_id):
+    lesson_progress = LessonProgress.query.filter_by(id=lesson_progress_id).first()
     if lesson_progress:
         return lesson_progress.current_code
     else:
@@ -56,11 +56,10 @@ def check_gazebo_ready():
 def main():
     # grab needed info to get current code
     data = request.get_json()
-    lesson_id = data['lesson_id']
-    user_id = data['user_id']
+    lesson_progress_id = data[''] #TODO GET CORRECT ID
 
     # get current code
-    current_code = get_current_code(lesson_id, user_id)
+    current_code = get_current_code(lesson_progress_id)
 
     # save current code to correct file location
     dest_file = './turtlebot3_ws/src/turtlebot3/robot_controller/robot_controller/controller.py'
