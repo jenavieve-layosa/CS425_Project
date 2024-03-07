@@ -1,4 +1,4 @@
-# python3 /home/andy/CS425_Project/backend/ros-backend/backend_controller.py
+# python3 /home/andy/CS425_Project/backend/ros_backend/backend_controller.py
 
 import subprocess
 import time
@@ -90,7 +90,8 @@ def main():
     if not os.path.exists(dest_file):
         print(f"Error writing current code to {dest_file}")
         return jsonify({'status': False, 'err_msg': 'Error writing current code'})
-    exit() # stuff below currently works need the stuff above to work
+    
+    # stuff below currently works need the stuff above to work
     # Paths to the shell scripts
 
     gazebo_script = '/home/andy/CS425_Project/backend/ros-backend/subprocesses/run_gazebo.sh'

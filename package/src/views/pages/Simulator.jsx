@@ -55,6 +55,17 @@ const Simulator = () => {
     URL.revokeObjectURL(url);
   };
 
+  const runFile = () => {
+    // save file here, for now just going to download it
+    const blob = new Blob([fileContent], {type: 'text/plain'});
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.download = 'myCodeFile.txt';
+    link.href = url;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
   // Function to handle theme change
   const changeTheme = (theme) => {
     setEditorTheme(theme);
@@ -130,39 +141,45 @@ const Simulator = () => {
       <div className="page-wrapper">
         <div className="container-fluid">
           <HeaderBanner />
-          <h1 className="title text-center"> Welcome to the Simulator</h1>
-          <h2 className="subtitle text-center">This website uses Monaco Code Editor and Gazebo to create an interactive virtual environment to help demonstrate robotics concepts without the need for hardware</h2>
-          <div style={{ width: '50%', textAlign: 'left' }}>
-            <button onClick={saveFile} style={{ marginBottom: '10px' }}>Save File</button>
-            <button onClick={() => changeTheme('hc-black')}>Dark Theme</button>
-            <button onClick={() => changeTheme('vs-light')}>Light Theme</button>
-            {/* Add more theme buttons as needed */}
-          </div>
-          <div className="intro-content">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'left', marginBottom: '20px' }}>
-              <div style={{ display: 'flex', width: '40%' }}>
-                <MonacoEditor
-                  width="100%"
-                  height="600"
-                  options={editorOptions}
-                  onChange={handleChange}
-                />
+          <h1 className="title text-center">Welcome to the Simulator</h1>
+          <h2 className="subtitle text-center">This website uses Monaco Code Editor and a 3D visualization tool to create an interactive virtual environment for demonstrating robotics concepts without hardware.</h2>
+          
+          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: '20px' }}>
+            {/* Left half: Code Editor and its buttons */}
+            <div style={{ width: '50%' }}>
+              <div style={{ marginBottom: '10px' }}>
+                <button onClick={saveFile}>Save File</button>
+                <button onClick={runFile}>Run Simulation</button>
+                <button onClick={() => changeTheme('hc-black')}>Dark Theme</button>
+                <button onClick={() => changeTheme('vs-light')}>Light Theme</button>
               </div>
-              <Slider
-                min={0}
-                max={data.length - 1}
-                step={1}
-                value={currentFrame}
-                onChange={handleSliderChange}
-                disabled={autoplay}
+              <MonacoEditor
+                width="100%"
+                height="600"
+                options={editorOptions}
+                onChange={handleChange}
               />
-              <p>Current Frame: {currentFrame}</p>
-              <button onClick={startAutoplay} disabled={autoplay}>
-                Start Autoplay
-              </button>
-              <button onClick={stopAutoplay} disabled={!autoplay}>
-                Stop Autoplay
-              </button>
+            </div>
+
+            {/* Right half: Visualizer, its buttons, and a slider */}
+            <div style={{ width: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                
+                <div style={{ marginTop: '20px' }}>
+                  <button onClick={startAutoplay} disabled={autoplay}>Start Autoplay</button>
+                  <button onClick={stopAutoplay} disabled={!autoplay}>Stop Autoplay</button>
+                  <Slider
+                    min={0}
+                    max={data.length - 1}
+                    step={1}
+                    value={currentFrame}
+                    onChange={handleSliderChange}
+                    disabled={autoplay}
+                    style={{ width: '100%', marginTop: '10px' }}
+                  />
+                  <p>Current Frame: {currentFrame}</p>
+                </div>
+              </div>
               <ThreeScene data={data[currentFrame]} />
                       
             </div>
