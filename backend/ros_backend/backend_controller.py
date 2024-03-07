@@ -5,7 +5,7 @@ import time
 import signal
 import shutil
 import os
-from flask import request, jsonify, Blueprint, sess
+from flask import request, jsonify, Blueprint
 from flask_cors import CORS
 from ..flask_backend.app import db
 from ..flask_backend.app.models import LessonProgress
