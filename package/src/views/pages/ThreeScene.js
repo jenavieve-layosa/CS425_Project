@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as THREE from 'three';
 import { OrbitControls } from 'three-stdlib';
-import URDFLoader from 'urdf-loader'; // Import URDFLoader
 
 const ThreeScene = ({ data }) => {
-  const mountRef = useRef(null);
+  const mountRef = useRef(null); // Reference to the div where the renderer will be mounted
   const sceneRef = useRef(null);
   const robotMeshRef = useRef(null);
   const cameraRef = useRef(null);
@@ -27,34 +26,23 @@ const ThreeScene = ({ data }) => {
     // Renderer
     rendererRef.current = new THREE.WebGLRenderer();
     rendererRef.current.setSize(width, height);
-    mountRef.current.appendChild(rendererRef.current.domElement);
+    mountRef.current.appendChild(rendererRef.current.domElement); // Append to the div instead of body
 
     // Helpers and mesh
     const gridHelper = new THREE.GridHelper(200, 50);
     sceneRef.current.add(gridHelper);
 
-    // Initialize URDF loader and load the model
-    const loader = new URDFLoader();
-    loader.load( '/home/andy/CS425_Project/package/src/assets/urdf_robot_meshs/turtlebot3_burger.urdf', ( robot ) => {
-      robot.scale.set(10,10,10);
-      robot.position.set(0,0,0);
-      
-      robotMeshRef.current = robot;
-      sceneRef.current.add(robot);
-
-      robot.traverse( function ( child ) {
-        if ( child.isMesh ) {
-            // Optionally set the material or any other properties for each mesh part
-        }
-      });
-
-      // If you want to attach the camera to the robot or perform any other operations
-    });
+    const geometry = new THREE.BoxGeometry();
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    robotMeshRef.current = new THREE.Mesh(geometry, material);
+    sceneRef.current.add(robotMeshRef.current);
 
     // Controls
     controlsRef.current = new OrbitControls(cameraRef.current, rendererRef.current.domElement);
-  };
 
+    robotMeshRef.current.attach(cameraRef.current);
+    robotMeshRef.current.position.set(0, 0, 0);
+  };
 
   const onResize = () => {
     const width = mountRef.current.clientWidth;
