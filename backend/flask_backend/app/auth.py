@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, redirect, url_for, request, flash
 from werkzeug.security import generate_password_hash, check_password_hash
-from flask_login import login_user, login_required, logout_user
+from flask_login import login_user, login_required, logout_user, current_user
 from flask_cors import CORS
 from .models import User
 from . import db
@@ -8,6 +8,13 @@ import json
 
 auth = Blueprint('auth', __name__)
 CORS(auth)
+
+@auth.route('/login', methods=['GET'])
+def check_login():
+    if current_user.is_authenticated:
+        return json.dumps({'status':True})
+    else:
+        return json.dumps({'status':False})
 
 @auth.route('/api/login', methods=['POST'])
 def login_post():

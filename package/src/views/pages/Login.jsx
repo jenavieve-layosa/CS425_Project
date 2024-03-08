@@ -33,22 +33,24 @@ const AsyncAwait = (loginData) =>{
     }, );
     return data.map((data) => data.status);
 }
-
-const HandleSubmit = async (event) => {
-    event.preventDefault();
-    
-    const loginData = {
-        email: event.target.email.value,
-        password: event.target.password.value
-    }
-    AsyncAwait(loginData);
-};
+const checkLogin = async () => {
+    const res = await fetch('/api/login', {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    const data = await res.json();
+    const status = data.map((data) => data.status);
+    return status;
+}
 
 const Login = () => {
     //use states for the login info
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
+    const [status, setStatus] = useState("");
     //data fetching functions
     //const name = data.map((data) => data.name);
 
@@ -56,8 +58,21 @@ const Login = () => {
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
-
-    
+    const HandleSubmit = async (event) => {
+        event.preventDefault();
+        
+        const loginData = {
+            email: email, 
+            password: password
+        }
+        setStatus(AsyncAwait(loginData));
+    };
+    useEffect(() => {
+        setStatus(checkLogin());
+        if (status === true){
+            window.location.href="/";
+        }
+    }, []);
     return (
         <div id="main-wrapper">
             <Header />
