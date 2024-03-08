@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
-import img3 from '../../assets/images/img3.jpg';
 import ThreeScene from './ThreeScene.js';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
 const Simulator = () => {
+
   const [currentFrame, setCurrentFrame] = useState(0);
   const [data, setData] = useState([]);
   const [autoplay, setAutoplay] = useState(false);
@@ -76,26 +76,40 @@ const Simulator = () => {
     stopAutoplay();
   };
 
+
   const startAutoplay = () => {
     setAutoplay(true);
+  
     const updateFrame = () => {
       setCurrentFrame((prevFrame) => {
-        if (!data || data.length <= prevFrame + 1) {
-          stopAutoplay(); // Stop the autoplay if data is not valid
+        const nextFrame = (prevFrame + 1) % data.length;
+  
+        // Ensure we stop at the last frame and clear the timeout
+        if (!data || nextFrame === 0) {
+          stopAutoplay();
           return prevFrame;
         }
-
-        const nextFrame = (prevFrame + 1) % data.length;
+  
         let timeDiff = data[nextFrame].timestamp - data[prevFrame].timestamp;
-        timeDiff = isNaN(timeDiff) ? 0 : timeDiff; // Fallback if timeDiff is not a number
-
-        autoplayIntervalRef.current = setTimeout(updateFrame, timeDiff * 1000); // Assuming timestamp is in seconds
+        // Convert timeDiff to milliseconds if necessary or apply a default interval
+        timeDiff = isNaN(timeDiff) ? 1 : timeDiff; // Default to 1 second if timeDiff isn't a number
+        const delay = timeDiff * 1000; // Adjust this scaling factor as needed
+  
+        // Clear any existing timeout to ensure we don't speed up frame changes
+        if (autoplayIntervalRef.current) {
+          clearTimeout(autoplayIntervalRef.current);
+        }
+  
+        autoplayIntervalRef.current = setTimeout(updateFrame, delay);
         return nextFrame;
       });
     };
-
+  
+    // Start the update loop
     updateFrame();
   };
+  
+
 
   const stopAutoplay = () => {
     setAutoplay(false);
@@ -104,6 +118,7 @@ const Simulator = () => {
       autoplayIntervalRef.current = null;
     }
   };
+
 
   useEffect(() => {
     fetch('/data.txt')
@@ -121,12 +136,14 @@ const Simulator = () => {
       });
   }, []);
 
+
   useEffect(() => {
     if (autoplay) {
       startAutoplay();
     } else {
       stopAutoplay();
     }
+
 
     return () => {
       if (autoplayIntervalRef.current) {

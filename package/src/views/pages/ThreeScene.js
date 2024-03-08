@@ -75,16 +75,43 @@ const ThreeScene = ({ data }) => {
   useEffect(() => {
     trackRobotRef.current = trackRobot;
   }, [trackRobot]);
+  const updateRobot = () => {
+    if (data) {
+      const scaleFactor = 1;
+      robotMeshRef.current.position.set(
+        parseFloat(data.x) * -scaleFactor,
+        0, // Keeping the robot on the x-y plane
+        parseFloat(data.y) * scaleFactor
+      );
+      robotMeshRef.current.rotation.set(0, parseFloat(data.theta), 0);
+    }
+  };
 
+
+  let lastLoggedTime = 0;
+  const logInterval = 1000;
   const animate = () => {
     requestAnimationFrame(animate);
-    // Animation and control logic
+
+
+    if (trackRobotRef.current && robotMeshRef.current) {
+      controlsRef.current.enabled = false; // Disable manual controls in tracking mode
+      robotMeshRef.current.attach(cameraRef.current);
+    } else {
+      const offset = new THREE.Vector3(-10, 50, 10);
+      controlsRef.current.enabled = true; // Enable manual controls
+
+
+      sceneRef.current.attach(cameraRef.current);
+      cameraRef.current.position.lerp(offset, 0.05);
+      cameraRef.current.lookAt(-10, 0, 10);
+      controlsRef.current.maxPolarAngle = Math.PI / 2; // Limit vertical rotation to maintain height
+    }
+
+
     rendererRef.current.render(sceneRef.current, cameraRef.current);
   };
 
-  const updateRobot = () => {
-    // Update robot logic
-  };
 
   const toggleTracking = () => {
     setTrackRobot(!trackRobot);
