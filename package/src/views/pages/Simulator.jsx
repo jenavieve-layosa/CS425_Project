@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
-import img3 from '../../assets/images/img3.jpg';
 import ThreeScene from './ThreeScene.js';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 
 const Simulator = () => {
+
   const [currentFrame, setCurrentFrame] = useState(0);
   const [data, setData] = useState([]);
   const [autoplay, setAutoplay] = useState(false);
@@ -55,6 +55,17 @@ const Simulator = () => {
     URL.revokeObjectURL(url);
   };
 
+  const runFile = () => {
+    // save file here, for now just going to download it
+    const blob = new Blob([fileContent], {type: 'text/plain'});
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.download = 'myCodeFile.txt';
+    link.href = url;
+    link.click();
+    URL.revokeObjectURL(url);
+  };
+
   // Function to handle theme change
   const changeTheme = (theme) => {
     setEditorTheme(theme);
@@ -65,26 +76,40 @@ const Simulator = () => {
     stopAutoplay();
   };
 
+
   const startAutoplay = () => {
     setAutoplay(true);
+  
     const updateFrame = () => {
       setCurrentFrame((prevFrame) => {
-        if (!data || data.length <= prevFrame + 1) {
-          stopAutoplay(); // Stop the autoplay if data is not valid
+        const nextFrame = (prevFrame + 1) % data.length;
+  
+        // Ensure we stop at the last frame and clear the timeout
+        if (!data || nextFrame === 0) {
+          stopAutoplay();
           return prevFrame;
         }
-
-        const nextFrame = (prevFrame + 1) % data.length;
+  
         let timeDiff = data[nextFrame].timestamp - data[prevFrame].timestamp;
-        timeDiff = isNaN(timeDiff) ? 0 : timeDiff; // Fallback if timeDiff is not a number
-
-        autoplayIntervalRef.current = setTimeout(updateFrame, timeDiff * 1000); // Assuming timestamp is in seconds
+        // Convert timeDiff to milliseconds if necessary or apply a default interval
+        timeDiff = isNaN(timeDiff) ? 1 : timeDiff; // Default to 1 second if timeDiff isn't a number
+        const delay = timeDiff * 1000; // Adjust this scaling factor as needed
+  
+        // Clear any existing timeout to ensure we don't speed up frame changes
+        if (autoplayIntervalRef.current) {
+          clearTimeout(autoplayIntervalRef.current);
+        }
+  
+        autoplayIntervalRef.current = setTimeout(updateFrame, delay);
         return nextFrame;
       });
     };
-
+  
+    // Start the update loop
     updateFrame();
   };
+  
+
 
   const stopAutoplay = () => {
     setAutoplay(false);
@@ -93,6 +118,7 @@ const Simulator = () => {
       autoplayIntervalRef.current = null;
     }
   };
+
 
   useEffect(() => {
     fetch('/data.txt')
@@ -110,12 +136,14 @@ const Simulator = () => {
       });
   }, []);
 
+
   useEffect(() => {
     if (autoplay) {
       startAutoplay();
     } else {
       stopAutoplay();
     }
+
 
     return () => {
       if (autoplayIntervalRef.current) {
@@ -130,39 +158,45 @@ const Simulator = () => {
       <div className="page-wrapper">
         <div className="container-fluid">
           <HeaderBanner />
-          <h1 className="title text-center"> Welcome to the Simulator</h1>
-          <h2 className="subtitle text-center">This website uses Monaco Code Editor and Gazebo to create an interactive virtual environment to help demonstrate robotics concepts without the need for hardware</h2>
-          <div style={{ width: '50%', textAlign: 'left' }}>
-            <button onClick={saveFile} style={{ marginBottom: '10px' }}>Save File</button>
-            <button onClick={() => changeTheme('hc-black')}>Dark Theme</button>
-            <button onClick={() => changeTheme('vs-light')}>Light Theme</button>
-            {/* Add more theme buttons as needed */}
-          </div>
-          <div className="intro-content">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'left', marginBottom: '20px' }}>
-              <div style={{ display: 'flex', width: '40%' }}>
-                <MonacoEditor
-                  width="100%"
-                  height="600"
-                  options={editorOptions}
-                  onChange={handleChange}
-                />
+          <h1 className="title text-center">Welcome to the Simulator</h1>
+          <h2 className="subtitle text-center">This website uses Monaco Code Editor and a 3D visualization tool to create an interactive virtual environment for demonstrating robotics concepts without hardware.</h2>
+          
+          <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginTop: '20px' }}>
+            {/* Left half: Code Editor and its buttons */}
+            <div style={{ width: '50%' }}>
+              <div style={{ marginBottom: '10px' }}>
+                <button onClick={saveFile}>Save File</button>
+                <button onClick={runFile}>Run Simulation</button>
+                <button onClick={() => changeTheme('hc-black')}>Dark Theme</button>
+                <button onClick={() => changeTheme('vs-light')}>Light Theme</button>
               </div>
-              <Slider
-                min={0}
-                max={data.length - 1}
-                step={1}
-                value={currentFrame}
-                onChange={handleSliderChange}
-                disabled={autoplay}
+              <MonacoEditor
+                width="100%"
+                height="600"
+                options={editorOptions}
+                onChange={handleChange}
               />
-              <p>Current Frame: {currentFrame}</p>
-              <button onClick={startAutoplay} disabled={autoplay}>
-                Start Autoplay
-              </button>
-              <button onClick={stopAutoplay} disabled={!autoplay}>
-                Stop Autoplay
-              </button>
+            </div>
+
+            {/* Right half: Visualizer, its buttons, and a slider */}
+            <div style={{ width: '50%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+                
+                <div style={{ marginTop: '20px' }}>
+                  <button onClick={startAutoplay} disabled={autoplay}>Start Autoplay</button>
+                  <button onClick={stopAutoplay} disabled={!autoplay}>Stop Autoplay</button>
+                  <Slider
+                    min={0}
+                    max={data.length - 1}
+                    step={1}
+                    value={currentFrame}
+                    onChange={handleSliderChange}
+                    disabled={autoplay}
+                    style={{ width: '100%', marginTop: '10px' }}
+                  />
+                  <p>Current Frame: {currentFrame}</p>
+                </div>
+              </div>
               <ThreeScene data={data[currentFrame]} />
                       
             </div>
