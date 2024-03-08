@@ -25,7 +25,7 @@ const Header = () => {
                         <Collapse isOpen={isOpen} navbar className="hover-dropdown font-14 justify-content-end" id="h6-info">
                             <Nav navbar className="ms-auto">
                                 <NavItem>
-                                    <Link className="nav-link" to={"/HomePage"}>
+                                    <Link className="nav-link" to={"/home"}>
                                         Home
                                     </Link>
                                 </NavItem>
@@ -35,35 +35,35 @@ const Header = () => {
                                         Lessons <i className="fa fa-angle-down m-l-5"></i>
                                     </DropdownToggle>
                                     <DropdownMenu className="b-none animated fadeInUp">
-                                        <DropdownItem><Link to={"/Lesson1"}>Lesson 1</Link></DropdownItem>
-                                        <DropdownItem><Link to={"/Lesson2"}>Lesson 2</Link></DropdownItem>
-                                        <DropdownItem><Link to={"/Lesson3"}>Lesson 3</Link></DropdownItem>
-                                        <DropdownItem><Link to={"/Lesson4"}>Lesson 4</Link></DropdownItem>
-                                        <DropdownItem><Link to={"/Lesson5"}>Lesson 5</Link></DropdownItem>
-                                        <DropdownItem><Link to={"/Components"}>Components</Link></DropdownItem>
+                                        <DropdownItem><Link to={"/lesson1"}>Lesson 1</Link></DropdownItem>
+                                        <DropdownItem><Link to={"/lesson2"}>Lesson 2</Link></DropdownItem>
+                                        <DropdownItem><Link to={"/lesson3"}>Lesson 3</Link></DropdownItem>
+                                        <DropdownItem><Link to={"/lesson4"}>Lesson 4</Link></DropdownItem>
+                                        <DropdownItem><Link to={"/lesson5"}>Lesson 5</Link></DropdownItem>
+                                        <DropdownItem><Link to={"/components"}>Components</Link></DropdownItem>
                                         <DropdownItem><Link to={"/custom-components"}>Custom</Link></DropdownItem>
                                         
                                     </DropdownMenu>
                                 </UncontrolledDropdown>
                                 </NavItem>
                                 <NavItem>
-                                    <Link className="nav-link" to={"/Simulator"}>
+                                    <Link className="nav-link" to={"/simulator"}>
                                         Simulation
                                     </Link>
                                 </NavItem>
                                 <NavItem>
-                                    <Link className="nav-link" to={"/Glossary"}>
+                                    <Link className="nav-link" to={"/glossary"}>
                                         Glossary
                                     </Link>
                                 </NavItem>
                                 <NavItem>
-                                    <Link className="nav-link" to={"/HomePage"}>
+                                    <Link className="nav-link" to={"/home"}>
                                         About
                                     </Link>
                                 </NavItem>
                             </Nav>
                             <div className="act-buttons">
-                                <Link to="/Login" className="btn btn-success-gradiant font-18">Login</Link>
+                                <Link to="/login" className="btn btn-success-gradiant font-18">Login</Link>
                             </div>
                         </Collapse>
                     </Navbar>
