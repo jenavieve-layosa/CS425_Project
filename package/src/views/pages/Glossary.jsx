@@ -5,6 +5,7 @@ import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
 
+import autonomous from '../../assets/images/Glossary/autonomous_example.jpg';
 
 import ROS_Master from '../../assets/images/Glossary/ROS Master.png';
 const Glossary = () => {
@@ -46,7 +47,7 @@ const Glossary = () => {
                                                 <tr>
                                                     
                                                     <td>Autonomous</td>
-                                                    <td>Example</td>
+                                                    <td><img src={autonomous} alt="https://www.researchgate.net/figure/The-example-of-autonomous-mobile-robot_fig1_228711493" className="img-thumbnail" width = "800"/>True autonomous robots are intelligent machines that can perform tasks and operate in an environment independently, without human control or intervention.</td>
                                                     <td>Capable of operating independently</td>
                                                     <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
                                                     

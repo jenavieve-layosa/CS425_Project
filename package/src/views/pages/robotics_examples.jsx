@@ -155,7 +155,7 @@ const JsComponents = (props) => {
                             <p>Undefined Technologies</p>
                             </ModalBody>
                             <ModalFooter className="justify-content-center">
-                                <Button color="primary" onClick={toggle2.bind(null)}>Continue</Button>
+                                <Button color="primary" onClick={toggle3.bind(null)}>Continue</Button>
                             </ModalFooter>
                         </Modal>
                         
