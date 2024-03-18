@@ -1,6 +1,6 @@
 # dependencies
-/package/node_modules
-/package/node_modules/*
+package/node_modules
+package/node_modules/*
 /flask_backend/auth/Lib
 
 #environment variables
