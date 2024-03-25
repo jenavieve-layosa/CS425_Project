@@ -21,7 +21,7 @@ def login_post():
 
     # check if the user actually exists
     # take the user-supplied password, hash it, and compare it to the hashed password in the database
-    if not user or not check_password_hash(user.password, password):
+    if not user or not (user.password == password):
         return json.dumps({'status': False,
                            'err_msg':'Please check your login details and try again.'})
 

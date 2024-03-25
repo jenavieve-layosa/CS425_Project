@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import React from "react";
+import bcrypt from "bcryptjs";
 
 //imports for the template
 import Header from "../../components/header/header";
@@ -39,7 +40,7 @@ const HandleSubmit = async (event) => {
     
     const loginData = {
         email: event.target.email.value,
-        password: event.target.password.value
+        password: bcrypt.hash(event.target.password.value, 'pbkdf2:sha1' | 8)
     }
     AsyncAwait(loginData);
 };
