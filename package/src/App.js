@@ -12,23 +12,25 @@ import Glossary from "./views/pages/Glossary.jsx";
 import Simulator from "./views/pages/Simulator.jsx";
 import SignUp from "./views/pages/SignUp.jsx";
 import Login from "./views/pages/Login.jsx";
+import About from "./views/pages/About.jsx";
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/custom-components" element={<CustomComponents />} />
-        <Route path="/components" element={<Components />} />
-        <Route path="/lesson1" element={<Lesson1 />} />
-        <Route path="/lesson2" element={<Lesson2 />} />
-        <Route path="/lesson3" element={<Lesson3 />} />
-        <Route path="/lesson4" element={<Lesson4 />} />
-        <Route path="/lesson5" element={<Lesson5 />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/glossary" element={<Glossary />} />
-        <Route path="/simulator" element={<Simulator />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/Components" element={<Components />} />
+        <Route path="/Lesson1" element={<Lesson1 />} />
+        <Route path="/Lesson2" element={<Lesson2 />} />
+        <Route path="/Lesson3" element={<Lesson3 />} />
+        <Route path="/Lesson4" element={<Lesson4 />} />
+        <Route path="/Lesson5" element={<Lesson5 />} />
+        <Route path="/HomePage" element={<HomePage />} />
+        <Route path="/Glossary" element={<Glossary />} />
+        <Route path="/Simulator" element={<Simulator />} />
+        <Route path="/SignUp" element={<SignUp />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/About" element={<About />} />
         <Route path="/" element={<HomePage />} />
       </Routes>
     </Router>

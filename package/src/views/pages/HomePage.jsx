@@ -9,11 +9,9 @@ import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
 import img3 from '../../assets/images/img3.jpg';
 import img6 from '../../assets/images/img6.jpg';
-import roadmap from '../../assets/images/roadmap.png';
 import learning_robot from '../../assets/images/learning_robot_1.png';
 
 import Examples from "../pages/robotics_examples.jsx";
-import Types from "../pages/types_of_robots.jsx";
 
 
 

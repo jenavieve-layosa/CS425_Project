@@ -57,7 +57,7 @@ const Header = () => {
                                     </Link>
                                 </NavItem>
                                 <NavItem>
-                                    <Link className="nav-link" to={"/HomePage"}>
+                                    <Link className="nav-link" to={"/About"}>
                                         About
                                     </Link>
                                 </NavItem>

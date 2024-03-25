@@ -6,6 +6,17 @@ import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
 
 import autonomous from '../../assets/images/Glossary/autonomous_example.jpg';
+import semiauto from '../../assets/images/Glossary/semi-autonomous-example.avif'
+import effectors from '../../assets/images/Glossary/effectors.jpg'
+import ai from '../../assets/images/Glossary/ai.webp'
+import precision from '../../assets/images/Glossary/precision.jpg'
+import standard from '../../assets/images/Glossary/standard.png'
+import framework from '../../assets/images/Glossary/framework.jpg'
+import middleware from '../../assets/images/Glossary/middleware.jpg'
+import modularity from '../../assets/images/Glossary/modularity.jpg'
+
+
+
 
 import ROS_Master from '../../assets/images/Glossary/ROS Master.png';
 const Glossary = () => {
@@ -47,7 +58,12 @@ const Glossary = () => {
                                                 <tr>
                                                     
                                                     <td>Autonomous</td>
-                                                    <td><img src={autonomous} alt="https://www.researchgate.net/figure/The-example-of-autonomous-mobile-robot_fig1_228711493" className="img-thumbnail" width = "800"/>True autonomous robots are intelligent machines that can perform tasks and operate in an environment independently, without human control or intervention.</td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={autonomous} alt="https://www.researchgate.net/figure/The-example-of-autonomous-mobile-robot_fig1_228711493" className="img-thumbnail" width = "200"/>
+                                                        <p style={{ marginLeft: '10px' }}>True autonomous robots are intelligent machines that can perform tasks and operate in an environment independently, without human control or intervention. Such as a robot capable of naviagting a maze without any instruction or manual control for the engineer.</p>
+                                                    </div>   
+                                                    </td>
                                                     <td>Capable of operating independently</td>
                                                     <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
                                                     
@@ -55,105 +71,167 @@ const Glossary = () => {
                                                 <tr>
                                                     
                                                     <td>Semi-autonomous</td>
-                                                    <td>Example</td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={semiauto} alt="https://newatlas.com/lancaster-university-semi-autonomous-robot-reactors/60123/" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}>Semi-autonomous robots, on the other hand, are robots that require some level of human input or control. These robots are designed to operate under the guidance of a human operator, who can monitor their actions and intervene if necessary</p>
+                                                    </div>
+                                                    </td>
                                                     <td>Partially capable of independent operation</td>
                                                     <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
                                                     <td>Effectors</td>
-                                                    <td>Example</td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={effectors} alt="https://www.tthk.ee/inlearcs/4-end-of-effector-selection-procedure/" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}>In robotics, an end effector is the device at the end of a robotic arm, designed to interact with the environment. The exact nature of this device depends on the application of the robot. In the strict definition, which originates from serial robotic manipulators, the end effector means the last link of the robot.</p>
+                                                    </div>
+                                                    </td>
                                                     <td>Components responsible for performing actions or tasks</td>
                                                     <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
                                                     <td>Artificial Intelligence (AI)</td>
-                                                    <td>Example</td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={ai} alt="" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}>Contemporary AI-driven robots possess the ability to tackle problems and exhibit a form of "thought" within certain boundaries. Consequently, artificial intelligence is relied upon to handle progressively intricate duties. Whether it's aiding in Tesla's assembly lines or instructing Japanese learners in English, instances of AI integration in robotics abound.</p>
+                                                    </div>
+                                                    </td>
                                                     <td>The simulation of human intelligence in machines using computer systems.</td>
                                                     <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
                                                     <td>Precision</td>
-                                                    <td>Example</td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={precision} alt="https://www.dentonvacuum.com/a-look-ahead-at-the-semiconductor-industry/" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}>An example is the use of robotic arms in semiconductor manufacturing, where precision is paramount for tasks like placing microchips onto circuit boards with nanometer-level accuracy. </p>
+                                                    </div>
+                                                    </td>
                                                     <td>The quality, condition, or fact of being exact and accurate.</td>
                                                     <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
                                                     <td>Standardization</td>
-                                                    <td>Example</td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={standard} alt="https://www.semanticscholar.org/paper/ROS-and-Unity-Based-Framework-for-Intelligent-and-Hussein-Garc%C3%ADa/ce3f3a09712f261808ab90921a4e8683ca76a841/figure/0" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}> One example is ROS (Robot Operating System), an open-source framework that provides standardized tools and libraries for developing robotic applications, fostering collaboration and accelerating innovation in the robotics community. </p>
+                                                    </div>
+                                                    </td>
                                                     <td>Establishing a standard or common set of practices, in programming this is done to ensure commonality between different programs so that using multiple platforms can be easily integrated together</td>
                                                     <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link> </td>
                                                 </tr>
                                                 <tr>
                                                     
                                                     <td>Framework</td>
-                                                    <td>Example</td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={framework} alt="https://www.frontiersin.org/articles/10.3389/frobt.2021.713083/full" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}>One example of a framework providing reusable software components in robotics is Gazebo, a simulation environment that offers a standardized platform for testing and developing robotic algorithms and behaviors. Robotics developers can utilize pre-built models and plugins within Gazebo to quickly prototype and validate their ideas across different robot platforms.</p>
+                                                    </div>
+                                                    </td>
                                                     <td>A platform providing reusable software components</td>
                                                     <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
                                                     <td>Middleware</td>
-                                                    <td>Example</td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={middleware} alt="https://www.openrtm.org/openrtm/en/doc/aboutopenrtm/rtmiddleware" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}>An example is the Robot Middleware (RTM) developed by the Robot Technology Research Association, which offers standardized interfaces and communication protocols for connecting components in distributed robotic systems. </p>
+                                                    </div>
+                                                    </td>
                                                     <td>Software that acts as an intermediary allowing communication between different applications.</td>
                                                     <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link> </td>
                                                 </tr>
                                                 <tr>
                                                     
                                                     <td>Modularity</td>
-                                                    <td>Example</td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={modularity} alt="https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}> In robotics, modularity is exemplified by modular robotic platforms like the TurtleBot, which consists of interchangeable hardware components such as sensors, actuators, and computing units. This modularity allows users to customize the robot for different tasks and easily upgrade or replace individual components as needed.</p>
+                                                    </div>
+                                                    </td>
                                                     <td>Design principle emphasizing the organization of a system into independent, interchangeable components.</td>
                                                     <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
-                                                </tr>  
-                                                <tr>
-                                                    
-                                                    <td></td>
-                                                    <td>Example</td>
-                                                    <td></td>
-                                                    <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
-                                                </tr>                                                
+                                                </tr>                                                  
                                                 <tr>
                                                     
                                                     <td>ROS Master</td>
-                                                    <td><img src={ROS_Master} alt="ROS Master:https://www.oreilly.com/library/view/ros-programming-building/9781788627436/402a97fc-b154-485b-ad70-0830aef107dc.xhtml " className="img-thumbnail" width = "800"/>The ROS master provides naming and registration services to the rest of the nodes in the ROS system. It tracks publishers and subscribers to topics as well as services. The role of the master is to enable individual ROS nodes to locate one another. Once these nodes have located each other, they communicate with each other in a peer-to-peer fashion. You can see in a graphic example the steps performed in ROS to advertise a topic, subscribe to a topic, and publish a message, in the following diagram:</td>
+                                                    <td>
+                                                        <img src={ROS_Master} alt="ROS Master:https://www.oreilly.com/library/view/ros-programming-building/9781788627436/402a97fc-b154-485b-ad70-0830aef107dc.xhtml " className="img-thumbnail" width = "450"/>
+                                                        <p>The ROS master provides naming and registration services to the rest of the nodes in the ROS system. It tracks publishers and subscribers to topics as well as services. The role of the master is to enable individual ROS nodes to locate one another. Once these nodes have located each other, they communicate with each other in a peer-to-peer fashion. You can see in a graphic example the steps performed in ROS to advertise a topic, subscribe to a topic, and publish a message, in the following diagram:</p>
+                                                    
+                                                    </td>
                                                     <td>The central hub managing the ROS system. It tracks all active nodes, services, and topics.</td>
                                                     <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
                                                     <td>Node</td>
-                                                    <td></td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={semiauto} alt="" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}>Example</p>
+                                                    </div>
+                                                    </td>
                                                     <td>An individual process that performs specific computations. Nodes communicate through topics.</td>
                                                     <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                                 <tr>
                                                   
                                                     <td>Topic</td>
-                                                    <td></td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={semiauto} alt="" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}>Example</p>
+                                                    </div>
+                                                    </td>
                                                     <td>A communication channel used by nodes to exchange messages. Topics enable the flow of information between nodes.</td>
                                                     <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                                 <tr>
                                                  
                                                     <td>Message</td>
-                                                    <td></td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={semiauto} alt="" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}>Example</p>
+                                                    </div>
+                                                    </td>
                                                     <td>A data structure defining the information sent between nodes through topics. It can be as simple as an integer or as complex as a sensor reading.</td>
                                                     <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
                                                     <td>Service</td>
-                                                    <td></td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={semiauto} alt="" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}>Example</p>
+                                                    </div>
+                                                    </td>
                                                     <td>A function call that nodes can make to request work from another node. It allows nodes to perform specific tasks on demand</td>
                                                     <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
                                                     <td>Parameter</td>
-                                                    <td></td>
+                                                    <td>
+                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                                                        <img src={semiauto} alt="" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}>Example</p>
+                                                    </div>
+                                                    </td>
                                                     <td>A variable that nodes can use to store and retrieve data. Parameters provide a convenient way to configure node behavior</td>
                                                     <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
