@@ -14,6 +14,13 @@ import standard from '../../assets/images/Glossary/standard.png'
 import framework from '../../assets/images/Glossary/framework.jpg'
 import middleware from '../../assets/images/Glossary/middleware.jpg'
 import modularity from '../../assets/images/Glossary/modularity.jpg'
+import node from '../../assets/images/Glossary/node.png'
+import topic from '../../assets/images/Glossary/topic.jpg'
+import message from '../../assets/images/Glossary/message.png'
+import service from '../../assets/images/Glossary/service.jpg'
+import parameter from '../../assets/images/Glossary/parameter.jpg'
+
+
 
 
 
@@ -180,8 +187,8 @@ const Glossary = () => {
                                                     <td>Node</td>
                                                     <td>
                                                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                                                        <img src={semiauto} alt="" className="img-thumbnail" width="200" />
-                                                        <p style={{ marginLeft: '10px' }}>Example</p>
+                                                        <img src={node} alt="https://docs.ros.org/en/foxy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Nodes/Understanding-ROS2-Nodes.html" className="img-thumbnail" width="300" />
+                                                        <p style={{ marginLeft: '10px' }}>An example would be a node could be responsible for receiving laser scan data from a LiDAR sensor and publishing it to other nodes for mapping or navigation.</p>
                                                     </div>
                                                     </td>
                                                     <td>An individual process that performs specific computations. Nodes communicate through topics.</td>
@@ -192,8 +199,8 @@ const Glossary = () => {
                                                     <td>Topic</td>
                                                     <td>
                                                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                                                        <img src={semiauto} alt="" className="img-thumbnail" width="200" />
-                                                        <p style={{ marginLeft: '10px' }}>Example</p>
+                                                        <img src={topic} alt="https://roboticsbackend.com/what-is-a-ros-topic/" className="img-thumbnail" width="350" />
+                                                        <p style={{ marginLeft: '10px' }}> For instance, a topic could be used to transmit odometry information from a robot's motion controller node to a localization node, allowing the robot to estimate its position in a global coordinate frame.</p>
                                                     </div>
                                                     </td>
                                                     <td>A communication channel used by nodes to exchange messages. Topics enable the flow of information between nodes.</td>
@@ -204,8 +211,8 @@ const Glossary = () => {
                                                     <td>Message</td>
                                                     <td>
                                                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                                                        <img src={semiauto} alt="" className="img-thumbnail" width="200" />
-                                                        <p style={{ marginLeft: '10px' }}>Example</p>
+                                                        <img src={message} alt="https://www.mathworks.com/help/ros/ug/work-with-basic-ros-messages.html" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}> For instance, a message could define the structure of sensor data, such as the timestamp, position, and intensity values of laser scans, facilitating interoperability and data exchange between different ROS nodes.</p>
                                                     </div>
                                                     </td>
                                                     <td>A data structure defining the information sent between nodes through topics. It can be as simple as an integer or as complex as a sensor reading.</td>
@@ -216,23 +223,21 @@ const Glossary = () => {
                                                     <td>Service</td>
                                                     <td>
                                                     <div style={{ display: 'flex', alignItems: 'center' }}>
-                                                        <img src={semiauto} alt="" className="img-thumbnail" width="200" />
-                                                        <p style={{ marginLeft: '10px' }}>Example</p>
+                                                        <img src={service} alt="https://roboticsbackend.com/what-is-a-ros-service/" className="img-thumbnail" width="200" />
+                                                        <p style={{ marginLeft: '10px' }}> For example, a robot's location service might requst an update in order to determine the current weather in the area that the robot is located in.</p>
                                                     </div>
                                                     </td>
-                                                    <td>A function call that nodes can make to request work from another node. It allows nodes to perform specific tasks on demand</td>
+                                                    <td>A function call that nodes can make to request work from another node. It allows nodes to perform specific tasks on demand. A service is a synchronous communication mechanism that allows nodes to request and receive specific tasks or information from one another</td>
                                                     <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
                                                     <td>Parameter</td>
                                                     <td>
-                                                    <div style={{ display: 'flex', alignItems: 'center' }}>
-                                                        <img src={semiauto} alt="" className="img-thumbnail" width="200" />
-                                                        <p style={{ marginLeft: '10px' }}>Example</p>
-                                                    </div>
+                                                        <img src={parameter} alt="https://roboticsbackend.com/what-is-a-ros-parameter/" className="img-thumbnail" width="450" />
+                                                        <p style={{ marginLeft: '10px' }}> For instance, a parameter could define a robots name or a simulation mode. It could also be the maximum speed limit for a robot's motion controller node, allowing for easy adjustments without modifying the source code.</p>
                                                     </td>
-                                                    <td>A variable that nodes can use to store and retrieve data. Parameters provide a convenient way to configure node behavior</td>
+                                                    <td>In ROS, parameters are configurable values that can be set and accessed by nodes at runtime. These values can control various aspects of a robotic system, such as sensor settings or algorithm parameters.</td>
                                                     <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                             </tbody>
