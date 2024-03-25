@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, redirect, url_for, request, flash
-from werkzeug.security import generate_password_hash, check_password_hash
+import bcrypt
 from flask_login import login_user, login_required, logout_user
 from flask_cors import CORS
 from .models import User
@@ -21,7 +21,7 @@ def login_post():
 
     # check if the user actually exists
     # take the user-supplied password, hash it, and compare it to the hashed password in the database
-    if not user or not (user.password == password):
+    if not user or not bcrypt.checkpw(password, user.password):
         return json.dumps({'status': False,
                            'err_msg':'Please check your login details and try again.'})
 
@@ -48,9 +48,11 @@ def signup_post():
     if user: # if a user is found, we want to redirect back to signup page so user can try again
         return json.dumps({'status':False, 'err_msg':'Email address already exists'})
     
+    salt = bcrypt.gensalt(rounds=8)
+    bytes = password.encode('utf-8')
     
     # create a new user with the form data. Hash the password so the plaintext version isn't saved.
-    new_user = User(email=email, firstname=firstname, lastname=lastname, password=generate_password_hash(password, method='pbkdf2:sha1', salt_length=8), user_type=account_type, user_verified=False)
+    new_user = User(email=email, firstname=firstname, lastname=lastname, password=bcrypt.hashpw(bytes, salt), user_type=account_type, user_verified=False)
     
     # add the new user to the database
     db.session.add(new_user)

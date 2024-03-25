@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import bcrypt from "bcryptjs";
 
 //imports for the template
 import Header from "../../components/header/header";
 import HeaderBanner2 from "../../components/banner2/banner2";
 import Footer from "../../components/footer/footer";
 import { Container, Form, FormGroup, Row, Col, Label, Button, Input } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookies';
+
+const bcrypt = require('bcryptjs');
+const saltRounds = 8;
 
 
 const AsyncAwait = (loginData) =>{
@@ -37,12 +40,22 @@ const AsyncAwait = (loginData) =>{
 
 const HandleSubmit = async (event) => {
     event.preventDefault();
-    
+    //hash the password
+    const hashed = await bcrypt.hash(event.target.password.value, saltRounds);
+
     const loginData = {
         email: event.target.email.value,
-        password: bcrypt.hash(event.target.password.value, 'pbkdf2:sha1' | 8)
+        password: hashed
     }
-    AsyncAwait(loginData);
+    const status = AsyncAwait(loginData);
+    if (status) {
+        const expirationTime = new Date(new Date().getTime() + 600000); //sets an expiration time on the cookie session at 10 minutes
+        Cookies.set('auth', JSON.stringify(status), {expires: expirationTime});
+        //redirect to the dashboard
+        Navigate('/'); //replace with user page
+    } else {
+        alert('Invalid email or password');
+    }
 };
 
 const Login = () => {
