@@ -19,13 +19,9 @@ import topic from '../../assets/images/Glossary/topic.jpg'
 import message from '../../assets/images/Glossary/message.png'
 import service from '../../assets/images/Glossary/service.jpg'
 import parameter from '../../assets/images/Glossary/parameter.jpg'
-
-
-
-
-
-
 import ROS_Master from '../../assets/images/Glossary/ROS Master.png';
+
+
 const Glossary = () => {
     
     return (
@@ -72,7 +68,7 @@ const Glossary = () => {
                                                     </div>   
                                                     </td>
                                                     <td>Capable of operating independently</td>
-                                                    <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
+                                                    <td><Link to="/Lesson1#autonomous" className="label label-lesson1">L.1</Link></td>
                                                     
                                                 </tr>
                                                 <tr>
@@ -85,7 +81,7 @@ const Glossary = () => {
                                                     </div>
                                                     </td>
                                                     <td>Partially capable of independent operation</td>
-                                                    <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
+                                                    <td><Link to="/Lesson1#semi-autonomous" className="label label-lesson1">L.1</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
@@ -97,7 +93,7 @@ const Glossary = () => {
                                                     </div>
                                                     </td>
                                                     <td>Components responsible for performing actions or tasks</td>
-                                                    <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
+                                                    <td><Link to="/Lesson1#effectors" className="label label-lesson1">L.1</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
@@ -109,7 +105,7 @@ const Glossary = () => {
                                                     </div>
                                                     </td>
                                                     <td>The simulation of human intelligence in machines using computer systems.</td>
-                                                    <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
+                                                    <td><Link to="/Lesson1#artificial intelligence" className="label label-lesson1">L.1</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
@@ -121,7 +117,7 @@ const Glossary = () => {
                                                     </div>
                                                     </td>
                                                     <td>The quality, condition, or fact of being exact and accurate.</td>
-                                                    <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
+                                                    <td><Link to="/Lesson1#precision" className="label label-lesson1">L.1</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
@@ -133,7 +129,7 @@ const Glossary = () => {
                                                     </div>
                                                     </td>
                                                     <td>Establishing a standard or common set of practices, in programming this is done to ensure commonality between different programs so that using multiple platforms can be easily integrated together</td>
-                                                    <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link> </td>
+                                                    <td><Link to="/Lesson1#standardization" className="label label-lesson1">L.1</Link> </td>
                                                 </tr>
                                                 <tr>
                                                     
@@ -145,7 +141,7 @@ const Glossary = () => {
                                                     </div>
                                                     </td>
                                                     <td>A platform providing reusable software components</td>
-                                                    <td><Link to="/Lesson1" className="label label-lesson1">L.1</Link></td>
+                                                    <td><Link to="/Lesson1#framework" className="label label-lesson1">L.1</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
@@ -157,7 +153,7 @@ const Glossary = () => {
                                                     </div>
                                                     </td>
                                                     <td>Software that acts as an intermediary allowing communication between different applications.</td>
-                                                    <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link> </td>
+                                                    <td><Link to="/Lesson2#middleware" className="label label-lesson2">L.2</Link> </td>
                                                 </tr>
                                                 <tr>
                                                     
@@ -169,7 +165,7 @@ const Glossary = () => {
                                                     </div>
                                                     </td>
                                                     <td>Design principle emphasizing the organization of a system into independent, interchangeable components.</td>
-                                                    <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
+                                                    <td><Link to="/Lesson2#modularity" className="label label-lesson2">L.2</Link></td>
                                                 </tr>                                                  
                                                 <tr>
                                                     
@@ -180,7 +176,7 @@ const Glossary = () => {
                                                     
                                                     </td>
                                                     <td>The central hub managing the ROS system. It tracks all active nodes, services, and topics.</td>
-                                                    <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
+                                                    <td><Link to="/Lesson2#ROSmaster" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
@@ -192,7 +188,7 @@ const Glossary = () => {
                                                     </div>
                                                     </td>
                                                     <td>An individual process that performs specific computations. Nodes communicate through topics.</td>
-                                                    <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
+                                                    <td><Link to="/Lesson2#node" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                                 <tr>
                                                   
@@ -204,7 +200,7 @@ const Glossary = () => {
                                                     </div>
                                                     </td>
                                                     <td>A communication channel used by nodes to exchange messages. Topics enable the flow of information between nodes.</td>
-                                                    <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
+                                                    <td><Link to="/Lesson2#node" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                                 <tr>
                                                  
@@ -216,7 +212,7 @@ const Glossary = () => {
                                                     </div>
                                                     </td>
                                                     <td>A data structure defining the information sent between nodes through topics. It can be as simple as an integer or as complex as a sensor reading.</td>
-                                                    <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
+                                                    <td><Link to="/Lesson2#message" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
@@ -228,7 +224,7 @@ const Glossary = () => {
                                                     </div>
                                                     </td>
                                                     <td>A function call that nodes can make to request work from another node. It allows nodes to perform specific tasks on demand. A service is a synchronous communication mechanism that allows nodes to request and receive specific tasks or information from one another</td>
-                                                    <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
+                                                    <td><Link to="/Lesson2#service" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                                 <tr>
                                                     
@@ -238,7 +234,7 @@ const Glossary = () => {
                                                         <p style={{ marginLeft: '10px' }}> For instance, a parameter could define a robots name or a simulation mode. It could also be the maximum speed limit for a robot's motion controller node, allowing for easy adjustments without modifying the source code.</p>
                                                     </td>
                                                     <td>In ROS, parameters are configurable values that can be set and accessed by nodes at runtime. These values can control various aspects of a robotic system, such as sensor settings or algorithm parameters.</td>
-                                                    <td><Link to="/Lesson2" className="label label-lesson2">L.2</Link></td>
+                                                    <td><Link to="/Lesson2#parameters" className="label label-lesson2">L.2</Link></td>
                                                 </tr>
                                             </tbody>
                                         </Table>
