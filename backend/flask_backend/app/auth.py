@@ -1,6 +1,6 @@
-from flask import Blueprint, render_template, redirect, url_for, request, flash
+from flask import Blueprint, request, Response
 import bcrypt
-from flask_login import login_user, login_required, logout_user
+from flask_login import login_user, login_required, logout_user, current_user
 from flask_cors import CORS
 from .models import User
 from . import db
@@ -15,22 +15,15 @@ def login_post():
     data = request.get_json()
     email = data['email']
     password = data['password']
-
-
     user = User.query.filter_by(email=email).first()
 
     # check if the user actually exists
     # take the user-supplied password, hash it, and compare it to the hashed password in the database
-    if not user or not bcrypt.checkpw(password, user.password):
-        return json.dumps({'status': False,
-                           'err_msg':'Please check your login details and try again.'})
+    if not user or not bcrypt.checkpw(password.encode(), user.password.encode()): # if the user doesn't exist or password is wrong
+        return Response(("{'status':false}"), status=401, mimetype='application/json')
 
     # if the above check passes, then we know the user has the right credentials
-    return json.dumps({'status':login_user(user)})
-
-@auth.route('/signup')
-def signup():
-    return render_template('signup.html')
+    return Response(json.dumps(login_user(user)), status=200, mimetype='application/json')
 
 @auth.route('/api/signup', methods=['POST'])
 def signup_post():
@@ -58,11 +51,30 @@ def signup_post():
     db.session.add(new_user)
     db.session.commit()
     
-    return json.dumps({'status':True})
+    return Response(("{'status':true}"), status=201, mimetype='application/json')
 
-@auth.route('/logout')
-@login_required
-def logout():
-    logout_user()
-    return redirect(url_for('main.index'))
+@auth.route('/api/userData', methods=['GET'])
+def getUserData():
+    if current_user.is_authenticated:
+        return Response(json.dumps({'id':current_user.id,'email':current_user.email, 'firstname':current_user.firstname, 'lastname':current_user.lastname, 'user_type':current_user.user_type}), status=200, mimetype='application/json')
+    else:
+        return Response(status=401, mimetype='application/json')
 
+@auth.route('/api/checkAuth')
+def checkAuth():
+    if current_user.is_authenticated:
+        return Response({"'status':True"},status=200, mimetype='application/json')
+    else:
+        return Response(status=401, mimetype='application/json')
+    
+@auth.route('/api/editAccount', methods=['POST'])
+def editAccount():
+    if current_user.is_authenticated:
+        data = request.get_json()
+        current_user.email = data['email']
+        current_user.firstname = data['firstname']
+        current_user.lastname = data['lastname']
+        db.session.commit()
+        return Response(status=200, mimetype='application/json')
+    else:
+        return Response(status=401, mimetype='application/json')

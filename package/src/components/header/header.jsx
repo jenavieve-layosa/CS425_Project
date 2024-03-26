@@ -3,8 +3,9 @@ import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 import { Container, NavbarBrand, Navbar, Nav, NavItem, NavbarToggler, Collapse, Row, Col, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, } from 'reactstrap';
 
-
 import logo from '../../assets/images/robot-logo.png';
+
+const Cookies = require('js-cookie');
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -25,7 +26,7 @@ const Header = () => {
                         <Collapse isOpen={isOpen} navbar className="hover-dropdown font-14 justify-content-end" id="h6-info">
                             <Nav navbar className="ms-auto">
                                 <NavItem>
-                                    <Link className="nav-link" to={"/HomePage"}>
+                                    <Link className="nav-link" to={"/"}>
                                         Home
                                     </Link>
                                 </NavItem>
@@ -63,7 +64,10 @@ const Header = () => {
                                 </NavItem>
                             </Nav>
                             <div className="act-buttons">
-                                <Link to="/Login" className="btn btn-success-gradiant font-18">Login</Link>
+                                {Cookies.get('auth') == null && (
+                                <Link to="/Login" className="btn btn-success-gradiant font-18">Login</Link>)}
+                                {Cookies.get('auth') != null && (
+                                <Link to="/Account" className="btn btn-success-gradiant font-18">My Account</Link>)}
                             </div>
                         </Collapse>
                     </Navbar>

@@ -29,6 +29,3 @@ class UserClass(db.Model):
     class_code = db.Column(db.Integer, unique=True, primary_key=True) # primary keys are required by SQLAlchemy
     user_id = db.Column(db.Integer, ForeignKey(User.id)) #foreign key is the user id
     teacher_email = db.Column(db.String(100), ForeignKey(User.email)) #foreign key is the teacher email
-
-
-# bitnami pword CGrZa4J+0I/u

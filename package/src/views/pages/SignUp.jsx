@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, FormGroup, Row, Col, Label, Button, Input } from 'reactstrap';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 //imports for template
 import Header from "../../components/header/header";
@@ -16,6 +16,7 @@ const SignUp = () => {
     const [password, setPassword] = useState('');
     const [passwordConfirm, setPasswordConfirm] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
 
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
@@ -43,9 +44,8 @@ const SignUp = () => {
                     },
                     body: JSON.stringify(signUpData)
                 });
-                if (response.status === 200) {
-                    alert('Account created successfully');
-                    Navigate('/Login');
+                if (response.status === 201) {
+                    navigate('/Login');
                 } else {
                     alert('An error occurred. Please try again');
                 }
@@ -93,7 +93,7 @@ const SignUp = () => {
                                                     value={user_type} onChange={(e) => setUserType(e.target.value)}>
                                                     <option value='2'>Independent Learner</option>
                                                     <option value='0'>Student</option>
-                                                    <option value='1'>Teacher</option>
+                                                    <option value='1'>Instructor</option>
                                                 </Input>
                                         </Col>
                                     </Row>
