@@ -23,7 +23,7 @@ const Home = () => {
         <div id="main-wrapper">
             <Header />
             <div className="page-wrapper">
-                <div className="container-fluid text-center">
+                <div className="container-fluid text-center" id="top-section">
                     <HeaderBanner />
                     <Container>
                     <Row className="justify-content-center">

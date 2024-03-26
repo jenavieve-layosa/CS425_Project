@@ -80,6 +80,24 @@ Header 6
         }
     }
 }
+.static-slider-1 {
+    position: relative;
+}
+
+.align-self-center {
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+@media (min-width: 768px) {
+    .align-self-center {
+        margin-top: 0; /* Reset margin for larger screens */
+    }
+}
+.border-button {
+    border: 2px solid #f8f6f6; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+}
 
 .static-slider-head {
     min-height: 600px;

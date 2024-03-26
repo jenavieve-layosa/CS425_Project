@@ -1,8 +1,8 @@
 import React from "react";
 
 import PropTypes from "prop-types";
-import { Row, Col, Container } from 'reactstrap';
-
+import { Row, Button, Col, Container } from 'reactstrap';
+import { HashLink as Link } from 'react-router-hash-link';
 import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
@@ -34,7 +34,7 @@ const Lesson3 = () => {
         <div id="main-wrapper">
             <Header />
             <div className="page-wrapper">
-                <div className="container-fluid">
+                <div className="container-fluid" id="top-section">
                     <HeaderBanner />
                     <Container>
                     <Row className="justify-content-center">
@@ -320,8 +320,7 @@ const Lesson3 = () => {
                         ensuring quick and efficient service. Botlr uses sensors and mapping technology to
                         navigate safely and efficiently, making it a valuable addition to the hospitality industry.
 
-                        <p>Image from Atlantic Hotels Group - Boltr robot
-
+                        <p><img src={boltr} alt="" className="img-thumbnail" width="200" />
                         <p>Another example is Yobot, the robotic hotel concierge that manages luggage storage. In
                         collaboration with MFG automation, they adapted a robotic manipulator to help visitors
                         with their luggage. Guests enter their room number on a touchscreen and size, place their
@@ -1254,24 +1253,44 @@ const Lesson3 = () => {
                             research purposes, and the Aquatic Swarm Robots (AquaSwarm) - right, which collaboratively
                             perform underwater tasks such as mapping or environmental monitoring.
                         </p></p></p></p></p></p></p></p></p></p></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                         </div>
                     </div>
+
+                        <div className="static-slider-1">
+                            <Row className="justify-content-between">
+                                <Col md="2" className="align-self-center text-center">
+                                    <Link to="/HomePage#top-section">
+                                        <Button color="darkblue" className = "border-button">Previous</Button>
+                                    </Link>
+                                </Col>
+                                <Col md="6" className="align-self-center text-center">
+                                    <h1 className="title"></h1>
+                                    <h6 className="subtitle op-8"></h6>
+                                </Col>
+                                <Col md="2" className="align-self-center text-center">
+                                    <Link to="/Lesson2#top-section">
+                                        <Button color="darkblue" className = "border-button">Next</Button>
+                                    </Link>
+                                </Col>
+                            </Row>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
                 </div>
             <Footer />
         </div>

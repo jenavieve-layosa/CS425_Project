@@ -14,7 +14,7 @@ const Lesson5 = () => {
         <div id="main-wrapper">
             <Header />
             <div className="page-wrapper">
-                <div className="container-fluid">
+                <div className="container-fluid" id="top-section">
                     <HeaderBanner />
                     <Container>
                     <Row className="justify-content-center">

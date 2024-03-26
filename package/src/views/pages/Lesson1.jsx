@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PropTypes from "prop-types";
+import { HashLink as Link } from 'react-router-hash-link';
 import { Row, Col, Container, Card, Button, CardTitle, CardText, CardBody } from 'reactstrap';
 
 import Header from "../../components/header/header.jsx";
@@ -19,7 +20,7 @@ const Lesson1 = () => {
         <div id="main-wrapper">
             <Header />
             <div className="page-wrapper">
-                <div className="container-fluid">
+                <div className="container-fluid" id="top-section">
                     <HeaderBanner />
                     <Container>
                     <Row className="justify-content-center">
@@ -31,7 +32,7 @@ const Lesson1 = () => {
                     </Row>
                     </Container>
                     <Container maxWidth="md">
-                     <div style={{ padding: '20px', border: '5px solid #ddd', borderRadius: '15px', marginBottom: '20px' }}>
+                     <div style={{ padding: '20px', border: '5px solid #ddd', borderRadius: '15px', marginBottom: '20px' }} >
                      <h2 className="subtitle font-bold text-darkblue">Course Overview</h2>
                         <p>
                             Welcome to Lesson 1 of our ROS Programming course. In this lesson, we embark on a journey into the fascinating realm of robotics. We will begin by
@@ -215,17 +216,32 @@ const Lesson1 = () => {
                         </ul>
 
                         </div>
+                        <div> 
+                        
+                        </div>
+                    
 
                         <div className="static-slider-1">
-                                <Row className="justify-content-center">
-                                    <Col md="6" className="align-self-center text-center">
-                                        <h1 className="title"></h1>
-                                        <h6 className="subtitle op-8"></h6>
-                                    </Col>
-                                </Row>
+                            <Row className="justify-content-between">
+                                <Col md="2" className="align-self-center text-center">
+                                    <Link to="/HomePage#top-section">
+                                        <Button color="darkblue" className = "border-button">Previous</Button>
+                                    </Link>
+                                </Col>
+                                <Col md="6" className="align-self-center text-center">
+                                    <h1 className="title"></h1>
+                                    <h6 className="subtitle op-8"></h6>
+                                </Col>
+                                <Col md="2" className="align-self-center text-center">
+                                    <Link to="/Lesson2#top-section">
+                                        <Button color="darkblue" className = "border-button">Next</Button>
+                                    </Link>
+                                </Col>
+                            </Row>
                         </div>
+
                         <p>
-                            .
+                        .
                         </p>
                         
                         
