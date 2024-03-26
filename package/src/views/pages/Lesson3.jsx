@@ -1418,7 +1418,7 @@ const Lesson3 = () => {
                         <div className="static-slider-1">
                             <Row className="justify-content-between">
                                 <Col md="2" className="align-self-center text-center">
-                                    <Link to="/HomePage#top-section">
+                                    <Link to="/Lesson2#top-section">
                                         <Button color="darkblue" className = "border-button">Previous</Button>
                                     </Link>
                                 </Col>
@@ -1427,7 +1427,7 @@ const Lesson3 = () => {
                                     <h6 className="subtitle op-8"></h6>
                                 </Col>
                                 <Col md="2" className="align-self-center text-center">
-                                    <Link to="/Lesson2#top-section">
+                                    <Link to="/Lesson4#top-section">
                                         <Button color="darkblue" className = "border-button">Next</Button>
                                     </Link>
                                 </Col>
