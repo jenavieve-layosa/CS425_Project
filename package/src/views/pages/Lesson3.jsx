@@ -1,4 +1,4 @@
-import React from "react";
+
 
 import PropTypes from "prop-types";
 import { Row, Button, Col, Container } from 'reactstrap';
@@ -6,6 +6,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";
+import React, { useState } from 'react';
 
 import shakey from '../../assets/images/Shakey.png';
 import robotArm from '../../assets/images/robotArm.png';
@@ -29,6 +30,72 @@ import icub from '../../assets/images/types-of-robots/icub.png';
 
 
 const Lesson3 = () => {
+
+    const [isContentVisibleIndustrial, setIsContentVisibleIndustrial] = useState(false);
+    const [isContentVisibleService, setIsContentVisibleService] = useState(false);
+    const [isContentVisibleMobile, setIsContentVisibleMobile] = useState(false);
+    const [isContentVisibleHumanoid, setIsContentVisibleHumanoid] = useState(false);
+    const [isContentVisibleAgricultural, setIsContentVisibleAgricultural] = useState(false);
+    const [isContentVisibleMedical, setIsContentVisibleMedical] = useState(false);
+    const [isContentVisibleExploration, setIsContentVisibleExploration] = useState(false);
+    const [isContentVisibleMilitary, setIsContentVisibleMilitary] = useState(false);
+    const [isContentVisibleEducational, setIsContentVisibleEducational] = useState(false);
+    const [isContentVisibleEntertainment, setIsContentVisibleEntertainment] = useState(false);
+    const [isContentVisibleCollaborative, setIsContentVisibleCollaborative] = useState(false);
+    const [isContentVisibleExoskeleton, setIsContentVisibleExoskeleton] = useState(false);
+    const [isContentVisibleBioinspired, setIsContentVisibleBioinspired] = useState(false);
+  
+    const toggleContentVisibilityIndustrial = () => {
+        setIsContentVisibleIndustrial(!isContentVisibleIndustrial);
+    };
+
+    const toggleContentVisibilityService = () => {
+        setIsContentVisibleService(!isContentVisibleService);
+    };
+
+    const toggleContentVisibilityMobile = () => {
+        setIsContentVisibleMobile(!isContentVisibleMobile);
+    };
+
+    const toggleContentVisibilityHumanoid = () => {
+        setIsContentVisibleHumanoid(!isContentVisibleHumanoid);
+    };
+
+    const toggleContentVisibilityAgricultural = () => {
+        setIsContentVisibleAgricultural(!isContentVisibleAgricultural);
+    };
+
+    const toggleContentVisibilityMedical = () => {
+        setIsContentVisibleMedical(!isContentVisibleMedical);
+    };
+
+    const toggleContentVisibilityExploration = () => {
+        setIsContentVisibleExploration(!isContentVisibleExploration);
+    };
+
+    const toggleContentVisibilityMilitary = () => {
+        setIsContentVisibleMilitary(!isContentVisibleMilitary);
+    };
+
+    const toggleContentVisibilityEducational = () => {
+        setIsContentVisibleEducational(!isContentVisibleEducational);
+    };
+
+    const toggleContentVisibilityEntertainment = () => {
+        setIsContentVisibleEntertainment(!isContentVisibleEntertainment);
+    };
+
+    const toggleContentVisibilityCollaborative = () => {
+        setIsContentVisibleCollaborative(!isContentVisibleCollaborative);
+    };
+
+    const toggleContentVisibilityExoskeleton = () => {
+        setIsContentVisibleExoskeleton(!isContentVisibleExoskeleton);
+    };
+
+    const toggleContentVisibilityBioinspired = () => {
+        setIsContentVisibleBioinspired(!isContentVisibleBioinspired);
+    };
     return (
 
         <div id="main-wrapper">
@@ -110,129 +177,143 @@ const Lesson3 = () => {
                         <h4 className = "subtitle font-bold text-darkblue"> Types of Robots</h4>
 
                         <p>
-                            Robots are involved in many different industries and can fulfill a variety of purposes ***write a better intro here***
-                        </p>
-
-                        <h5 className = 'subtitle font-bold text-darkblue'> Industrial Robots </h5>
-
-                        <p>
-                            Industrial robots is the largest commercial application of robotics in the world today, they have improved productivity, quality, precision and adaptability with minimal costs. 
-                            The first industrial robot appeared in 1954 on a patent filed by a man named George Devol on the programmed article transfer. 
-                            He later co-founded Unimation with Joseph Engelberger which was the first robot company that put a robot into service.
-                            Their first robot was called Unimate and was used for extracting parts from a die-casting machine. It was an electronically controlled hydraulic heavy-lifting arm with six axes of motion and was capable for 
-                            lifting objects and moving them with precision. This machine paved the way for the invention and regular use of arm robots in industry. 
-
+                            Robots are involved in many different industries and can fulfill a variety of purposes, this portion of content can be quite dense to work through so it's mainly optional. 
 
                         </p>
-                        <p>
-                            Robotic arms are also knowna s robot manipulators, they are programmed and built to execute similar functions to a human arm. 
-                            They are built for the execution of repetative tasks that may require extreme precision or immense strength, they help ensure safey and promote production. 
-                            manipulators are connected by joints allowing rotational or linear motion. These robotic arms have end effectors at the end designed to perform tasks with great accuracy, depending on their application 
-                            tasks include gripping, spinning, welding, painting, etc. These robotic manipulators can be autonomous or controlled manually and can be mobile or fixed to a specific location. 
 
-                        </p>
-                        <img src={robotArm} alt="robot arm" className="img-thumbnail" width = "300"/> 
+                        <div>
+                            
+                            <div  onClick={toggleContentVisibilityIndustrial}>
+                                <h4 className="subtitle text-darkblue"><strong>Industrial Robots</strong> (click to reveal content)</h4>
+                            </div>
+                            {isContentVisibleIndustrial && (
+                                <div>
+                            
 
-                        <div className="white-space-filler"> secret secret secret</div>
+                                    <p>
+                                        Industrial robots is the largest commercial application of robotics in the world today, they have improved productivity, quality, precision and adaptability with minimal costs. 
+                                        The first industrial robot appeared in 1954 on a patent filed by a man named George Devol on the programmed article transfer. 
+                                        He later co-founded Unimation with Joseph Engelberger which was the first robot company that put a robot into service.
+                                        Their first robot was called Unimate and was used for extracting parts from a die-casting machine. It was an electronically controlled hydraulic heavy-lifting arm with six axes of motion and was capable for 
+                                        lifting objects and moving them with precision. This machine paved the way for the invention and regular use of arm robots in industry. 
 
-                        <h6 className="font-bold"> Key Components</h6>
+
+                                    </p>
+                                    <p>
+                                        Robotic arms are also knowna s robot manipulators, they are programmed and built to execute similar functions to a human arm. 
+                                        They are built for the execution of repetative tasks that may require extreme precision or immense strength, they help ensure safey and promote production. 
+                                        manipulators are connected by joints allowing rotational or linear motion. These robotic arms have end effectors at the end designed to perform tasks with great accuracy, depending on their application 
+                                        tasks include gripping, spinning, welding, painting, etc. These robotic manipulators can be autonomous or controlled manually and can be mobile or fixed to a specific location. 
+
+                                    </p>
+                                    <img src={robotArm} alt="robot arm" className="img-thumbnail" width = "300"/> 
+
+                                    <div className="white-space-filler"> secret secret secret</div>
+
+                                    <h6 className="font-bold"> Key Components</h6>
 
 
-                        <p>
-                        ●	Controllers - The controller is the main processor and acts as the brain of the robot, it receives commands from a program. 
-                        <p>
-                        ●	The arm has four major components: 
-                        </p>
-                        <Container style={{ marginLeft: 6}}>
-                            <Row>
-                                <Col xs={12}>
-                        <p>
-                        ○	Shoulder joint - this is the highest load bearing point in the arm and has three degrees of freedom: pitch, yaw and roll. The shoulder has the widest range of motion in the human body, and it is the foundation of most modern robotic arms. 
-                        <p>
-                        ○	Elbow joint - Many mechanical elbow joints have been used in robotic arm manufacture. The elbow joint provides extension, retraction, reach around and angular orientation of the wrist and hand. 
-                        <p>
-                        ○	Wrist joint - The wrist is a crucial component of even the earliest prototypes, it's the end-effector terminus and it allows the arm to be manipulated in a three-dimensional space. 
-                        <p>
-                        ○	Hand - this component defines the purpose and capacity of the robotic arm. The hand is a tool for multitasking capable of diverse tasks, it is also the research topic of many higher education institutions. 
-                        </p>
-                        </p>
-                        </p>
-                        </p>
-                                </Col>
-                            </Row>
-                        </Container>
-                        
-                        Robotic arms are also composed of drives and sensors. 
-                        <p>
-                        ●	Drives - these are the motors that provide movement for every part of the robot. They are located in between the joints and regular rotation and linear movement. These move independently from each other at varying speeds and directions as dictated by the controller.
-                        <p>
-                        ●	Sensors - they allow manipulators to react to their environment. 
-                        </p>
-                        </p>
-                        </p>
-                        <h6 className="font-bold">Types of robotic arm configurations</h6>
-                        <p>
-                        ● Cartesian Robot - Also known as the gantry robot, is named after the cartesian
-                        coordinate system. These robots include three articulating joints programmed to
-                        move linearly using the X, Y and Z coordinates. These robots are typically used for
-                        picking and placing items on converter belts.
+                                    <p>
+                                    ●	Controllers - The controller is the main processor and acts as the brain of the robot, it receives commands from a program. 
+                                    <p>
+                                    ●	The arm has four major components: 
+                                    </p>
+                                    <Container style={{ marginLeft: 6}}>
+                                        <Row>
+                                            <Col xs={12}>
+                                    <p>
+                                    ○	Shoulder joint - this is the highest load bearing point in the arm and has three degrees of freedom: pitch, yaw and roll. The shoulder has the widest range of motion in the human body, and it is the foundation of most modern robotic arms. 
+                                    <p>
+                                    ○	Elbow joint - Many mechanical elbow joints have been used in robotic arm manufacture. The elbow joint provides extension, retraction, reach around and angular orientation of the wrist and hand. 
+                                    <p>
+                                    ○	Wrist joint - The wrist is a crucial component of even the earliest prototypes, it's the end-effector terminus and it allows the arm to be manipulated in a three-dimensional space. 
+                                    <p>
+                                    ○	Hand - this component defines the purpose and capacity of the robotic arm. The hand is a tool for multitasking capable of diverse tasks, it is also the research topic of many higher education institutions. 
+                                    </p>
+                                    </p>
+                                    </p>
+                                    </p>
+                                            </Col>
+                                        </Row>
+                                    </Container>
+                                    
+                                    Robotic arms are also composed of drives and sensors. 
+                                    <p>
+                                    ●	Drives - these are the motors that provide movement for every part of the robot. They are located in between the joints and regular rotation and linear movement. These move independently from each other at varying speeds and directions as dictated by the controller.
+                                    <p>
+                                    ●	Sensors - they allow manipulators to react to their environment. 
+                                    </p>
+                                    </p>
+                                    </p>
+                                    <h6 className="font-bold">Types of robotic arm configurations</h6>
+                                    <p>
+                                    ● Cartesian Robot - Also known as the gantry robot, is named after the cartesian
+                                    coordinate system. These robots include three articulating joints programmed to
+                                    move linearly using the X, Y and Z coordinates. These robots are typically used for
+                                    picking and placing items on converter belts.
 
-                        <p>Image: Robohub - Example of cartesian robot with 3-axis
+                                    <p>Image: Robohub - Example of cartesian robot with 3-axis
 
-                        
+                                    
 
-                        <p>● Articulated Robot Arm - These are the most common mechanical robot arms seen
+                                    <p>● Articulated Robot Arm - These are the most common mechanical robot arms seen
 
-                        in the workplace. These robots are used for welding, material handling, pick-and-
-                        place tasks, dispensing and much more. They resemble human arms because of
+                                    in the workplace. These robots are used for welding, material handling, pick-and-
+                                    place tasks, dispensing and much more. They resemble human arms because of
 
-                        their multiple axes and degrees of freedom. Because of this, they are among the
-                        most adaptable, flexible and space saving robotic manipulators, however, they are
-                        by nature dangerous and must be equipped with necessary safety features.
+                                    their multiple axes and degrees of freedom. Because of this, they are among the
+                                    most adaptable, flexible and space saving robotic manipulators, however, they are
+                                    by nature dangerous and must be equipped with necessary safety features.
 
-                        Image: How Are Industrial Robots Built? - Moving joints of a robotic arm
+                                    Image: How Are Industrial Robots Built? - Moving joints of a robotic arm
 
-                        <p>● Cylindrical Robot Arm - This robot has at least one rotary joint at its base allowing
-                        it a rotational motion along its axis. Its axis constitutes a cylindrical coordinate
-                        system (up, down and around). This robotic arm is valuable in industries that
-                        produce tubes and cylindrical components. Other uses include die casting and spot
-                        welding.
+                                    <p>● Cylindrical Robot Arm - This robot has at least one rotary joint at its base allowing
+                                    it a rotational motion along its axis. Its axis constitutes a cylindrical coordinate
+                                    system (up, down and around). This robotic arm is valuable in industries that
+                                    produce tubes and cylindrical components. Other uses include die casting and spot
+                                    welding.
 
-                        Image: Process Solutions - Cylindrical Robotic arm
+                                    Image: Process Solutions - Cylindrical Robotic arm
 
-                        <p>● SCARA Robots - SCARA is an acronym for Selective Compliance Assembly Robot
-                        Arm. These robots work on a three-dimensional axis (X,Y and Z ) and rotary
-                        motion, in other words, it combines cartesian and cylindrical movements. SCARA
-                        robots are used in biomedical applications, assembly and pelletising.
+                                    <p>● SCARA Robots - SCARA is an acronym for Selective Compliance Assembly Robot
+                                    Arm. These robots work on a three-dimensional axis (X,Y and Z ) and rotary
+                                    motion, in other words, it combines cartesian and cylindrical movements. SCARA
+                                    robots are used in biomedical applications, assembly and pelletising.
 
-                        Image: SCARA
+                                    Image: SCARA
 
-                        <p>● Polar Robot- Also known as the spherical robot. It consists of an arm with two
-                        rotary joints and one linear joint connected to the base with a twisting joint. The
-                        axes work together to form a polar coordinate. These are used for injection molding,
-                        welding and material handling.
+                                    <p>● Polar Robot- Also known as the spherical robot. It consists of an arm with two
+                                    rotary joints and one linear joint connected to the base with a twisting joint. The
+                                    axes work together to form a polar coordinate. These are used for injection molding,
+                                    welding and material handling.
 
-                        Image from Process Solutions - Polar robot arm
+                                    Image from Process Solutions - Polar robot arm
 
-                        <p>● Delta Robot - Delta Robots, or parallel robots, possess three arms connected to a
+                                    <p>● Delta Robot - Delta Robots, or parallel robots, possess three arms connected to a
 
-                        single base, which is mounted above the workspace. Delta Robots work in a dome-
-                        shape and can move both delicately and precisely at high speeds due to each joint
+                                    single base, which is mounted above the workspace. Delta Robots work in a dome-
+                                    shape and can move both delicately and precisely at high speeds due to each joint
 
-                        of the end effector being directly controlled by all three arms.
+                                    of the end effector being directly controlled by all three arms.
 
-                        Image from Process Solutions - Delta or parallel robot
+                                    Image from Process Solutions - Delta or parallel robot
 
-                    
-                        <p>Another example of a material handling robot is the Sparrow robot, the first robotic system
-                        in amazon warehouses that can detect, select and handle individual products in their
-                        inventory. 
-                        </p></p></p></p></p></p></p></p>
-                        
-                
+                                
+                                    <p>Another example of a material handling robot is the Sparrow robot, the first robotic system
+                                    in amazon warehouses that can detect, select and handle individual products in their
+                                    inventory. 
+                                    </p></p></p></p></p></p></p></p>
 
-                        <h5 className = 'subtitle font-bold text-darkblue'> Service Robots </h5>
+                                    </div>
+                                    )}
+                                </div>
+                                                    
 
+                        <div  onClick={toggleContentVisibilityService}>
+                            <h4 className="subtitle text-darkblue"><strong>Service Robots</strong></h4>
+                            </div>
+                            {isContentVisibleService && (
+                                <div>
                         <p>
 
                         Service robots are designed to assist humans in service-oriented tasks and can be classified into
@@ -351,8 +432,15 @@ const Lesson3 = () => {
 
                         <p>Image from Wikipedia -Trilobite Image from ZDNet - iRobot’s roomba robot</p></p></p>
 
+                        </div>
+                                    )}
+                            
 
-                        <h5 className = 'subtitle font-bold text-darkblue'> Mobile Robots </h5>
+                            <div  onClick={toggleContentVisibilityMobile}>
+                            <h4 className="subtitle text-darkblue"><strong>Mobile Robots</strong></h4>
+                            </div>
+                            {isContentVisibleMobile && (
+                                <div>
 
                         <p>
                             Mobile robotics demands a combination of different disciplines such as social and cognitive sciences, computer science and engineering, physics, mathematics, and many others. The key thing about mobile robots is, well, they're mobile. 
@@ -497,8 +585,14 @@ const Lesson3 = () => {
                         
                         </p></p></p></p></p></p></p></p></p>
 
+                        </div>
+                                    )}
 
-                        <h5 className = 'subtitle font-bold text-darkblue'> Humanoid Robots </h5>
+                        <div  onClick={toggleContentVisibilityHumanoid}>
+                            <h4 className="subtitle text-darkblue"><strong>Humanoid Robots</strong></h4>
+                            </div>
+                            {isContentVisibleHumanoid && (
+                                <div>
 
                         <p>
                             Humanoid robots are advanced robotic systems designed to resemble and mimic human
@@ -587,7 +681,14 @@ const Lesson3 = () => {
                             <p><img src={atlas} alt="" className="img-thumbnail" width = "350"/>
                         </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
 
-                        <h5 className = 'subtitle font-bold text-darkblue'> Agricultural Robots </h5>
+                        </div>
+                                    )}
+
+                            <div  onClick={toggleContentVisibilityAgricultural}>
+                            <h4 className="subtitle text-darkblue"><strong>Agricultural Robots</strong></h4>
+                            </div>
+                            {isContentVisibleAgricultural && (
+                                <div>
 
                         <p>
 
@@ -692,7 +793,14 @@ const Lesson3 = () => {
 
                         </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
 
-                        <h5 className = 'subtitle font-bold text-darkblue'> Medical Robots </h5>
+                        </div>
+                                    )}
+
+                        <div  onClick={toggleContentVisibilityMedical}>
+                            <h4 className="subtitle text-darkblue"><strong>Medical Robots</strong></h4>
+                            </div>
+                            {isContentVisibleMedical && (
+                                <div>
 
                         <p>
 
@@ -819,7 +927,14 @@ const Lesson3 = () => {
 
                         </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
 
-                        <h5 className = 'subtitle font-bold text-darkblue'> Exploration Robots </h5>
+                        </div>
+                                    )}
+
+                            <div  onClick={toggleContentVisibilityExploration}>
+                            <h4 className="subtitle text-darkblue"><strong>Exploration Robots</strong></h4>
+                            </div>
+                            {isContentVisibleExploration && (
+                                <div>
 
                         <p>
 
@@ -878,7 +993,14 @@ const Lesson3 = () => {
 
                         </p></p></p></p></p></p></p></p>
 
-                        <h5 className = 'subtitle font-bold text-darkblue'> Military and Defense Robots </h5>
+                        </div>
+                                    )}
+
+                            <div  onClick={toggleContentVisibilityMilitary}>
+                            <h4 className="subtitle text-darkblue"><strong>Military and Defense Robots</strong></h4>
+                            </div>
+                            {isContentVisibleMilitary && (
+                                <div>
 
                         <p>
                         The use of robots in military and defense operations has become increasingly prevalent in recent
@@ -953,7 +1075,14 @@ const Lesson3 = () => {
                         <p>Image of the AeroVironment Raven (UAV)
                         </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
 
-                        <h5 className = 'subtitle font-bold text-darkblue'> Educational Robots </h5>
+                        </div>
+                                    )}
+
+                        <div  onClick={toggleContentVisibilityEducational}>
+                            <h4 className="subtitle text-darkblue"><strong>Educational Robots</strong></h4>
+                            </div>
+                            {isContentVisibleEducational && (
+                                <div>
 
                         <p>
 
@@ -994,7 +1123,14 @@ const Lesson3 = () => {
 
                         </p></p></p></p></p></p></p></p></p>
 
-                        <h5 className = 'subtitle font-bold text-darkblue'> Entertainment Robots </h5>
+                        </div>
+                                    )}
+
+                            <div  onClick={toggleContentVisibilityEntertainment}>
+                            <h4 className="subtitle text-darkblue"><strong>Entertainment Robots</strong></h4>
+                            </div>
+                            {isContentVisibleEntertainment && (
+                                <div>
 
                         <p>
                         Robotics in the entertainment industry have been part of the picture for quite some time. These
@@ -1060,8 +1196,14 @@ const Lesson3 = () => {
                             performances. They perform dangerous stunts that are too difficult for humans.
 
                         </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
+                        </div>
+                                    )}
 
-                        <h5 className = 'subtitle font-bold text-darkblue'> Collaborative Robots </h5>
+                            <div  onClick={toggleContentVisibilityCollaborative}>
+                            <h4 className="subtitle text-darkblue"><strong>Collaborative Robots</strong></h4>
+                            </div>
+                            {isContentVisibleCollaborative && (
+                                <div>
 
                         <p>
 
@@ -1137,7 +1279,15 @@ const Lesson3 = () => {
 
                         </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
 
-                        <h5 className = 'subtitle font-bold text-darkblue'> Exoskeleton Robots </h5>
+                        </div>
+                                    )}
+
+
+                            <div  onClick={toggleContentVisibilityExoskeleton}>
+                            <h4 className="subtitle text-darkblue"><strong>Exoskeleton Robots</strong></h4>
+                            </div>
+                            {isContentVisibleExoskeleton && (
+                                <div>
 
                         <p>
 
@@ -1212,8 +1362,14 @@ const Lesson3 = () => {
                         manual handling tasks.
 
                         </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
+                        </div>
+                                    )}
 
-                        <h5 className = 'subtitle font-bold text-darkblue'> Bio-inspired Robots </h5>
+                            <div  onClick={toggleContentVisibilityBioinspired}>
+                            <h4 className="subtitle text-darkblue"><strong>Bio-Inspired Robots</strong></h4>
+                            </div>
+                            {isContentVisibleBioinspired && (
+                                <div>
 
                         <p>
                         Bio-inspired robots take inspiration from natural organisms and biological systems to mimic their
@@ -1253,6 +1409,9 @@ const Lesson3 = () => {
                             research purposes, and the Aquatic Swarm Robots (AquaSwarm) - right, which collaboratively
                             perform underwater tasks such as mapping or environmental monitoring.
                         </p></p></p></p></p></p></p></p></p></p></p>
+
+                        </div>
+                                    )}
                         </div>
                     </div>
 
