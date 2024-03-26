@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, FormGroup, Row, Col, Label, Button, Input } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 //imports for template
 import Header from "../../components/header/header";
@@ -16,7 +16,7 @@ const SignUp = () => {
     const [password, setPassword] = useState('');
     const [passwordConfirm, setPasswordConfirm] = useState('');
     const [showPassword, setShowPassword] = useState(false);
-    const [status, setStatus] = useState('');
+    const navigate = useNavigate();
 
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
@@ -24,6 +24,10 @@ const SignUp = () => {
 
     const HandleSignUp = async (event) => {
         event.preventDefault();
+        if (firstname === '' || lastname === '' || email === '' || password === '' || passwordConfirm === '') {
+            alert('Please fill in all fields');
+            return;
+        }
         if (password === passwordConfirm) {
             const signUpData = {
                 email: email,
@@ -40,8 +44,12 @@ const SignUp = () => {
                     },
                     body: JSON.stringify(signUpData)
                 });
-                const res = await response.json();
-                return res;
+                if (response.status === 201) {
+                    navigate('/Login');
+                } else {
+                    alert('An error occurred. Please try again');
+                }
+                
             } catch (error) {
                 console.log('Error:', error);
             }
@@ -85,7 +93,7 @@ const SignUp = () => {
                                                     value={user_type} onChange={(e) => setUserType(e.target.value)}>
                                                     <option value='2'>Independent Learner</option>
                                                     <option value='0'>Student</option>
-                                                    <option value='1'>Teacher</option>
+                                                    <option value='1'>Instructor</option>
                                                 </Input>
                                         </Col>
                                     </Row>

@@ -7,8 +7,12 @@
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^13.5.0",
     "babel-cli": "^6.26.0",
+    "bcryptjs": "^2.4.3",
     "bootstrap": "^5.3.0",
+    "cors": "^2.8.5",
     "history": "^5.3.0",
+    "js-cookie": "^3.0.5",
+    "js-cookies": "^1.0.4",
     "monaco-editor": "^0.44.0",
     "rc-slider": "^10.5.0",
     "react-dom": "^18.2.0",
@@ -36,6 +40,9 @@
     "react-router-dom": "^6.12.1"
   },
   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
     
     "start": "react-scripts start",
     "build": "react-scripts build",
