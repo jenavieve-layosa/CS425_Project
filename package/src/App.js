@@ -11,6 +11,7 @@ import Lesson5 from "./views/pages/Lesson5.jsx";
 import HomePage from "./views/pages/HomePage.jsx";
 import Glossary from "./views/pages/Glossary.jsx";
 import Simulator from "./views/pages/Simulator.jsx";
+import CodeEditor from "./views/pages/CodeEditor.jsx";
 import SignUp from "./views/pages/SignUp.jsx";
 import Login from "./views/pages/Login.jsx";
 import About from "./views/pages/About.jsx";
@@ -50,6 +51,7 @@ function App() {
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/Glossary" element={<Glossary />} />
         <Route path="/Simulator" element={<Simulator />} />
+        <Route path="/CodeEditor" element={<CodeEditor />} />
         <Route path="/SignUp" element={<SignUp />} />
         <Route path="/Login" element={<Login />} />
         <Route path="/About" element={<About />} />

@@ -3,6 +3,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three-stdlib';
 
 const ThreeScene = ({ data }) => {
+  const height_scale = .5;
   const mountRef = useRef(null); // Reference to the div where the renderer will be mounted
   const sceneRef = useRef(null);
   const robotMeshRef = useRef(null);
@@ -14,7 +15,7 @@ const ThreeScene = ({ data }) => {
 
   const init = () => {
     const width = mountRef.current.clientWidth;
-    const height = mountRef.current.clientHeight;
+    const height = width * height_scale;
 
     // Scene
     sceneRef.current = new THREE.Scene();
@@ -46,7 +47,7 @@ const ThreeScene = ({ data }) => {
 
   const onResize = () => {
     const width = mountRef.current.clientWidth;
-    const height = mountRef.current.clientHeight;
+    const height = width * height_scale;
 
     if (rendererRef.current && cameraRef.current) {
       rendererRef.current.setSize(width, height);
