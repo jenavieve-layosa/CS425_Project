@@ -50,7 +50,7 @@ const Lesson2 = () => {
                         </ul>
                         </div>
                         <p>
-                            By the end of this section, you will master the core elements of ROS architecture, including the roles of the ROS master,
+                            By the end of this section, you will master the core elements of ROS architecture, including the roles of the <strong id="ROSmaster">ROS master</strong>,
                             nodes, topics, messages, services, parameters, and actions. 
                             
                         </p>
@@ -74,8 +74,8 @@ const Lesson2 = () => {
                         <h3 className= "subtitle font-bold text-darkblue">Fundamentals and history of ROS</h3>
 
                         <p>
-                        ROS, born in the early 2000s at Stanford University, started as an open-source middleware
-                        framework for robotics. Its fundamental design principles revolve around modularity, reusability,
+                        ROS, born in the early 2000s at Stanford University, started as an open-source <strong id="middleware">middleware </strong>
+                         framework for robotics. Its fundamental design principles revolve around <strong id="modularity">modularity</strong>, reusability,
                         and collaborative development. ROS provides a structured communication layer, a robust set of
                         tools, and a flexible framework for creating intricate robot behaviors. Over the years, ROS has
                         evolved through various versions, each introducing enhancements and expanded capabilities,
@@ -147,7 +147,7 @@ const Lesson2 = () => {
                         functions become invaluable tools for crafting sophisticated and efficient robots.
                         </p>
 
-                        <h5 className= "subtitle font-bold text-darkblue">Nodes and Topics</h5>       
+                        <h5 className= "subtitle font-bold text-darkblue" id="node">Nodes and Topics</h5>       
                         <p>
                         Nodes: In ROS, a node is an independent process that performs a specific task. Nodes
                         communicate with each other through a publish-subscribe mechanism using topics. A
@@ -175,7 +175,7 @@ const Lesson2 = () => {
                         </p>
                         </p>
 
-                        <h5 className= "subtitle font-bold text-darkblue">Services and Actions</h5>
+                        <h5 className= "subtitle font-bold text-darkblue" id="service">Services and Actions</h5>
                         <p>
                         Services: ROS services allow communication between nodes through a request-response
                         mechanism. A node can offer a service, and other nodes can request and receive the
@@ -203,7 +203,7 @@ const Lesson2 = () => {
 
                         <p>
                         ROS launch files simplify the process of starting multiple nodes and
-                        configuring parameters. Launch files are XML files that define how nodes should be
+                        configuring <strong id="parameters">parameters</strong>. Launch files are XML files that define how nodes should be
                         launched and can include parameters and arguments.
                         <p>
                         Example:
@@ -225,7 +225,7 @@ const Lesson2 = () => {
                         </p>
                         <h5 className= "subtitle font-bold text-darkblue">Bag Files</h5>
                         <p>
-                        Files: ROS bag files are a format for saving and playing back ROS message data.
+                        Files: ROS bag files are a format for saving and playing back ROS <strong id="message">message</strong> data.
                         They record topics and messages during a specific duration, allowing developers to
                         replay and analyze data.
                         <p>

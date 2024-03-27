@@ -152,7 +152,7 @@ const Lesson3 = () => {
                             
                         </p> 
                         
-                        <h5 className= "subtitle font-bold text-darkblue">A reminder on application</h5>
+                        <h2 className= "subtitle font-bold text-darkblue">A reminder on application</h2>
 
                         <p>
                         Robots are transformative agents across industries. In
@@ -163,7 +163,7 @@ const Lesson3 = () => {
                         procedures with enhanced precision.
                         </p>
 
-                        <h3 className= "subtitle font-bold text-darkblue">Robot Anatomy</h3>
+                        <h2 className= "subtitle font-bold text-darkblue">Robot Anatomy</h2>
 
                         <p>
                         The anatomy of a robot is analogous to the human body&#39;s
@@ -174,7 +174,7 @@ const Lesson3 = () => {
                         performing tasks like welding or packaging.
                             </p> 
 
-                        <h4 className = "subtitle font-bold text-darkblue"> Types of Robots</h4>
+                        <h2 className = "subtitle font-bold text-darkblue"> Types of Robots</h2>
 
                         <p>
                             Robots are involved in many different industries and can fulfill a variety of purposes, this portion of content can be quite dense to work through so it's mainly optional. 
@@ -183,7 +183,7 @@ const Lesson3 = () => {
 
                         <div>
                             
-                            <div  onClick={toggleContentVisibilityIndustrial}>
+                            <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityIndustrial}>
                                 <h4 className="subtitle text-darkblue"><strong>Industrial Robots</strong> (click to reveal content)</h4>
                             </div>
                             {isContentVisibleIndustrial && (
@@ -252,9 +252,7 @@ const Lesson3 = () => {
                                     move linearly using the X, Y and Z coordinates. These robots are typically used for
                                     picking and placing items on converter belts.
 
-                                    <p>Image: Robohub - Example of cartesian robot with 3-axis
-
-                                    
+                                    <p><img src={cartesian} alt="robot arm" className="img-thumbnail" width = "300"/>
 
                                     <p>● Articulated Robot Arm - These are the most common mechanical robot arms seen
 
@@ -273,7 +271,7 @@ const Lesson3 = () => {
                                     produce tubes and cylindrical components. Other uses include die casting and spot
                                     welding.
 
-                                    Image: Process Solutions - Cylindrical Robotic arm
+                                    <p><img src={cylindricalarm} alt="robot arm" className="img-thumbnail" width = "300"/></p>
 
                                     <p>● SCARA Robots - SCARA is an acronym for Selective Compliance Assembly Robot
                                     Arm. These robots work on a three-dimensional axis (X,Y and Z ) and rotary
@@ -296,7 +294,7 @@ const Lesson3 = () => {
 
                                     of the end effector being directly controlled by all three arms.
 
-                                    Image from Process Solutions - Delta or parallel robot
+                                    <p><img src={delta} alt="" className="img-thumbnail" width = "300"/></p>
 
                                 
                                     <p>Another example of a material handling robot is the Sparrow robot, the first robotic system
@@ -309,7 +307,7 @@ const Lesson3 = () => {
                                 </div>
                                                     
 
-                        <div  onClick={toggleContentVisibilityService}>
+                        <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityService}>
                             <h4 className="subtitle text-darkblue"><strong>Service Robots</strong></h4>
                             </div>
                             {isContentVisibleService && (
@@ -436,7 +434,7 @@ const Lesson3 = () => {
                                     )}
                             
 
-                            <div  onClick={toggleContentVisibilityMobile}>
+                            <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityMobile}>
                             <h4 className="subtitle text-darkblue"><strong>Mobile Robots</strong></h4>
                             </div>
                             {isContentVisibleMobile && (
@@ -588,7 +586,7 @@ const Lesson3 = () => {
                         </div>
                                     )}
 
-                        <div  onClick={toggleContentVisibilityHumanoid}>
+                        <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityHumanoid}>
                             <h4 className="subtitle text-darkblue"><strong>Humanoid Robots</strong></h4>
                             </div>
                             {isContentVisibleHumanoid && (
@@ -607,7 +605,8 @@ const Lesson3 = () => {
                             ASIMO showcased remarkable mobility, balance, and dexterity; a multi-functional mobile
                             assistant that could help people with poor mobility.
 
-                            <p>Image of Hondas P series and ASIMO
+                            <p><p><img src={hondas} alt="" className="img-thumbnail" width = "300"/></p>
+
 
                             <p>Humanoid robots used in research often possess advanced sensing capabilities, including vision
                             systems, tactile sensors, and force feedback mechanisms. These features enable them to perceive
@@ -684,7 +683,7 @@ const Lesson3 = () => {
                         </div>
                                     )}
 
-                            <div  onClick={toggleContentVisibilityAgricultural}>
+                            <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityAgricultural}>
                             <h4 className="subtitle text-darkblue"><strong>Agricultural Robots</strong></h4>
                             </div>
                             {isContentVisibleAgricultural && (
@@ -701,7 +700,7 @@ const Lesson3 = () => {
                             fibers quickly, creating up to fifty pounds of cleaned cotton a day, work equivalent to hundreds of
                             hours if done manually.
 
-                            <p>Image of Eli Whitney’s cotton gin
+                            <p><img src={cotton} alt="" className="img-thumbnail" width = "300"/>
 
                             <h6 className = "font-bold"> Crop monitoring</h6>
 
@@ -767,7 +766,7 @@ const Lesson3 = () => {
                             Example: Harvest Automation's nursery robot, which automates the transplanting
                             of potted plants in greenhouses, nurseries, and horticultural operations.
 
-                            <p>Image of Harvest Automation’s nursery robot Image of Dot Technology Corp's autonomous platform
+                            <p><img src={dotTech} alt="" className="img-thumbnail" width = "300"/>
 
                             <h6 className = "font-bold">Precision farming</h6>
                             <p>Precision farming involves the use of agricultural robots and advanced technologies to
@@ -796,7 +795,7 @@ const Lesson3 = () => {
                         </div>
                                     )}
 
-                        <div  onClick={toggleContentVisibilityMedical}>
+                        <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityMedical}>
                             <h4 className="subtitle text-darkblue"><strong>Medical Robots</strong></h4>
                             </div>
                             {isContentVisibleMedical && (
@@ -930,7 +929,7 @@ const Lesson3 = () => {
                         </div>
                                     )}
 
-                            <div  onClick={toggleContentVisibilityExploration}>
+                            <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityExploration}>
                             <h4 className="subtitle text-darkblue"><strong>Exploration Robots</strong></h4>
                             </div>
                             {isContentVisibleExploration && (
@@ -996,7 +995,7 @@ const Lesson3 = () => {
                         </div>
                                     )}
 
-                            <div  onClick={toggleContentVisibilityMilitary}>
+                            <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityMilitary}>
                             <h4 className="subtitle text-darkblue"><strong>Military and Defense Robots</strong></h4>
                             </div>
                             {isContentVisibleMilitary && (
@@ -1078,7 +1077,7 @@ const Lesson3 = () => {
                         </div>
                                     )}
 
-                        <div  onClick={toggleContentVisibilityEducational}>
+                        <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityEducational}>
                             <h4 className="subtitle text-darkblue"><strong>Educational Robots</strong></h4>
                             </div>
                             {isContentVisibleEducational && (
@@ -1126,7 +1125,7 @@ const Lesson3 = () => {
                         </div>
                                     )}
 
-                            <div  onClick={toggleContentVisibilityEntertainment}>
+                            <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityEntertainment}>
                             <h4 className="subtitle text-darkblue"><strong>Entertainment Robots</strong></h4>
                             </div>
                             {isContentVisibleEntertainment && (
@@ -1199,7 +1198,7 @@ const Lesson3 = () => {
                         </div>
                                     )}
 
-                            <div  onClick={toggleContentVisibilityCollaborative}>
+                            <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityCollaborative}>
                             <h4 className="subtitle text-darkblue"><strong>Collaborative Robots</strong></h4>
                             </div>
                             {isContentVisibleCollaborative && (
@@ -1283,7 +1282,7 @@ const Lesson3 = () => {
                                     )}
 
 
-                            <div  onClick={toggleContentVisibilityExoskeleton}>
+                            <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityExoskeleton}>
                             <h4 className="subtitle text-darkblue"><strong>Exoskeleton Robots</strong></h4>
                             </div>
                             {isContentVisibleExoskeleton && (
@@ -1365,7 +1364,7 @@ const Lesson3 = () => {
                         </div>
                                     )}
 
-                            <div  onClick={toggleContentVisibilityBioinspired}>
+                            <div style={{ padding: '10px', border: '2px solid #ddd', borderRadius: '5px', marginBottom: '10px' }} onClick={toggleContentVisibilityBioinspired}>
                             <h4 className="subtitle text-darkblue"><strong>Bio-Inspired Robots</strong></h4>
                             </div>
                             {isContentVisibleBioinspired && (
@@ -1418,7 +1417,7 @@ const Lesson3 = () => {
                         <div className="static-slider-1">
                             <Row className="justify-content-between">
                                 <Col md="2" className="align-self-center text-center">
-                                    <Link to="/HomePage#top-section">
+                                    <Link to="/Lesson2#top-section">
                                         <Button color="darkblue" className = "border-button">Previous</Button>
                                     </Link>
                                 </Col>
@@ -1427,7 +1426,7 @@ const Lesson3 = () => {
                                     <h6 className="subtitle op-8"></h6>
                                 </Col>
                                 <Col md="2" className="align-self-center text-center">
-                                    <Link to="/Lesson2#top-section">
+                                    <Link to="/Lesson4#top-section">
                                         <Button color="darkblue" className = "border-button">Next</Button>
                                     </Link>
                                 </Col>

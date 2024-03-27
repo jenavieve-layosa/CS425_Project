@@ -79,7 +79,7 @@ const Lesson1 = () => {
                         <h3 className= "subtitle font-bold text-darkblue">Robotics</h3>
 
                         <p>
-                        In the realm of robotics, a robot is an autonomous or semi-autonomous machine designed to
+                        In the realm of robotics, a robot is an <strong id="autonomous">autonomous</strong> or <strong id="semi-autonomous">semi-autonomous</strong> machine designed to
                         carry out tasks or operations typically done by humans. These machines can be programmed to
                         perform specific functions, ranging from simple repetitive actions to complex decision-making
                         processes. Robots come in various shapes and sizes, each tailored to fulfill a specific purpose,
@@ -92,7 +92,7 @@ const Lesson1 = () => {
                         Understanding the essence of a robot involves recognizing its multifaceted nature. Beyond mere
                         machines, robots are entities with the capacity to sense, process information, and act on the
                         physical world. They are equipped with sensors for perception, processors for decision-making,
-                        and effectors for physical actions, embodying a synergy of mechanics, electronics, and software.
+                        and <strong id="effectors">effectors</strong> for physical actions, embodying a synergy of mechanics, electronics, and software.
                         </p>
                         <p>
                             A robot typically does three things (see below):
@@ -114,8 +114,8 @@ const Lesson1 = () => {
 
                         <p>
                         Robotics is an interdisciplinary field involving the development of systems combining electrical and mechanical components with computers. 
-                        It encompasses core disciplines such as electrical and mechanical engineering, computer science, artificial
-                        intelligence, computer vision, applied mathematics, and even elements of biology. Robotics seeks to create intelligent machines
+                        It encompasses core disciplines such as electrical and mechanical engineering, computer science, <strong id="artificial intelligence">artificial
+                        intelligence</strong>, computer vision, applied mathematics, and even elements of biology. Robotics seeks to create intelligent machines
                         that can mimic or simulate human actions, automating processes and tasks across various industries.
                         It is a fascinating and rapidly evolving field that contains many different sections such as: 
                         design, construction, programming, human-robot-interaction, mechatronics, bio-inspired robots, and much more.   
@@ -139,7 +139,7 @@ const Lesson1 = () => {
                                                     
                         <p>
                         Robotics is organized based on applications. Robots excel in tasks requiring
-                        precision, repetitive work, and monotonous operations. Robots can be found in manufacturing industries for welding, material handling, painting, assembling, 
+                        <strong id = "precision"> precision</strong>, repetitive work, and monotonous operations. Robots can be found in manufacturing industries for welding, material handling, painting, assembling, 
                         picking, packing, and palletizing, etc.  Similarly, robots can be found in agriculture for repetitive tasks like seeding, harvesting, weed control, optimal soil detection. 
                         Another common place to see robots in action is in healthcare, helping doctors with performing surgical procedures and providing therapy for patients.
                         On the other hand, robots have revolutionized exploration, as robots can explore places where humans cannot get to easily, like the depths of the ocean or outer space. 
@@ -151,7 +151,7 @@ const Lesson1 = () => {
                         exploration and entertainment, showcasing the diverse ways robots impact our lives.
                         </p>
                         <p>
-                        <img src={applications} alt="" className="img-circle" width = "550"/>
+                        <img src={applications} alt="" className="img-circle" width = "450"/>
                         </p>
                         <h3 className= "subtitle font-bold text-darkblue">Recent Milestones and Innovations</h3>
 
@@ -187,8 +187,8 @@ const Lesson1 = () => {
                         High-Level Programming: Abstracting complexities of robot hardware, providing a more intuitive and human-readable way to program robots.
                         </p>
                         <p>
-                        ROS, or Robot Operating System, is not an actual operating system but a framework providing tools and libraries for robot software development. 
-                        Its importance lies in fostering collaboration and standardization, enabling seamless integration of hardware and software components, and facilitating the sharing of code and solutions across the robotics community. 
+                        ROS, or Robot Operating System, is not an actual operating system but a <strong id ="framework">framework</strong> providing tools and libraries for robot software development. 
+                        Its importance lies in fostering collaboration and <strong id="standardization">standardization</strong>, enabling seamless integration of hardware and software components, and facilitating the sharing of code and solutions across the robotics community. 
                         </p>
 
                         <h3 className= "subtitle font-bold text-darkblue">Conclusion</h3>
