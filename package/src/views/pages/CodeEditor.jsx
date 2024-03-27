@@ -9,34 +9,32 @@ const CodeEditor = () => {
 
   const navigate = useNavigate();
 
-  const [fileContent, setFileContent] = useState('');
-  const [editorTheme, setEditorTheme] = useState('hc-black'); // State to manage editor theme
+  const [fileContent, setFileContent] = useState('Hello World! \n Type your code here:');
+  const [editorTheme, setEditorTheme] = useState('vs-dark'); // State to manage editor theme
 
   const editorOptions = {
-    theme: editorTheme,
-    fontSize: 16,
-    language: 'python',
-    lineNumbers: 'on',
+    autoIndent: true,
+    contextmenu: true,
     minimap: {
-      enabled: false,
+      enabled: true,
     },
-    wordWrap: 'on', // Enable word wrap
-    // Set text alignment explicitly
-    editorOptions: {
-      wordWrap: 'on',
-      minimap: { enabled: false },
-      automaticLayout: true,
-      glyphMargin: false,
-      wrappingIndent: "indent",
-      cursorStyle: 'line', // Display cursor as a line
-      cursorBlinking: 'smooth', // Smooth cursor blinking
-      scrollbar: { verticalScrollbarSize: 10, horizontalScrollbarSize: 10 }, // Set scrollbar size
-    }
+    fontFamily: 'monospace',
+    fontSize: 16,
+    lineHeight: 24,
+    hideCursorInOverviewRuler: true,
+    renderIndentGuides: true,
+    matchBrackets: 'always',
+    scrollbar: {horizontalSliderSize: 4, verticalSliderSize: 18},
+    selectOnLineNumbers: true,
+    roundedSelection: false,
+    readOnly: false,
+    cursorStyle: 'line',
+    automaticLayout: true,
   };
 
-  const handleChange = (value, event) => {
+  /*const handleChange = (value, event) => {
     setFileContent(value);
-  };
+  };*/
 
   const saveFile = () => {
     // save file here, save to the db
@@ -77,14 +75,16 @@ const CodeEditor = () => {
               <div style={{ marginBottom: '10px' }}>
                 <button onClick={saveFile}>Save File</button>
                 <button onClick={runFile}>Run Simulation</button>
-                <button onClick={() => changeTheme('hc-black')}>Dark Theme</button>
+                <button onClick={() => changeTheme('vs-dark')}>Dark Theme</button>
                 <button onClick={() => changeTheme('vs-light')}>Light Theme</button>
               </div>
               <MonacoEditor
-                width="100%"
-                height="600"
+                theme={editorTheme}
+                height="500"
+                language="python"
                 options={editorOptions}
-                onChange={handleChange}
+                onChange={setFileContent}
+                value={fileContent}
               />
             </div>
             
