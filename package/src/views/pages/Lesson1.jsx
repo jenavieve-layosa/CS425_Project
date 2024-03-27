@@ -151,7 +151,7 @@ const Lesson1 = () => {
                         exploration and entertainment, showcasing the diverse ways robots impact our lives.
                         </p>
                         <p>
-                        <img src={applications} alt="" className="img-circle" width = "550"/>
+                        <img src={applications} alt="" className="img-circle" width = "450"/>
                         </p>
                         <h3 className= "subtitle font-bold text-darkblue">Recent Milestones and Innovations</h3>
 

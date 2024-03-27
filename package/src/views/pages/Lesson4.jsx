@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import PropTypes from "prop-types";
 import { Row, Col, Container, Card, Button, CardTitle, CardText, CardBody } from 'reactstrap';
-
+import { HashLink as Link } from 'react-router-hash-link';
 import Header from "../../components/header/header.jsx";
 import HeaderBanner from "../../components/banner/banner.jsx";
 import Footer from "../../components/footer/footer.jsx";

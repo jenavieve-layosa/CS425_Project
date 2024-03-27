@@ -74,8 +74,8 @@ const Lesson2 = () => {
                         <h3 className= "subtitle font-bold text-darkblue">Fundamentals and history of ROS</h3>
 
                         <p>
-                        ROS, born in the early 2000s at Stanford University, started as an open-source <strong id="middleware">middleware</strong>
-                        framework for robotics. Its fundamental design principles revolve around <strong id="modularity">modularity</strong>, reusability,
+                        ROS, born in the early 2000s at Stanford University, started as an open-source <strong id="middleware">middleware </strong>
+                         framework for robotics. Its fundamental design principles revolve around <strong id="modularity">modularity</strong>, reusability,
                         and collaborative development. ROS provides a structured communication layer, a robust set of
                         tools, and a flexible framework for creating intricate robot behaviors. Over the years, ROS has
                         evolved through various versions, each introducing enhancements and expanded capabilities,
