@@ -252,7 +252,7 @@ const Lesson3 = () => {
                                     move linearly using the X, Y and Z coordinates. These robots are typically used for
                                     picking and placing items on converter belts.
 
-                                    <p>Image: Robohub - Example of cartesian robot with 3-axis
+                                    <p><img src={cartesian} alt="robot arm" className="img-thumbnail" width = "300"/>
 
                                     
 
@@ -273,7 +273,7 @@ const Lesson3 = () => {
                                     produce tubes and cylindrical components. Other uses include die casting and spot
                                     welding.
 
-                                    Image: Process Solutions - Cylindrical Robotic arm
+                                    <img src={cylindricalarm} alt="robot arm" className="img-thumbnail" width = "300"/>
 
                                     <p>● SCARA Robots - SCARA is an acronym for Selective Compliance Assembly Robot
                                     Arm. These robots work on a three-dimensional axis (X,Y and Z ) and rotary
@@ -296,7 +296,7 @@ const Lesson3 = () => {
 
                                     of the end effector being directly controlled by all three arms.
 
-                                    Image from Process Solutions - Delta or parallel robot
+                                    <img src={delta} alt="" className="img-thumbnail" width = "300"/>
 
                                 
                                     <p>Another example of a material handling robot is the Sparrow robot, the first robotic system
@@ -701,7 +701,7 @@ const Lesson3 = () => {
                             fibers quickly, creating up to fifty pounds of cleaned cotton a day, work equivalent to hundreds of
                             hours if done manually.
 
-                            <p>Image of Eli Whitney’s cotton gin
+                            <p><img src={cotton} alt="" className="img-thumbnail" width = "300"/>
 
                             <h6 className = "font-bold"> Crop monitoring</h6>
 
@@ -767,7 +767,7 @@ const Lesson3 = () => {
                             Example: Harvest Automation's nursery robot, which automates the transplanting
                             of potted plants in greenhouses, nurseries, and horticultural operations.
 
-                            <p>Image of Harvest Automation’s nursery robot Image of Dot Technology Corp's autonomous platform
+                            <p><img src={dotTech} alt="" className="img-thumbnail" width = "300"/>
 
                             <h6 className = "font-bold">Precision farming</h6>
                             <p>Precision farming involves the use of agricultural robots and advanced technologies to
