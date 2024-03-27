@@ -6,13 +6,11 @@ import Header from "../../components/header/header";
 import HeaderBanner2 from "../../components/banner2/banner2";
 import Footer from "../../components/footer/footer";
 import { Container, Form, FormGroup, Row, Col, Label, Button, Input } from 'reactstrap';
-import { Link } from "react-router-dom";
 
 const Account = () => {
     const [firstname, setFirstname] = useState('');
     const [lastname, setLastname] = useState('');
     const [email, setEmail] = useState('');
-    const [userType, setUserType] = useState('');
     const [editing, setEditing] = useState(false);
 
     const getUserData = async () => {
@@ -27,7 +25,6 @@ const Account = () => {
             setFirstname(data.firstname);
             setLastname(data.lastname);
             setEmail(data.email);
-            setUserType(data.user_type);
         } catch (error) {
             console.log('Error:', error);
         }
@@ -72,14 +69,10 @@ return (
                     <Row>
                         <Col classname="self-align-center text-center">
                             <h2>Account Information</h2>
-                            <p>Account Type: {userType}</p>
                             <p>First Name: {firstname}</p>
                             <p>Last Name: {lastname}</p>
                             <p>Email: {email}</p>
-                            <Button className="btn btn-success-gradiant font-18" onClick={() => setEditing(true)}>Edit</Button>
-                        </Col>
-                        <Col classname="act-buttons">
-                            <Link to="/changePassword" className="btn btn-success-gradiant font-18">Change Password</Link>
+                            <Button onClick={() => setEditing(true)}>Edit</Button>
                         </Col>
                     </Row>
                 )}

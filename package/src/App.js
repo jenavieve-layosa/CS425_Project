@@ -16,7 +16,6 @@ import SignUp from "./views/pages/SignUp.jsx";
 import Login from "./views/pages/Login.jsx";
 import About from "./views/pages/About.jsx";
 import Account from "./views/pages/Account.jsx";
-import PasswordChange from "./views/pages/PasswordChange.jsx";
 
 function App() {
   const checkAuth = async () => {
@@ -27,8 +26,8 @@ function App() {
           "Content-Type": "application/json",
         },
       });
-      await response.json();
-      if (response.status === 200) {
+      const data = await response.json();
+      if (data.map((data) => data.status) === true) {
         Cookies.set("auth", JSON.stringify(true));
       }
     } catch (error) {
@@ -58,7 +57,6 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/account" element={<Account />} />
-        <Route path="/changePassword" element={<PasswordChange />} />
       </Routes>
     </Router>
   );
