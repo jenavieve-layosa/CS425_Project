@@ -26,13 +26,13 @@ const Home = () => {
                 <div className="container-fluid text-center" id="top-section">
                     <HeaderBanner />
                     <Container>
-                    <Row className="justify-content-center">
-                        <Col md="12" className="text-center">
-                            <h1 className="title font-bold">Welcome to the FORE Learning Hub!</h1>
-                            <h6 className="subtitle">FORE: Fundamentals of Robotics Education is an interactive learning website for those of a high school to undergraduate level with an interest in learning how to program robotics!</h6>
-                        </Col>
-                    </Row>
-                </Container>
+                        <Row className="justify-content-center">
+                            <Col md="12" className="text-center">
+                                <h1 className="title font-bold">Welcome to the FORE Learning Hub!</h1>
+                                <h6 className="subtitle">FORE: Fundamentals of Robotics Education is an interactive learning website for those of a high school to undergraduate level with an interest in learning how to program robotics!</h6>
+                            </Col>
+                        </Row>
+                    </Container>
                     <div className="intro-content">
                     
                     <img src={learning_robot} alt="Introduction to Robotics" className="img-rounded" width = "350"/>

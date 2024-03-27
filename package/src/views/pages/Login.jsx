@@ -8,29 +8,27 @@ import Footer from "../../components/footer/footer";
 import { Container, Form, FormGroup, Row, Col, Label, Button, Input } from 'reactstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
+import bcrypt from 'bcryptjs';
 
 const Login = () => {
-    //use states for the login info
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
-    const [status, setStatus] = useState(false);
     const navigate = useNavigate();
-    //data fetching functions
 
-    //non data related functions
     const togglePasswordVisibility = () => {
         setShowPassword(!showPassword);
     };
     const HandleSubmit = async (event) => {
         event.preventDefault();
                 
-        //hash the password (currently having issues)
-        //const hashed = await bcrypt.hash(event.target.password.value, saltRounds);
+        //hash the password before sending to backend
+        const salt = bcrypt.genSalt(16);
+        const hashedPassword = bcrypt.hash(password, salt);
     
         const loginData = {
-            email: event.target.email.value,
-            password: event.target.password.value
+            email: email,
+            password: hashedPassword
         }
         try {
             const response = await fetch('/api/login', {
@@ -42,9 +40,9 @@ const Login = () => {
             
             });
             if (response.status === 200) {
-                Cookies.set('auth', JSON.stringify(status), {expires:1}); //sets the auth cookie, expires automatically when the browser is closed
+                Cookies.set('auth', JSON.stringify(true), {expires:1}); //sets the auth cookie, expires automatically when the browser is closed
                 //redirect to the account page
-                navigate('/Account'); 
+                navigate('/Account');
             } else {
                 alert('Invalid email or password. Try again.')
             }

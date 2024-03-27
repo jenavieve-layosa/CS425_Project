@@ -1,16 +1,35 @@
 /* eslint-disable */
 import React, { useState } from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
-import { Container, NavbarBrand, Navbar, Nav, NavItem, NavbarToggler, Collapse, Row, Col, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, } from 'reactstrap';
-
+import { Container, NavbarBrand, Navbar, Nav, NavItem, NavbarToggler, Collapse, Row, Col, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, Button, } from 'reactstrap';
 import logo from '../../assets/images/robot-logo.png';
 
 const Cookies = require('js-cookie');
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-
+    const navigate = useNavigate();
     const toggle = () => setIsOpen(!isOpen);
+
+    const callLogout = async () => {
+        try {
+            const response = await fetch('/api/logout', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            });
+        }
+        catch (error) {
+            console.log('Error:', error);
+        }
+        if (response.status === 200) {
+            Cookies.remove('auth');
+            window.location.reload();
+        } else {
+            alert('An error occurred. Please try again');
+        }
+    }
 
     /*--------------------------------------------------------------------------------*/
     /*To open NAVBAR in MOBILE VIEW                                                   */
@@ -67,7 +86,10 @@ const Header = () => {
                                 {Cookies.get('auth') == null && (
                                 <Link to="/Login" className="btn btn-success-gradiant font-18">Login</Link>)}
                                 {Cookies.get('auth') != null && (
-                                <Link to="/Account" className="btn btn-success-gradiant font-18">My Account</Link>)}
+                                <Link to="/Account" className="btn btn-success-gradiant font-18">My Account</Link>
+                                &&
+                                <Button className="btn btn-success-gradiant font-18" onClick={() => {callLogout()}}>Logout</Button>
+                                )}
                             </div>
                         </Collapse>
                     </Navbar>

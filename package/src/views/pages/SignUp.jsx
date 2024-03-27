@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Container, Form, FormGroup, Row, Col, Label, Button, Input } from 'reactstrap';
 import { Link, useNavigate } from 'react-router-dom';
+import bcrypt from 'bcryptjs';
+import Cookies from 'js-cookie';
 
 //imports for template
 import Header from "../../components/header/header";
 import HeaderBanner2 from "../../components/banner2/banner2";
 import Footer from "../../components/footer/footer";
+
 
 
 const SignUp = () => {
@@ -24,6 +27,10 @@ const SignUp = () => {
 
     const HandleSignUp = async (event) => {
         event.preventDefault();
+        if (Cookies.get('auth') === JSON.stringify(false)) {
+            return alert('Please logout to create an account');
+        }
+        const salt = bcrypt.genSalt(16);
         if (firstname === '' || lastname === '' || email === '' || password === '' || passwordConfirm === '') {
             alert('Please fill in all fields');
             return;
@@ -31,7 +38,7 @@ const SignUp = () => {
         if (password === passwordConfirm) {
             const signUpData = {
                 email: email,
-                password: password,
+                password: bcrypt.hash(password, salt),
                 firstname: firstname,
                 lastname: lastname,
                 account_type: user_type
@@ -46,7 +53,10 @@ const SignUp = () => {
                 });
                 if (response.status === 201) {
                     navigate('/Login');
-                } else {
+                } else if (response.status === 401){
+                    alert('Email already exists. Please login or use a different email.');
+                }
+                else {
                     alert('An error occurred. Please try again');
                 }
                 
