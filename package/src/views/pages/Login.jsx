@@ -14,7 +14,6 @@ const Login = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [showPassword, setShowPassword] = useState(false);
-    const [status, setStatus] = useState(false);
     const navigate = useNavigate();
     //data fetching functions
 
@@ -42,7 +41,7 @@ const Login = () => {
             
             });
             if (response.status === 200) {
-                Cookies.set('auth', JSON.stringify(status), {expires:1}); //sets the auth cookie, expires automatically when the browser is closed
+                Cookies.set('auth', JSON.stringify(true), {expires:1}); //sets the auth cookie, expires automatically when the browser is closed
                 //redirect to the account page
                 navigate('/Account'); 
             } else {
