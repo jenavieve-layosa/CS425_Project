@@ -263,7 +263,7 @@ const Lesson3 = () => {
                                     most adaptable, flexible and space saving robotic manipulators, however, they are
                                     by nature dangerous and must be equipped with necessary safety features.
 
-                                    Image: How Are Industrial Robots Built? - Moving joints of a robotic arm
+                                    
 
                                     <p>● Cylindrical Robot Arm - This robot has at least one rotary joint at its base allowing
                                     it a rotational motion along its axis. Its axis constitutes a cylindrical coordinate
@@ -278,14 +278,14 @@ const Lesson3 = () => {
                                     motion, in other words, it combines cartesian and cylindrical movements. SCARA
                                     robots are used in biomedical applications, assembly and pelletising.
 
-                                    Image: SCARA
+                                    
 
                                     <p>● Polar Robot- Also known as the spherical robot. It consists of an arm with two
                                     rotary joints and one linear joint connected to the base with a twisting joint. The
                                     axes work together to form a polar coordinate. These are used for injection molding,
                                     welding and material handling.
 
-                                    Image from Process Solutions - Polar robot arm
+                                    <p className="white-space-filler">Image from Process Solutions - Polar robot arm</p>
 
                                     <p>● Delta Robot - Delta Robots, or parallel robots, possess three arms connected to a
 
@@ -363,7 +363,7 @@ const Lesson3 = () => {
                         teaching and therapeutic behaviors, such as singing, exercise, explaining, and playing with
                         children.
 
-                        <p>Image from ResearchGate - Left - Pepper, Right - Nao
+                        <p className="white-space-filler">Image from ResearchGate - Left - Pepper, Right - Nao
 
                         <p>In addition to Pepper and Nao, there are several other examples of healthcare service robots
                         that are revolutionizing the healthcare industry like PARO Therapeutic Robot. PARO is a
@@ -374,7 +374,7 @@ const Lesson3 = () => {
                         the overall well-being of patients. PARO has been successfully used in nursing homes,
                         hospitals, and therapy sessions.
 
-                        <p>Image from HiveLife - Paro the therapeutic robot
+                        <p className="white-space-filler">Image from HiveLife - Paro the therapeutic robot
 
                         <p>Another example is Robotic Surgical Systems. These surgical systems are advanced
                         robotic platforms used by surgeons to perform minimally invasive surgeries with enhanced
@@ -405,7 +405,7 @@ const Lesson3 = () => {
                         with their luggage. Guests enter their room number on a touchscreen and size, place their
                         luggage in a container, enter their pin number and last name and Yobot does the rest
 
-                        <p>Image from Wired UK - Yobot
+                        <p className="white-space-filler">Image from Wired UK - Yobot
 
                         </p></p></p></p>
 
@@ -428,7 +428,7 @@ const Lesson3 = () => {
                         reach under furniture, and automatically return to its charging dock when the battery is
                         low.
 
-                        <p>Image from Wikipedia -Trilobite Image from ZDNet - iRobot’s roomba robot</p></p></p>
+                        <p className="white-space-filler">Image from Wikipedia -Trilobite Image from ZDNet - iRobot’s roomba robot</p></p></p>
 
                         </div>
                                     )}
@@ -502,7 +502,7 @@ const Lesson3 = () => {
                         navigate autonomously. It supports the ROS (Robot Operating System) framework,
                         providing a robust foundation for developing sophisticated applications.
 
-                        <p>Image from Robotis - TurtleBot3
+                        <p className="white-space-filler"> Image from Robotis - TurtleBot3
 
                         <p>● Mobile Industrial Robots, commonly known as MiR, are a series of wheeled robots
                         specifically designed for autonomous material transportation in industrial settings.
@@ -511,7 +511,7 @@ const Lesson3 = () => {
                         workflows and can be programmed to perform tasks such as transporting goods
                         between workstations or delivering components to assembly lines.
 
-                        Image from MiR - Mobile Industrial Robot 
+                         
                         </p></p></p></p></p>
 
                         <h6 className = "font-bold"> Aerial Drones </h6>
@@ -628,7 +628,7 @@ const Lesson3 = () => {
                             Example: The RIBA-II robot, developed by RIKEN and Tokai Rubber Industries, aids
                             in rehabilitation exercises and assists patients with mobility challenges.
 
-                            <p>Image of the RIBA-II robot helping someone
+                            <p className="white-space-filler">Image of the RIBA-II robot helping someone
 
                             <h6 className = "font-bold"> Entertainment</h6>
 
@@ -724,7 +724,7 @@ const Lesson3 = () => {
                             insights into crop health and predicts yield variations in large-scale farming
                             operations.
 
-                            <p>Image of Blue Rivers See and Spray robot Image of Raptor Maps’ thermal imaging system
+                            <p className="white-space-filler">Image of Blue Rivers See and Spray robot Image of Raptor Maps’ thermal imaging system
                             <h6 className = "font-bold">Harvesting</h6>
                             <p>Harvesting robots automate the labor-intensive process of harvesting crops, reducing the
                             dependency on manual labor and improving efficiency. They have witnessed significant
@@ -837,7 +837,8 @@ const Lesson3 = () => {
                             such as stereoscopic cameras or fluorescence imaging, to provide surgeons with a magnified,
                             high-resolution view of the surgical site.
 
-                            <p>Image of da Vinci Surgical Systems
+                            <p> <img src={davinci} alt="" className="img-thumbnail" width = "300"/> 
+
 
                             <p>In addition to minimally invasive surgeries with the da Vinci Surgical Systems, surgery robots
                             can perform microsurgeries. Robots aid in performing delicate microsurgeries, such as
@@ -846,7 +847,7 @@ const Lesson3 = () => {
                             Example: Microsure's MUSA robot enhances precision and stability for microvascular
                             procedures like lymphatic surgery and super-microsurgery.
 
-                            <p>Image of MUSA robot for microsurgeries
+                            <p className="white-space-filler">Image of MUSA robot for microsurgeries
 
                             <h6 className = "font-bold"> Rehabilitation robots </h6>
                             <p>Rehabilitation robots are advanced robotic systems designed to assist individuals in regaining
@@ -873,7 +874,7 @@ const Lesson3 = () => {
                             Example: Hocoma's Lokomat system combines a robotic exoskeleton and a treadmill
                             to provide intensive gait training for individuals with neurological disorders.
 
-                            <p>Image of Kinova’s robotic arm Image Lokomat for mobility rehabilitation
+                            <p className="white-space-filler">Image of Kinova’s robotic arm Image Lokomat for mobility rehabilitation
 
                             <h6 className = "font-bold">Robot prosthetics</h6>
                             <p>Robot prosthetics, also known as bionic prostheses, are advanced artificial limbs that mimic
@@ -922,7 +923,7 @@ const Lesson3 = () => {
                             Example: Sarcos Robotics' Guardian XO full-body exoskeleton, which amplifies the
                             wearer's strength and endurance for industrial and defense applications.
 
-                            <p>Image of Ekso Bionics’ exoskeleton Image of Sarco Robotics exoskeleton
+                            <p className="white-space-filler">Image of Ekso Bionics’ exoskeleton Image of Sarco Robotics exoskeleton
 
                         </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
 
@@ -966,7 +967,7 @@ const Lesson3 = () => {
                         life.
                         <p>● Assisting in the preparation for human space exploration missions.
 
-                        <p>Image of Lunokhod 1 Image of the Perseverance rover deployed on Mars in 2020.
+                        <p className="white-space-filler">Image of Lunokhod 1 Image of the Perseverance rover deployed on Mars in 2020.
 
                         <h6 className = "font-bold">Underwater exploration robots</h6>
                         <p>Exploring the vast and mysterious underwater world is challenging due to the extreme
@@ -1071,7 +1072,7 @@ const Lesson3 = () => {
                         the AeroVironment Raven, a lightweight UAV used for tactical reconnaissance in military
                         operations.
 
-                        <p>Image of the AeroVironment Raven (UAV)
+                        <p className="white-space-filler">Image of the AeroVironment Raven (UAV)
                         </p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p></p>
 
                         </div>
@@ -1116,7 +1117,7 @@ const Lesson3 = () => {
                         the VEX Robotics system, which combines construction elements with a programming
                         environment to promote hands-on learning and creativity.
 
-                        <p>Images of programmable robots. Top - Lego Mindstorms, bottom left - Arduino kit, bottom right - Vex
+                        <p className="white-space-filler">Images of programmable robots. Top - Lego Mindstorms, bottom left - Arduino kit, bottom right - Vex
 
                         robot
 
@@ -1314,7 +1315,7 @@ const Lesson3 = () => {
                         <p>● Assistance in activities of daily living, such as standing up, walking, or grasping
                         objects.
 
-                        <p>Image of the MyoPro
+                        <p className="white-space-filler">Image of the MyoPro
 
                         <h6 className = "font-bold">Assistive devices</h6> 
                         <p>Exoskeleton robots also serve as assistive devices, providing support and assistance to
